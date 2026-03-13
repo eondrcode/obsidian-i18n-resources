@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-13T10:08:58.171Z",
+  "lastUpdated": "2026-03-13T10:13:22.946Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -26,15 +26,23 @@
       "lastPushedAt": "2026-03-13T09:02:14Z",
       "recentCommits30d": 100,
       "totalContributors": 1,
-      "activityScore": 0.51,
-      "pluginCount": 1,
+      "activityScore": 0.76,
+      "pluginCount": 8,
+      "translationCount": 11,
       "languages": [
         "zh-cn"
       ],
       "pluginIds": [
-        "obsidian-git"
+        "Minimal",
+        "obsidian-admonition",
+        "homepage",
+        "obsidian-git",
+        "obsidian-excalidraw-plugin",
+        "better-plugins-manager",
+        "table-editor-obsidian",
+        "obsidian42-brat"
       ],
-      "lastManifestUpdate": "2026-03-13T08:49:56.592Z"
+      "lastManifestUpdate": "2026-03-13T09:00:36.339Z"
     }
   },
   "leaderboard": {
@@ -49,25 +57,25 @@
         "name": "voxrs",
         "avatarUrl": "https://avatars.githubusercontent.com/u/132795729?v=4",
         "htmlUrl": "https://github.com/voxrs",
-        "totalPlugins": 1,
+        "totalPlugins": 8,
         "totalStars": 0,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.51,
+        "activityScore": 0.76,
         "lastActiveAt": "2026-03-13T09:02:14Z"
       }
     ]
   },
   "summary": {
     "totalRepos": 1,
-    "totalPlugins": 1,
-    "totalTranslations": 1,
+    "totalPlugins": 8,
+    "totalTranslations": 11,
     "totalContributors": 1,
     "totalStars": 0,
     "languageDistribution": {
-      "zh-cn": 1
+      "zh-cn": 11
     }
   }
 }
