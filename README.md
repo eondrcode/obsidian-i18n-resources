@@ -164,10 +164,6 @@ obsidian-i18n-resources/
 - 🌍 翻译本项目文档
 - ⭐ 推荐本项目给其他用户
 
-### 许可证
-
-本项目采用 MIT 许证，您可以自由使用、修改和分发本项目代码。
-
 ---
 
 ## English
@@ -296,9 +292,6 @@ We welcome all forms of contributions, including but not limited to:
 - 🌍 Translating project documentation
 - ⭐ Recommending this project to other users
 
-### License
-
-This project is licensed under the MIT License. You are free to use, modify, and distribute this project's code.
 
 ---
 
