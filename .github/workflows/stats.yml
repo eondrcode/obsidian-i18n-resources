@@ -2,9 +2,12 @@ name: Daily Stats Update
 
 on:
   schedule:
-    # 每天 UTC 1:00 执行（北京时间 9:00）
-    - cron: '0 1 * * *'
+    # 每天 UTC 16:00 执行（北京时间 0:00）
+    - cron: '0 16 * * *'
   workflow_dispatch: # 允许手动触发
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 permissions:
   contents: write
