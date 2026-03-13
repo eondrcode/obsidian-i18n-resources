@@ -75,11 +75,18 @@ jobs:
 
             let manifestData = [];
             try {
-              const { data } = await github.rest.repos.getContent({ owner: targetOwner, repo: targetRepo, path: 'manifest.json' });
-              manifestData = JSON.parse(Buffer.from(data.content, 'base64').toString('utf-8'));
+              let manifestFile;
+              try {
+                const { data } = await github.rest.repos.getContent({ owner: targetOwner, repo: targetRepo, path: 'metadata.json' });
+                manifestFile = data;
+              } catch {
+                const { data } = await github.rest.repos.getContent({ owner: targetOwner, repo: targetRepo, path: 'manifest.json' });
+                manifestFile = data;
+              }
+              manifestData = JSON.parse(Buffer.from(manifestFile.content, 'base64').toString('utf-8'));
               if (!Array.isArray(manifestData)) throw new Error('Not array');
             } catch {
-              await github.rest.issues.createComment({ owner, repo, issue_number: issueNumber, body: `❌ 仓库 \`${repoAddress}\` 中未找到有效的 \`manifest.json\`。` });
+              await github.rest.issues.createComment({ owner, repo, issue_number: issueNumber, body: `❌ 仓库 \`${repoAddress}\` 中未找到有效的 \`metadata.json\` (或 \`manifest.json\`)。` });
               return;
             }
 
