@@ -1,0 +1,295 @@
+name: Approve and Register Translation Repo
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  label_new:
+    if: github.event.action == 'opened' && startsWith(github.event.issue.title, '[Register]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto Label New Request
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              labels: ['申请收录']
+            });
+
+  approve:
+    if: github.event.action == 'labeled' && github.event.label.name == '同意收录'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Process Approval
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const issueNumber = context.payload.issue.number;
+            const title = context.payload.issue.title;
+
+            // 移除所有相关的过程标签和其他状态，只保留【已收录】
+            for (const label of ['申请收录', '同意收录', '拒绝收录', '取消收录', '已拒绝', '已取消']) {
+              try { await github.rest.issues.removeLabel({ owner, repo, issue_number: issueNumber, name: label }); } catch(e){}
+            }
+
+            const match = title.match(/\[Register\]\s*(.+)/);
+            if (!match) return;
+            const repoAddress = match[1].trim();
+            const parts = repoAddress.split('/');
+            if (parts.length !== 2) return;
+            const [targetOwner, targetRepo] = parts;
+
+            // 读取 registry
+            let registry = [];
+            try { registry = JSON.parse(fs.readFileSync('registry.json', 'utf-8')); } catch (e) {}
+
+            registry = registry.filter(r => r.repoAddress !== repoAddress);
+            registry.push({ repoAddress: repoAddress, registeredAt: new Date().toISOString() });
+
+            // 获取数据
+            let repoInfo;
+            try {
+              repoInfo = (await github.rest.repos.get({ owner: targetOwner, repo: targetRepo })).data;
+            } catch {
+              await github.rest.issues.createComment({ owner, repo, issue_number: issueNumber, body: `❌ 仓库 \`${repoAddress}\` 不存在或不可访问。` });
+              return;
+            }
+
+            let manifestData = [];
+            try {
+              const { data } = await github.rest.repos.getContent({ owner: targetOwner, repo: targetRepo, path: 'manifest.json' });
+              manifestData = JSON.parse(Buffer.from(data.content, 'base64').toString('utf-8'));
+              if (!Array.isArray(manifestData)) throw new Error('Not array');
+            } catch {
+              await github.rest.issues.createComment({ owner, repo, issue_number: issueNumber, body: `❌ 仓库 \`${repoAddress}\` 中未找到有效的 \`manifest.json\`。` });
+              return;
+            }
+
+            fs.writeFileSync('registry.json', JSON.stringify(registry, null, 2));
+
+            // ---- 采集完整数据 ----
+            let stats = { lastUpdated: '', repos: {}, leaderboard: { topReposByStars: [], topReposByActivity: [], topAuthors: [] }, summary: { totalRepos: 0, totalPlugins: 0, totalTranslations: 0, totalContributors: 0, totalStars: 0, languageDistribution: {} } };
+            try { stats = JSON.parse(fs.readFileSync('stats.json', 'utf-8')); } catch (e) {}
+            // 确保新结构字段存在
+            if (!stats.leaderboard) stats.leaderboard = { topReposByStars: [], topReposByActivity: [], topAuthors: [] };
+            if (!stats.summary) stats.summary = { totalRepos: 0, totalPlugins: 0, totalTranslations: 0, totalContributors: 0, totalStars: 0, languageDistribution: {} };
+
+            const languages = [...new Set(manifestData.map(e => e.language).filter(Boolean))];
+            const pluginIds = [...new Set(manifestData.map(e => e.plugin).filter(Boolean))];
+            const dates = manifestData.map(e => e.updated_at).filter(Boolean).sort().reverse();
+            const lastManifestUpdate = dates[0] || '';
+
+            // 近 30 天 commits
+            let recentCommits30d = 0;
+            try {
+              const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
+              const { data: commits } = await github.rest.repos.listCommits({ owner: targetOwner, repo: targetRepo, since: thirtyDaysAgo, per_page: 100 });
+              recentCommits30d = commits.length;
+            } catch (e) { console.log('⚠️ commits:', e.message); }
+
+            // 贡献者
+            let totalContributors = 0;
+            try {
+              const { data: contributors } = await github.rest.repos.listContributors({ owner: targetOwner, repo: targetRepo, per_page: 100 });
+              totalContributors = contributors.length;
+            } catch (e) { console.log('⚠️ contributors:', e.message); }
+
+            // 活跃度评分
+            function calcScore(pc, lp, rc, st, fk, arch) {
+              if (arch) return 0;
+              const ps = Math.min(pc / 50, 1);
+              let fs = 0;
+              if (lp) {
+                const d = (Date.now() - new Date(lp).getTime()) / 864e5;
+                fs = d <= 7 ? 1 : d <= 30 ? 0.7 : d <= 90 ? 0.4 : d <= 180 ? 0.2 : 0.05;
+              }
+              return Math.round((0.3*ps + 0.3*fs + 0.2*Math.min(rc/20,1) + 0.1*Math.min(st/10,1) + 0.1*Math.min(fk/5,1)) * 100) / 100;
+            }
+
+            const activityScore = calcScore(manifestData.length, repoInfo.pushed_at, recentCommits30d, repoInfo.stargazers_count, repoInfo.forks_count, repoInfo.archived);
+
+            stats.repos[repoAddress] = {
+              authorName: repoInfo.owner.login,
+              authorId: repoInfo.owner.id,
+              avatarUrl: repoInfo.owner.avatar_url,
+              authorType: repoInfo.owner.type,
+              authorHtmlUrl: repoInfo.owner.html_url,
+              repoName: repoInfo.name,
+              repoFullName: repoInfo.full_name,
+              description: repoInfo.description || '',
+              htmlUrl: repoInfo.html_url,
+              defaultBranch: repoInfo.default_branch,
+              license: repoInfo.license?.spdx_id || null,
+              topics: repoInfo.topics || [],
+              isArchived: repoInfo.archived,
+              isFork: repoInfo.fork,
+              repoSize: repoInfo.size,
+              stars: repoInfo.stargazers_count,
+              forks: repoInfo.forks_count,
+              watchers: repoInfo.watchers_count,
+              openIssuesCount: repoInfo.open_issues_count,
+              repoCreatedAt: repoInfo.created_at,
+              repoUpdatedAt: repoInfo.updated_at,
+              lastPushedAt: repoInfo.pushed_at,
+              recentCommits30d,
+              totalContributors,
+              activityScore,
+              pluginCount: manifestData.length,
+              languages,
+              pluginIds,
+              lastManifestUpdate
+            };
+
+            // 重新计算排行榜和汇总
+            const entries = Object.entries(stats.repos);
+            stats.leaderboard.topReposByStars = entries.sort((a,b) => b[1].stars - a[1].stars).slice(0,10).map(([a]) => a);
+            stats.leaderboard.topReposByActivity = entries.sort((a,b) => (b[1].activityScore||0) - (a[1].activityScore||0)).slice(0,10).map(([a]) => a);
+
+            // 聚合作者
+            const am = new Map();
+            for (const [, s] of entries) {
+              const n = s.authorName || 'Unknown';
+              const ex = am.get(n);
+              if (ex) { ex.totalPlugins += s.pluginCount||0; ex.totalStars += s.stars||0; ex.repoCount++; (s.languages||[]).forEach(l => ex.langs.add(l)); ex.scores.push(s.activityScore||0); if(s.lastPushedAt > ex.lastActiveAt) ex.lastActiveAt = s.lastPushedAt; }
+              else am.set(n, { name:n, avatarUrl:s.avatarUrl||'', htmlUrl:s.authorHtmlUrl||'', totalPlugins:s.pluginCount||0, totalStars:s.stars||0, repoCount:1, langs:new Set(s.languages||[]), scores:[s.activityScore||0], lastActiveAt:s.lastPushedAt||'' });
+            }
+            stats.leaderboard.topAuthors = Array.from(am.values()).map(a => ({ name:a.name, avatarUrl:a.avatarUrl, htmlUrl:a.htmlUrl, totalPlugins:a.totalPlugins, totalStars:a.totalStars, repoCount:a.repoCount, languages:[...a.langs], activityScore: a.scores.length>0 ? a.scores.sort((x,y)=>y-x).reduce((s,v,i)=>s+v/(i+1),0) / a.scores.reduce((s,_,i)=>s+1/(i+1),0) : 0, lastActiveAt:a.lastActiveAt })).sort((a,b) => b.activityScore - a.activityScore).slice(0,10);
+
+            const allPids = new Set(); let totalTrans = 0;
+            const langDist = {};
+            for (const [,s] of entries) { (s.pluginIds||[]).forEach(p=>allPids.add(p)); totalTrans += s.pluginCount||0; (s.languages||[]).forEach(l => { langDist[l] = (langDist[l]||0) + (s.pluginCount||0); }); }
+            stats.summary = { totalRepos: entries.length, totalPlugins: allPids.size, totalTranslations: totalTrans, totalContributors: new Set(entries.map(([,s])=>s.authorName).filter(Boolean)).size, totalStars: entries.reduce((s,[,r])=>s+(r.stars||0),0), languageDistribution: langDist };
+
+            stats.lastUpdated = new Date().toISOString();
+            fs.writeFileSync('stats.json', JSON.stringify(stats, null, 2));
+
+            await github.rest.issues.addLabels({ owner, repo, issue_number: issueNumber, labels: ['已收录'] });
+            await github.rest.issues.createComment({
+              owner, repo, issue_number: issueNumber,
+              body: `✅ **同意收录！** 仓库 \`${repoAddress}\` 已成功加入社区目录。\n\n📊 **统计数据**：\n- ⭐ Stars: ${repoInfo.stargazers_count}\n- 📦 翻译包: ${manifestData.length}\n- 🌍 语言: ${languages.join(', ')}\n- 🔥 活跃度: ${activityScore}\n- 👥 贡献者: ${totalContributors}`
+            });
+            await github.rest.issues.update({ owner, repo, issue_number: issueNumber, state: 'closed' });
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add registry.json stats.json
+          git diff --staged --quiet || git commit -m "Approve repo from issue #${{ github.event.issue.number }}"
+          git push
+
+  reject:
+    if: github.event.action == 'labeled' && github.event.label.name == '拒绝收录'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Process Rejection
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const issueNumber = context.payload.issue.number;
+
+            // 移除所有相关的过程标签和其他状态，只保留【已拒绝】
+            for (const label of ['申请收录', '同意收录', '拒绝收录', '取消收录', '已收录', '已取消']) {
+              try { await github.rest.issues.removeLabel({ owner, repo, issue_number: issueNumber, name: label }); } catch(e){}
+            }
+
+            await github.rest.issues.addLabels({ owner, repo, issue_number: issueNumber, labels: ['已拒绝'] });
+            await github.rest.issues.createComment({
+              owner, repo, issue_number: issueNumber,
+              body: '❌ **拒绝收录**。您的翻译仓库未能通过审核。'
+            });
+            await github.rest.issues.update({ owner, repo, issue_number: issueNumber, state: 'closed' });
+
+  remove:
+    if: github.event.action == 'labeled' && github.event.label.name == '取消收录'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Process Removal
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const issueNumber = context.payload.issue.number;
+            const title = context.payload.issue.title;
+
+            // 移除所有相关的过程标签和其他状态，只保留【已取消】
+            for (const label of ['申请收录', '同意收录', '拒绝收录', '取消收录', '已收录', '已拒绝']) {
+              try { await github.rest.issues.removeLabel({ owner, repo, issue_number: issueNumber, name: label }); } catch(e){}
+            }
+
+            const match = title.match(/\[Register\]\s*(.+)/);
+            if (!match) return;
+            const repoAddress = match[1].trim();
+
+            let registry = [];
+            try { registry = JSON.parse(fs.readFileSync('registry.json', 'utf-8')); } catch (e) {}
+            registry = registry.filter(r => r.repoAddress !== repoAddress);
+            fs.writeFileSync('registry.json', JSON.stringify(registry, null, 2));
+
+            let stats = { lastUpdated: '', repos: {}, leaderboard: { topReposByStars: [], topReposByActivity: [], topAuthors: [] }, summary: { totalRepos: 0, totalPlugins: 0, totalTranslations: 0, totalContributors: 0, totalStars: 0, languageDistribution: {} } };
+            try { stats = JSON.parse(fs.readFileSync('stats.json', 'utf-8')); } catch (e) {}
+            if (!stats.leaderboard) stats.leaderboard = { topReposByStars: [], topReposByActivity: [], topAuthors: [] };
+            if (!stats.summary) stats.summary = { totalRepos: 0, totalPlugins: 0, totalTranslations: 0, totalContributors: 0, totalStars: 0, languageDistribution: {} };
+
+            if (stats.repos[repoAddress]) delete stats.repos[repoAddress];
+
+            // 重新计算排行榜和汇总
+            const entries = Object.entries(stats.repos);
+            stats.leaderboard.topReposByStars = entries.sort((a,b) => b[1].stars - a[1].stars).slice(0,10).map(([a]) => a);
+            stats.leaderboard.topReposByActivity = entries.sort((a,b) => (b[1].activityScore||0) - (a[1].activityScore||0)).slice(0,10).map(([a]) => a);
+
+            const am = new Map();
+            for (const [, s] of entries) {
+              const n = s.authorName || 'Unknown';
+              const ex = am.get(n);
+              if (ex) { ex.totalPlugins += s.pluginCount||0; ex.totalStars += s.stars||0; ex.repoCount++; (s.languages||[]).forEach(l => ex.langs.add(l)); ex.scores.push(s.activityScore||0); if(s.lastPushedAt > ex.lastActiveAt) ex.lastActiveAt = s.lastPushedAt; }
+              else am.set(n, { name:n, avatarUrl:s.avatarUrl||'', htmlUrl:s.authorHtmlUrl||'', totalPlugins:s.pluginCount||0, totalStars:s.stars||0, repoCount:1, langs:new Set(s.languages||[]), scores:[s.activityScore||0], lastActiveAt:s.lastPushedAt||'' });
+            }
+            stats.leaderboard.topAuthors = Array.from(am.values()).map(a => ({ name:a.name, avatarUrl:a.avatarUrl, htmlUrl:a.htmlUrl, totalPlugins:a.totalPlugins, totalStars:a.totalStars, repoCount:a.repoCount, languages:[...a.langs], activityScore: a.scores.length>0 ? a.scores.sort((x,y)=>y-x).reduce((s,v,i)=>s+v/(i+1),0) / a.scores.reduce((s,_,i)=>s+1/(i+1),0) : 0, lastActiveAt:a.lastActiveAt })).sort((a,b) => b.activityScore - a.activityScore).slice(0,10);
+
+            const allPids = new Set(); let totalTrans = 0;
+            const langDist = {};
+            for (const [,s] of entries) { (s.pluginIds||[]).forEach(p=>allPids.add(p)); totalTrans += s.pluginCount||0; (s.languages||[]).forEach(l => { langDist[l] = (langDist[l]||0) + (s.pluginCount||0); }); }
+            stats.summary = { totalRepos: entries.length, totalPlugins: allPids.size, totalTranslations: totalTrans, totalContributors: new Set(entries.map(([,s])=>s.authorName).filter(Boolean)).size, totalStars: entries.reduce((s,[,r])=>s+(r.stars||0),0), languageDistribution: langDist };
+
+            stats.lastUpdated = new Date().toISOString();
+            fs.writeFileSync('stats.json', JSON.stringify(stats, null, 2));
+
+            await github.rest.issues.addLabels({ owner, repo, issue_number: issueNumber, labels: ['已取消'] });
+            await github.rest.issues.createComment({
+              owner, repo, issue_number: issueNumber,
+              body: `⏸️ **已取消收录**。仓库 \`${repoAddress}\` 已从社区目录中移除，排行榜和统计已更新。`
+            });
+            await github.rest.issues.update({ owner, repo, issue_number: issueNumber, state: 'closed' });
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add registry.json stats.json
+          git diff --staged --quiet || git commit -m "Remove repo from issue #${{ github.event.issue.number }}"
+          git push
