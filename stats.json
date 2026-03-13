@@ -1,0 +1,73 @@
+{
+  "lastUpdated": "2026-03-13T10:08:58.171Z",
+  "repos": {
+    "voxrs/obsidian-translations": {
+      "authorName": "voxrs",
+      "authorId": 132795729,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/132795729?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/voxrs",
+      "repoName": "obsidian-translations",
+      "repoFullName": "voxrs/obsidian-translations",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/voxrs/obsidian-translations",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 140,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-02-25T11:41:17Z",
+      "repoUpdatedAt": "2026-03-13T09:02:16Z",
+      "lastPushedAt": "2026-03-13T09:02:14Z",
+      "recentCommits30d": 100,
+      "totalContributors": 1,
+      "activityScore": 0.51,
+      "pluginCount": 1,
+      "languages": [
+        "zh-cn"
+      ],
+      "pluginIds": [
+        "obsidian-git"
+      ],
+      "lastManifestUpdate": "2026-03-13T08:49:56.592Z"
+    }
+  },
+  "leaderboard": {
+    "topReposByStars": [
+      "voxrs/obsidian-translations"
+    ],
+    "topReposByActivity": [
+      "voxrs/obsidian-translations"
+    ],
+    "topAuthors": [
+      {
+        "name": "voxrs",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/132795729?v=4",
+        "htmlUrl": "https://github.com/voxrs",
+        "totalPlugins": 1,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.51,
+        "lastActiveAt": "2026-03-13T09:02:14Z"
+      }
+    ]
+  },
+  "summary": {
+    "totalRepos": 1,
+    "totalPlugins": 1,
+    "totalTranslations": 1,
+    "totalContributors": 1,
+    "totalStars": 0,
+    "languageDistribution": {
+      "zh-cn": 1
+    }
+  }
+}
