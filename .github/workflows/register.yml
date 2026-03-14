@@ -73,20 +73,28 @@ jobs:
               return;
             }
 
-            let manifestData = [];
-            try {
-              let manifestFile;
+            async function getRepoFileContent(targetOwner, targetRepo, path) {
               try {
-                const { data } = await github.rest.repos.getContent({ owner: targetOwner, repo: targetRepo, path: 'metadata.json' });
-                manifestFile = data;
-              } catch {
-                const { data } = await github.rest.repos.getContent({ owner: targetOwner, repo: targetRepo, path: 'manifest.json' });
-                manifestFile = data;
+                const { data } = await github.rest.repos.getContent({ owner: targetOwner, repo: targetRepo, path });
+                if (data.content) {
+                  return JSON.parse(Buffer.from(data.content, 'base64').toString('utf-8'));
+                } else if (data.sha) {
+                  console.log(`📄 文件 ${path} 超过 1MB，尝试通过 Blob 获取内容 (SHA: ${data.sha})...`);
+                  const { data: blob } = await github.rest.git.getBlob({ owner: targetOwner, repo: targetRepo, file_sha: data.sha });
+                  return JSON.parse(Buffer.from(blob.content, 'base64').toString('utf-8'));
+                }
+              } catch (e) {
+                if (e.status !== 404) throw e;
               }
-              manifestData = JSON.parse(Buffer.from(manifestFile.content, 'base64').toString('utf-8'));
+              return null;
+            }
+
+            let manifestData = null;
+            try {
+              manifestData = await getRepoFileContent(targetOwner, targetRepo, 'metadata.json');
               if (!Array.isArray(manifestData)) throw new Error('Not array');
-            } catch {
-              await github.rest.issues.createComment({ owner, repo, issue_number: issueNumber, body: `❌ 仓库 \`${repoAddress}\` 中未找到有效的 \`metadata.json\` (或 \`manifest.json\`)。` });
+            } catch (e) {
+              await github.rest.issues.createComment({ owner, repo, issue_number: issueNumber, body: `❌ 仓库 \`${repoAddress}\` 中未找到有效的 \`metadata.json\`，或者文件格式错误。` });
               return;
             }
 
@@ -101,6 +109,8 @@ jobs:
 
             const languages = [...new Set(manifestData.map(e => e.language).filter(Boolean))];
             const pluginIds = [...new Set(manifestData.map(e => e.plugin).filter(Boolean))];
+            const translationCount = manifestData.length;
+            const uniquePluginCount = pluginIds.length;
             const dates = manifestData.map(e => e.updated_at).filter(Boolean).sort().reverse();
             const lastManifestUpdate = dates[0] || '';
 
@@ -119,19 +129,33 @@ jobs:
               totalContributors = contributors.length;
             } catch (e) { console.log('⚠️ contributors:', e.message); }
 
-            // 活跃度评分
-            function calcScore(pc, lp, rc, st, fk, arch) {
-              if (arch) return 0;
-              const ps = Math.min(pc / 50, 1);
-              let fs = 0;
-              if (lp) {
-                const d = (Date.now() - new Date(lp).getTime()) / 864e5;
-                fs = d <= 7 ? 1 : d <= 30 ? 0.7 : d <= 90 ? 0.4 : d <= 180 ? 0.2 : 0.05;
+            // 活跃度评分算法 (同步自 stats.yml)
+            function calculateActivityScore({ pluginCount, lastPushedAt, recentCommits30d, stars, forks, isArchived }) {
+              if (isArchived) return 0;
+              let daysSincePush = Infinity;
+              if (lastPushedAt) {
+                daysSincePush = (Date.now() - new Date(lastPushedAt).getTime()) / (1000 * 60 * 60 * 24);
               }
-              return Math.round((0.3*ps + 0.3*fs + 0.2*Math.min(rc/20,1) + 0.1*Math.min(st/10,1) + 0.1*Math.min(fk/5,1)) * 100) / 100;
+              const scoreFromCommits = Math.min(recentCommits30d * 0.5, 35);
+              const scoreFromPlugins = Math.min(pluginCount * 2.0, 25);
+              const scoreFromStars = Math.min(stars * 0.1, 15);
+              let scoreFromTime = 0;
+              if (daysSincePush <= 7) scoreFromTime = 25;
+              else if (daysSincePush <= 30) scoreFromTime = 15;
+              else if (daysSincePush <= 90) scoreFromTime = 5;
+
+              const totalScore = (scoreFromCommits + scoreFromPlugins + scoreFromStars + scoreFromTime) / 100;
+              return Math.min(totalScore, 1);
             }
 
-            const activityScore = calcScore(manifestData.length, repoInfo.pushed_at, recentCommits30d, repoInfo.stargazers_count, repoInfo.forks_count, repoInfo.archived);
+            const activityScore = calculateActivityScore({
+              pluginCount: uniquePluginCount,
+              lastPushedAt: repoInfo.pushed_at,
+              recentCommits30d,
+              stars: repoInfo.stargazers_count,
+              forks: repoInfo.forks_count,
+              isArchived: repoInfo.archived
+            });
 
             stats.repos[repoAddress] = {
               authorName: repoInfo.owner.login,
@@ -159,31 +183,80 @@ jobs:
               recentCommits30d,
               totalContributors,
               activityScore,
-              pluginCount: manifestData.length,
+              pluginCount: uniquePluginCount,
+              translationCount,
               languages,
-              pluginIds,
-              lastManifestUpdate
+            lastManifestUpdate
             };
 
-            // 重新计算排行榜和汇总
+            // 重新计算排行榜和汇总 (同步自 stats.yml)
             const entries = Object.entries(stats.repos);
             stats.leaderboard.topReposByStars = entries.sort((a,b) => b[1].stars - a[1].stars).slice(0,10).map(([a]) => a);
             stats.leaderboard.topReposByActivity = entries.sort((a,b) => (b[1].activityScore||0) - (a[1].activityScore||0)).slice(0,10).map(([a]) => a);
 
-            // 聚合作者
             const am = new Map();
             for (const [, s] of entries) {
               const n = s.authorName || 'Unknown';
               const ex = am.get(n);
-              if (ex) { ex.totalPlugins += s.pluginCount||0; ex.totalStars += s.stars||0; ex.repoCount++; (s.languages||[]).forEach(l => ex.langs.add(l)); ex.scores.push(s.activityScore||0); if(s.lastPushedAt > ex.lastActiveAt) ex.lastActiveAt = s.lastPushedAt; }
-              else am.set(n, { name:n, avatarUrl:s.avatarUrl||'', htmlUrl:s.authorHtmlUrl||'', totalPlugins:s.pluginCount||0, totalStars:s.stars||0, repoCount:1, langs:new Set(s.languages||[]), scores:[s.activityScore||0], lastActiveAt:s.lastPushedAt||'' });
+              if (ex) {
+                ex.totalPlugins += s.pluginCount||0;
+                ex.totalStars += s.stars||0;
+                ex.repoCount++;
+                (s.languages||[]).forEach(l => ex.langs.add(l));
+                ex.scores.push(s.activityScore||0);
+                if(s.lastPushedAt > ex.lastActiveAt) ex.lastActiveAt = s.lastPushedAt;
+              } else {
+                am.set(n, {
+                  name: n,
+                  avatarUrl: s.avatarUrl||'',
+                  htmlUrl: s.authorHtmlUrl||'',
+                  totalPlugins: s.pluginCount||0,
+                  totalStars: s.stars||0,
+                  repoCount: 1,
+                  langs: new Set(s.languages||[]),
+                  scores: [s.activityScore||0],
+                  lastActiveAt: s.lastPushedAt||''
+                });
+              }
             }
-            stats.leaderboard.topAuthors = Array.from(am.values()).map(a => ({ name:a.name, avatarUrl:a.avatarUrl, htmlUrl:a.htmlUrl, totalPlugins:a.totalPlugins, totalStars:a.totalStars, repoCount:a.repoCount, languages:[...a.langs], activityScore: a.scores.length>0 ? a.scores.sort((x,y)=>y-x).reduce((s,v,i)=>s+v/(i+1),0) / a.scores.reduce((s,_,i)=>s+1/(i+1),0) : 0, lastActiveAt:a.lastActiveAt })).sort((a,b) => b.activityScore - a.activityScore).slice(0,10);
+            stats.leaderboard.topAuthors = Array.from(am.values())
+              .map(a => ({
+                name: a.name,
+                avatarUrl: a.avatarUrl,
+                htmlUrl: a.htmlUrl,
+                totalPlugins: a.totalPlugins,
+                totalStars: a.totalStars,
+                repoCount: a.repoCount,
+                languages: [...a.langs],
+                activityScore: a.scores.length > 0
+                  ? a.scores.sort((x, y) => y - x).reduce((s, v, i) => s + v / (i + 1), 0) / a.scores.reduce((s, _, i) => s + 1 / (i + 1), 0)
+                  : 0,
+                lastActiveAt: a.lastActiveAt
+              }))
+              .sort((a, b) => b.activityScore - a.activityScore || b.totalPlugins - a.totalPlugins)
+              .slice(0, 10);
 
-            const allPids = new Set(); let totalTrans = 0;
+            let totalTrans = 0;
             const langDist = {};
-            for (const [,s] of entries) { (s.pluginIds||[]).forEach(p=>allPids.add(p)); totalTrans += s.pluginCount||0; (s.languages||[]).forEach(l => { langDist[l] = (langDist[l]||0) + (s.pluginCount||0); }); }
-            stats.summary = { totalRepos: entries.length, totalPlugins: allPids.size, totalTranslations: totalTrans, totalContributors: new Set(entries.map(([,s])=>s.authorName).filter(Boolean)).size, totalStars: entries.reduce((s,[,r])=>s+(r.stars||0),0), languageDistribution: langDist };
+            for (const [, s] of entries) {
+              totalTrans += s.translationCount||0;
+              (s.languages||[]).forEach(l => {
+                langDist[l] = (langDist[l]||0) + (s.translationCount||0);
+              });
+            }
+
+            // 插件总数(去重)由于不再存储列表，注册流程中无法准确重新计算。
+            // 我们保留原有的总数。真正的准确计算由每日例行的 stats.yml 完成。
+            const totalPluginsCount = stats.summary.totalPlugins || 0;
+
+            stats.summary = {
+              totalRepos: entries.length,
+              totalPlugins: totalPluginsCount,
+              totalTranslations: totalTrans,
+              totalContributors: new Set(entries.map(([,s])=>s.authorName).filter(Boolean)).size,
+              totalStars: entries.reduce((s,[,r])=>s+(r.stars||0),0),
+              languageDistribution: langDist
+             };
 
             stats.lastUpdated = new Date().toISOString();
             fs.writeFileSync('stats.json', JSON.stringify(stats, null, 2));
@@ -195,13 +268,28 @@ jobs:
             });
             await github.rest.issues.update({ owner, repo, issue_number: issueNumber, state: 'closed' });
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add registry.json stats.json
-          git diff --staged --quiet || git commit -m "Approve repo from issue #${{ github.event.issue.number }}"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Approve repo from issue #${{ github.event.issue.number }}"
+          for i in {1..5}; do
+            echo "Attempt $i to push changes..."
+            if git pull --rebase && git push; then
+              echo "Push successful"
+              exit 0
+            fi
+            wait_time=$((i * 2 + RANDOM % 3))
+            echo "Push failed, retrying in ${wait_time}s..."
+            sleep $wait_time
+          done
+          echo "Push failed after 5 attempts"
+          exit 1
 
   reject:
     if: github.event.action == 'labeled' && github.event.label.name == '拒绝收录'
@@ -264,7 +352,7 @@ jobs:
 
             if (stats.repos[repoAddress]) delete stats.repos[repoAddress];
 
-            // 重新计算排行榜和汇总
+            // 重新计算排行榜和汇总 (同步自 stats.yml)
             const entries = Object.entries(stats.repos);
             stats.leaderboard.topReposByStars = entries.sort((a,b) => b[1].stars - a[1].stars).slice(0,10).map(([a]) => a);
             stats.leaderboard.topReposByActivity = entries.sort((a,b) => (b[1].activityScore||0) - (a[1].activityScore||0)).slice(0,10).map(([a]) => a);
@@ -273,15 +361,112 @@ jobs:
             for (const [, s] of entries) {
               const n = s.authorName || 'Unknown';
               const ex = am.get(n);
-              if (ex) { ex.totalPlugins += s.pluginCount||0; ex.totalStars += s.stars||0; ex.repoCount++; (s.languages||[]).forEach(l => ex.langs.add(l)); ex.scores.push(s.activityScore||0); if(s.lastPushedAt > ex.lastActiveAt) ex.lastActiveAt = s.lastPushedAt; }
-              else am.set(n, { name:n, avatarUrl:s.avatarUrl||'', htmlUrl:s.authorHtmlUrl||'', totalPlugins:s.pluginCount||0, totalStars:s.stars||0, repoCount:1, langs:new Set(s.languages||[]), scores:[s.activityScore||0], lastActiveAt:s.lastPushedAt||'' });
+              if (ex) {
+                ex.totalPlugins += s.pluginCount||0;
+                ex.totalStars += s.stars||0;
+                ex.repoCount++;
+                (s.languages||[]).forEach(l => ex.langs.add(l));
+                ex.scores.push(s.activityScore||0);
+                if(s.lastPushedAt > ex.lastActiveAt) ex.lastActiveAt = s.lastPushedAt;
+              } else {
+                am.set(n, {
+                  name: n,
+                  avatarUrl: s.avatarUrl||'',
+                  htmlUrl: s.authorHtmlUrl||'',
+                  totalPlugins: s.pluginCount||0,
+                  totalStars: s.stars||0,
+                  repoCount: 1,
+                  langs: new Set(s.languages||[]),
+                  scores: [s.activityScore||0],
+                  lastActiveAt: s.lastPushedAt||''
+                });
+              }
             }
-            stats.leaderboard.topAuthors = Array.from(am.values()).map(a => ({ name:a.name, avatarUrl:a.avatarUrl, htmlUrl:a.htmlUrl, totalPlugins:a.totalPlugins, totalStars:a.totalStars, repoCount:a.repoCount, languages:[...a.langs], activityScore: a.scores.length>0 ? a.scores.sort((x,y)=>y-x).reduce((s,v,i)=>s+v/(i+1),0) / a.scores.reduce((s,_,i)=>s+1/(i+1),0) : 0, lastActiveAt:a.lastActiveAt })).sort((a,b) => b.activityScore - a.activityScore).slice(0,10);
+            stats.leaderboard.topAuthors = Array.from(am.values())
+              .map(a => ({
+                name: a.name,
+                avatarUrl: a.avatarUrl,
+                htmlUrl: a.htmlUrl,
+                totalPlugins: a.totalPlugins,
+                totalStars: a.totalStars,
+                repoCount: a.repoCount,
+                languages: [...a.langs],
+                activityScore: a.scores.length > 0
+                  ? a.scores.sort((x, y) => y - x).reduce((s, v, i) => s + v / (i + 1), 0) / a.scores.reduce((s, _, i) => s + 1 / (i + 1), 0)
+                  : 0,
+                lastActiveAt: a.lastActiveAt
+              }))
+              .sort((a, b) => b.activityScore - a.activityScore || b.totalPlugins - a.totalPlugins)
+              .slice(0, 10);
 
-            const allPids = new Set(); let totalTrans = 0;
+            // 重新计算排行榜和汇总 (同步自 stats.yml)
+            const entries = Object.entries(stats.repos);
+            stats.leaderboard.topReposByStars = entries.sort((a,b) => b[1].stars - a[1].stars).slice(0,10).map(([a]) => a);
+            stats.leaderboard.topReposByActivity = entries.sort((a,b) => (b[1].activityScore||0) - (a[1].activityScore||0)).slice(0,10).map(([a]) => a);
+
+            const am = new Map();
+            for (const [, s] of entries) {
+              const n = s.authorName || 'Unknown';
+              const ex = am.get(n);
+              if (ex) {
+                ex.totalPlugins += s.pluginCount||0;
+                ex.totalStars += s.stars||0;
+                ex.repoCount++;
+                (s.languages||[]).forEach(l => ex.langs.add(l));
+                ex.scores.push(s.activityScore||0);
+                if(s.lastPushedAt > ex.lastActiveAt) ex.lastActiveAt = s.lastPushedAt;
+              } else {
+                am.set(n, {
+                  name: n,
+                  avatarUrl: s.avatarUrl||'',
+                  htmlUrl: s.authorHtmlUrl||'',
+                  totalPlugins: s.pluginCount||0,
+                  totalStars: s.stars||0,
+                  repoCount: 1,
+                  langs: new Set(s.languages||[]),
+                  scores: [s.activityScore||0],
+                  lastActiveAt: s.lastPushedAt||''
+                });
+              }
+            }
+            stats.leaderboard.topAuthors = Array.from(am.values())
+              .map(a => ({
+                name: a.name,
+                avatarUrl: a.avatarUrl,
+                htmlUrl: a.htmlUrl,
+                totalPlugins: a.totalPlugins,
+                totalStars: a.totalStars,
+                repoCount: a.repoCount,
+                languages: [...a.langs],
+                activityScore: a.scores.length > 0
+                  ? a.scores.sort((x, y) => y - x).reduce((s, v, i) => s + v / (i + 1), 0) / a.scores.reduce((s, _, i) => s + 1 / (i + 1), 0)
+                  : 0,
+                lastActiveAt: a.lastActiveAt
+              }))
+              .sort((a, b) => b.activityScore - a.activityScore || b.totalPlugins - a.totalPlugins)
+              .slice(0, 10);
+
+            let totalTrans = 0;
             const langDist = {};
-            for (const [,s] of entries) { (s.pluginIds||[]).forEach(p=>allPids.add(p)); totalTrans += s.pluginCount||0; (s.languages||[]).forEach(l => { langDist[l] = (langDist[l]||0) + (s.pluginCount||0); }); }
-            stats.summary = { totalRepos: entries.length, totalPlugins: allPids.size, totalTranslations: totalTrans, totalContributors: new Set(entries.map(([,s])=>s.authorName).filter(Boolean)).size, totalStars: entries.reduce((s,[,r])=>s+(r.stars||0),0), languageDistribution: langDist };
+            for (const [, s] of entries) {
+              totalTrans += s.translationCount||0;
+              (s.languages||[]).forEach(l => {
+                langDist[l] = (langDist[l]||0) + (s.translationCount||0);
+              });
+            }
+            
+            // 插件总数(去重)由于不再存储列表，注册/移除流程中无法准确重新计算。
+            // 真正的准确计算由每日例行的 stats.yml 完成。
+            const totalPluginsCount = stats.summary.totalPlugins || 0;
+
+            stats.summary = {
+              totalRepos: entries.length,
+              totalPlugins: totalPluginsCount,
+              totalTranslations: totalTrans,
+              totalContributors: new Set(entries.map(([,s])=>s.authorName).filter(Boolean)).size,
+              totalStars: entries.reduce((s,[,r])=>s+(r.stars||0),0),
+              languageDistribution: langDist
+             };
 
             stats.lastUpdated = new Date().toISOString();
             fs.writeFileSync('stats.json', JSON.stringify(stats, null, 2));
@@ -293,10 +478,26 @@ jobs:
             });
             await github.rest.issues.update({ owner, repo, issue_number: issueNumber, state: 'closed' });
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add registry.json stats.json
-          git diff --staged --quiet || git commit -m "Remove repo from issue #${{ github.event.issue.number }}"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Remove repo from issue #${{ github.event.issue.number }}"
+          for i in {1..5}; do
+            echo "Attempt $i to push changes..."
+            if git pull --rebase && git push; then
+              echo "Push successful"
+              exit 0
+            fi
+            wait_time=$((i * 2 + RANDOM % 3))
+            echo "Push failed, retrying in ${wait_time}s..."
+            sleep $wait_time
+          done
+          echo "Push failed after 5 attempts"
+          exit 1
+

@@ -28,148 +28,116 @@ jobs:
         with:
           script: |
             const fs = require('fs');
+            const registryContent = fs.readFileSync('registry.json', 'utf-8');
+            const registry = JSON.parse(registryContent);
 
-            // ========== 1. 读取 registry.json ==========
-            let registry = [];
-            try {
-              const content = fs.readFileSync('registry.json', 'utf-8');
-              registry = JSON.parse(content);
-            } catch (e) {
-              console.log('registry.json 为空或不存在，跳过更新');
-              return;
-            }
+            if (registry.length === 0) { console.log('没有注册的仓库'); return; }
 
-            if (registry.length === 0) {
-              console.log('没有注册的仓库，跳过更新');
-              return;
-            }
+            // 读取旧统计用于增量对比
+            let oldStats = { repos: {} };
+            try { oldStats = JSON.parse(fs.readFileSync('stats.json', 'utf-8')); } catch(e){}
 
             const stats = {
               lastUpdated: new Date().toISOString(),
               repos: {},
-              leaderboard: {
-                topReposByStars: [],
-                topReposByActivity: [],
-                topAuthors: []
-              },
-              summary: {
-                totalRepos: 0,
-                totalPlugins: 0,
-                totalTranslations: 0,
-                totalContributors: 0,
-                totalStars: 0,
-                languageDistribution: {}
-              }
+              leaderboard: { topReposByStars: [], topReposByActivity: [], topAuthors: [] },
+              summary: { totalRepos: 0, totalPlugins: 0, totalTranslations: 0, totalContributors: 0, totalStars: 0, languageDistribution: {} }
             };
 
-            // ========== 全局共享的重试抓取函数 ==========
             async function fetchWithRetry(fetcher, retries = 3) {
               for (let i = 0; i < retries; i++) {
-                try {
-                  return await fetcher();
-                } catch (error) {
-                  // 遇到 429 访问受限或者 403 时进行退避
+                try { return await fetcher(); } catch (error) {
                   if ((error.status === 403 || error.status === 429) && i < retries - 1) {
-                     const waitTime = Math.pow(2, i) * 1000 + Math.random() * 1000;
-                     console.log(`    ⚠️ API 限流，等待 ${Math.round(waitTime)}ms 后重试...`);
-                     await new Promise(r => setTimeout(r, waitTime));
-                  } else {
-                     throw error;
-                  }
+                    const waitTime = Math.pow(2, i) * 1000 + Math.random() * 1000;
+                    console.log(`    ⚠️ 限流，等待 ${Math.round(waitTime)}ms...`);
+                    await new Promise(r => setTimeout(r, waitTime));
+                  } else throw error;
                 }
               }
             }
 
-            // 用于汇总的中间变量
             const allPluginIds = new Set();
             const allContributorLogins = new Set();
-            const authorAgg = new Map(); // authorName -> aggregated data
-
-            // 30 天前的 ISO 时间（用于查询近 30 天 commits）
+            const authorAgg = new Map();
             const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
 
-            // ========== 2. 遍历所有注册仓库 ==========
-            for (const entry of registry) {
+            // 处理单个仓库的函数
+            async function processRepo(entry) {
               const [owner, repo] = entry.repoAddress.split('/');
-              if (!owner || !repo) continue;
+              if (!owner || !repo) return;
 
+              const existing = oldStats.repos[entry.repoAddress] || {};
               console.log(`\n📦 处理: ${entry.repoAddress}`);
 
               try {
-                // ---- 2a. 获取仓库基本信息 ----
+                // 1. 获取基础信息 (必要)
                 const { data: repoInfo } = await fetchWithRetry(() => github.rest.repos.get({ owner, repo }));
+                
+                // 2. 增量判断：如果 pushed_at 没变，且已有数据，则跳过部分抓取
+                let skipDeepFetch = false;
+                if (existing.lastPushedAt === repoInfo.pushed_at && existing.translationCount !== undefined) {
+                  console.log(`    ⚡ 距离上次运行未新增推送，启用增量模式 (跳过 metadata 和贡献者抓取)`);
+                  skipDeepFetch = true;
+                }
 
-                // ---- 2b. 获取 metadata.json (兼容 manifest.json) ----
-                let translationCount = 0;
-                let uniquePluginCount = 0;
-                let languages = [];
-                let pluginIds = [];
-                let lastManifestUpdate = '';
-                try {
-                  let manifestFile;
+                // 3. 获取 metadata.json
+                let translationCount = existing.translationCount || 0;
+                let uniquePluginCount = existing.pluginCount || 0;
+                let languages = existing.languages || [];
+                let pluginIds = existing.pluginIds || []; // 临时用于汇总计算
+                let lastManifestUpdate = existing.lastManifestUpdate || '';
+
+                if (!skipDeepFetch) {
+                  async function getRepoFileContent(targetOwner, targetRepo, path) {
+                    try {
+                      const { data } = await fetchWithRetry(() => github.rest.repos.getContent({ owner: targetOwner, repo: targetRepo, path }));
+                      if (data.content) return JSON.parse(Buffer.from(data.content, 'base64').toString('utf-8'));
+                      else if (data.sha) {
+                        const { data: blob } = await fetchWithRetry(() => github.rest.git.getBlob({ owner: targetOwner, repo: targetRepo, file_sha: data.sha }));
+                        return JSON.parse(Buffer.from(blob.content, 'base64').toString('utf-8'));
+                      }
+                    } catch (e) { if (e.status !== 404) throw e; }
+                    return null;
+                  }
+
                   try {
-                    const { data } = await fetchWithRetry(() => github.rest.repos.getContent({
-                      owner, repo, path: 'metadata.json'
-                    }));
-                    manifestFile = data;
-                  } catch (err) {
-                    const { data } = await fetchWithRetry(() => github.rest.repos.getContent({
-                      owner, repo, path: 'manifest.json'
-                    }));
-                    manifestFile = data;
-                  }
-                  const decoded = Buffer.from(manifestFile.content, 'base64').toString('utf-8');
-                  const manifest = JSON.parse(decoded);
-                  if (Array.isArray(manifest)) {
-                    translationCount = manifest.length;
-                    languages = [...new Set(manifest.map(e => e.language).filter(Boolean))];
-                    pluginIds = [...new Set(manifest.map(e => e.plugin).filter(Boolean))];
-                    uniquePluginCount = pluginIds.length;
-
-                    // 从 manifest 条目中找到最新的 updated_at
-                    const dates = manifest
-                      .map(e => e.updated_at)
-                      .filter(Boolean)
-                      .sort()
-                      .reverse();
-                    lastManifestUpdate = dates[0] || '';
-                  }
-                } catch (e) {
-                  console.log(`  ⚠️ 无法读取 metadata.json (或旧版 manifest): ${e.message}`);
-                }
-
-                // ---- 2c. 获取近 30 天 commit 数量 ----
-                let recentCommits30d = 0;
-                try {
-                  const { data: commits } = await fetchWithRetry(() => github.rest.repos.listCommits({
-                    owner, repo, since: thirtyDaysAgo, per_page: 100
-                  }));
-                  recentCommits30d = commits.length;
-                } catch (e) {
-                  console.log(`  ⚠️ 无法读取 commits: ${e.message}`);
-                }
-
-                // ---- 2d. 获取贡献者数量 ----
-                let totalContributors = 0;
-                const contributorLogins = [];
-                try {
-                  const { data: contributors } = await fetchWithRetry(() => github.rest.repos.listContributors({
-                    owner, repo, per_page: 100
-                  }));
-                  totalContributors = contributors.length;
-                  for (const c of contributors) {
-                    if (c.login) {
-                      contributorLogins.push(c.login);
-                      allContributorLogins.add(c.login);
+                    const manifest = await getRepoFileContent(owner, repo, 'metadata.json');
+                    if (manifest && Array.isArray(manifest)) {
+                      translationCount = manifest.length;
+                      languages = [...new Set(manifest.map(e => e.language).filter(Boolean))];
+                      pluginIds = [...new Set(manifest.map(e => e.plugin).filter(Boolean))];
+                      uniquePluginCount = pluginIds.length;
+                      const dates = manifest.map(e => e.updated_at).filter(Boolean).sort().reverse();
+                      lastManifestUpdate = dates[0] || '';
                     }
-                  }
-                } catch (e) {
-                  console.log(`  ⚠️ 无法读取贡献者: ${e.message}`);
+                  } catch (e) { console.log(`    ⚠️ metadata.json 解析失败: ${e.message}`); }
                 }
 
-                // ---- 2e. 计算活跃度分数 ----
+                // 4. 获取 Commits (30天内)
+                let recentCommits30d = 0;
+                // 如果 pushed_at 早于 30 天前，直接判定为 0
+                if (new Date(repoInfo.pushed_at) < new Date(thirtyDaysAgo)) {
+                  recentCommits30d = 0;
+                  console.log(`    ⏭️ 超过 30 天未更新，跳过 Commit 抓取`);
+                } else {
+                  try {
+                    const { data: commits } = await fetchWithRetry(() => github.rest.repos.listCommits({ owner, repo, since: thirtyDaysAgo, per_page: 100 }));
+                    recentCommits30d = commits.length;
+                  } catch (e) { console.log(`    ⚠️ Commits 失败: ${e.message}`); }
+                }
+
+                // 5. 获取贡献者
+                let totalContributors = existing.totalContributors || 0;
+                if (!skipDeepFetch) {
+                  try {
+                    const { data: contributors } = await fetchWithRetry(() => github.rest.repos.listContributors({ owner, repo, per_page: 100 }));
+                    totalContributors = contributors.length;
+                    contributors.forEach(c => { if(c.login) allContributorLogins.add(c.login); });
+                  } catch (e) { console.log(`    ⚠️ 贡献者失败: ${e.message}`); }
+                }
+
                 const activityScore = calculateActivityScore({
-                  pluginCount: uniquePluginCount, // 使用去重后的插件数量参与打分
+                  pluginCount: uniquePluginCount,
                   lastPushedAt: repoInfo.pushed_at,
                   recentCommits30d,
                   stars: repoInfo.stargazers_count,
@@ -177,16 +145,12 @@ jobs:
                   isArchived: repoInfo.archived
                 });
 
-                // ---- 2f. 构建完整的仓库状态记录 ----
                 const repoStats = {
-                  // 作者信息
                   authorName: repoInfo.owner.login,
                   authorId: repoInfo.owner.id,
                   avatarUrl: repoInfo.owner.avatar_url,
-                  authorType: repoInfo.owner.type,        // 'User' 或 'Organization'
+                  authorType: repoInfo.owner.type,
                   authorHtmlUrl: repoInfo.owner.html_url,
-
-                  // 仓库基本信息
                   repoName: repoInfo.name,
                   repoFullName: repoInfo.full_name,
                   description: repoInfo.description || '',
@@ -197,160 +161,114 @@ jobs:
                   isArchived: repoInfo.archived,
                   isFork: repoInfo.fork,
                   repoSize: repoInfo.size,
-
-                  // 仓库指标
                   stars: repoInfo.stargazers_count,
                   forks: repoInfo.forks_count,
                   watchers: repoInfo.watchers_count,
                   openIssuesCount: repoInfo.open_issues_count,
-
-                  // 时间戳
                   repoCreatedAt: repoInfo.created_at,
                   repoUpdatedAt: repoInfo.updated_at,
                   lastPushedAt: repoInfo.pushed_at,
-
-                  // 活跃度数据
                   recentCommits30d,
                   totalContributors,
                   activityScore,
-
-                  // Manifest 摘要
-                  pluginCount: uniquePluginCount, // 为了向前兼容，依然保留名称，但逻辑更正为插件类目数
-                  translationCount: translationCount, // 新增翻译包总数
+                  pluginCount: uniquePluginCount,
+                  translationCount,
                   languages,
-                  pluginIds,
                   lastManifestUpdate
                 };
 
-                stats.repos[entry.repoAddress] = repoStats;
-
-                // ---- 2g. 更新汇总数据 ----
-                stats.summary.totalStars += repoInfo.stargazers_count;
-                stats.summary.totalTranslations += translationCount;
-                for (const pid of pluginIds) allPluginIds.add(pid);
-                for (const lang of languages) {
-                  stats.summary.languageDistribution[lang] =
-                    (stats.summary.languageDistribution[lang] || 0) + translationCount;
-                }
-
-                // ---- 2h. 聚合作者数据 ----
-                const authorName = repoInfo.owner.login;
-                if (!authorAgg.has(authorName)) {
-                  authorAgg.set(authorName, {
-                    name: authorName,
-                    avatarUrl: repoInfo.owner.avatar_url,
-                    htmlUrl: repoInfo.owner.html_url,
-                    totalPlugins: 0,
-                    totalStars: 0,
-                    repoCount: 0,
-                    languages: new Set(),
-                    activityScores: [],
-                    lastActiveAt: ''
-                  });
-                }
-                const agg = authorAgg.get(authorName);
-                agg.totalPlugins += uniquePluginCount;
-                agg.totalStars += repoInfo.stargazers_count;
-                agg.repoCount += 1;
-                for (const lang of languages) agg.languages.add(lang);
-                agg.activityScores.push(activityScore);
-                if (!agg.lastActiveAt || repoInfo.pushed_at > agg.lastActiveAt) {
-                  agg.lastActiveAt = repoInfo.pushed_at;
-                }
-
-                console.log(`  ✅ Stars: ${repoInfo.stargazers_count}, 插件类型: ${uniquePluginCount}, 总翻译包: ${translationCount}, 活跃度: ${activityScore.toFixed(2)}`);
-              } catch (error) {
-                console.log(`  ❌ 获取失败: ${error.message}`);
+                return { address: entry.repoAddress, stats: repoStats, pluginIds };
+              } catch (e) {
+                console.log(`  ❌ ${entry.repoAddress} 整体抓取失败: ${e.message}`);
+                return null;
               }
-
-              // 使用重试退避替换固定延时
-              // await new Promise(r => setTimeout(r, 800));
             }
 
-            // ========== 3. 计算排行榜 ==========
+            // --- 控制并发的任务池执行器 ---
+            const concurrency = 5;
+            const results = [];
+            for (let i = 0; i < registry.length; i += concurrency) {
+              const chunk = registry.slice(i, i + concurrency);
+              const chunkResults = await Promise.all(chunk.map(entry => processRepo(entry)));
+              results.push(...chunkResults.filter(Boolean));
+            }
+
+            // --- 处理结果并汇总 ---
+            for (const item of results) {
+              const { address, stats: repoStats, pluginIds } = item;
+              stats.repos[address] = repoStats;
+
+              stats.summary.totalStars += repoStats.stars;
+              stats.summary.totalTranslations += repoStats.translationCount;
+              (pluginIds||[]).forEach(pid => allPluginIds.add(pid));
+              repoStats.languages.forEach(l => {
+                stats.summary.languageDistribution[l] = (stats.summary.languageDistribution[l] || 0) + repoStats.translationCount;
+              });
+
+              const authorName = repoStats.authorName;
+              if (!authorAgg.has(authorName)) {
+                authorAgg.set(authorName, { name: authorName, avatarUrl: repoStats.avatarUrl, htmlUrl: repoStats.authorHtmlUrl, totalPlugins: 0, totalStars: 0, repoCount: 0, languages: new Set(), activityScores: [], lastActiveAt: '' });
+              }
+              const agg = authorAgg.get(authorName);
+              agg.totalPlugins += repoStats.pluginCount;
+              agg.totalStars += repoStats.stars;
+              agg.repoCount += 1;
+              repoStats.languages.forEach(l => agg.languages.add(l));
+              agg.activityScores.push(repoStats.activityScore);
+              if (!agg.lastActiveAt || repoStats.lastPushedAt > agg.lastActiveAt) agg.lastActiveAt = repoStats.lastPushedAt;
+            }
+
+            // 排行榜计算 (保持原样)
             const repoEntries = Object.entries(stats.repos);
-
-            // 按 Star 排序
-            stats.leaderboard.topReposByStars = repoEntries
-              .sort((a, b) => b[1].stars - a[1].stars)
-              .slice(0, 10)
-              .map(([addr]) => addr);
-
-            // 按活跃度排序
-            stats.leaderboard.topReposByActivity = repoEntries
-              .sort((a, b) => b[1].activityScore - a[1].activityScore)
-              .slice(0, 10)
-              .map(([addr]) => addr);
-
-            // 活跃译者排行
+            stats.leaderboard.topReposByStars = repoEntries.sort((a,b) => b[1].stars - a[1].stars).slice(0,10).map(([a]) => a);
+            stats.leaderboard.topReposByActivity = repoEntries.sort((a,b) => b[1].activityScore - a[1].activityScore).slice(0,10).map(([a]) => a);
             stats.leaderboard.topAuthors = Array.from(authorAgg.values())
               .map(a => ({
-                name: a.name,
-                avatarUrl: a.avatarUrl,
-                htmlUrl: a.htmlUrl,
-                totalPlugins: a.totalPlugins,
-                totalStars: a.totalStars,
-                repoCount: a.repoCount,
-                languages: [...a.languages],
-                // 作者活跃度 = 所有仓库活跃度的加权平均（最高分仓库权重更大）
-                activityScore: a.activityScores.length > 0
-                  ? a.activityScores.sort((x, y) => y - x).reduce((sum, s, i) => sum + s * (1 / (i + 1)), 0)
-                    / a.activityScores.reduce((sum, _, i) => sum + 1 / (i + 1), 0)
-                  : 0,
+                name: a.name, avatarUrl: a.avatarUrl, htmlUrl: a.htmlUrl, totalPlugins: a.totalPlugins, totalStars: a.totalStars, repoCount: a.repoCount, languages: [...a.languages],
+                activityScore: a.activityScores.length > 0 ? a.activityScores.sort((x,y)=>y-x).reduce((s,v,i) => s+v*(1/(i+1)),0) / a.activityScores.reduce((s,_,i)=>s+1/(i+1),0) : 0,
                 lastActiveAt: a.lastActiveAt
               }))
-              .sort((a, b) => b.activityScore - a.activityScore || b.totalPlugins - a.totalPlugins)
-              .slice(0, 10);
+              .sort((a,b) => b.activityScore - a.activityScore || b.totalPlugins - a.totalPlugins).slice(0,10);
 
-            // ========== 4. 填充汇总 ==========
-            stats.summary.totalRepos = Object.keys(stats.repos).length;
+            stats.summary.totalRepos = repoEntries.length;
             stats.summary.totalPlugins = allPluginIds.size;
             stats.summary.totalContributors = allContributorLogins.size;
 
-            // ========== 5. 写入 stats.json ==========
             fs.writeFileSync('stats.json', JSON.stringify(stats, null, 2));
             console.log(`\n✅ 共更新 ${stats.summary.totalRepos} 个仓库的统计数据`);
-            console.log(`   翻译插件: ${stats.summary.totalPlugins}, 翻译条目: ${stats.summary.totalTranslations}`);
-            console.log(`   贡献者: ${stats.summary.totalContributors}, 总 Star: ${stats.summary.totalStars}`);
 
-            // ========== 活跃度评分算法 ==========
             function calculateActivityScore({ pluginCount, lastPushedAt, recentCommits30d, stars, forks, isArchived }) {
               if (isArchived) return 0;
-
-              // 1. 翻译数量得分 (权重 30%) — 50 个翻译满分
-              const pluginScore = Math.min(pluginCount / 50, 1);
-
-              // 2. 更新时效得分 (权重 30%) — 时间衰减
-              let freshnessScore = 0;
-              let daysSincePush = Infinity;
-              if (lastPushedAt) {
-                daysSincePush = (Date.now() - new Date(lastPushedAt).getTime()) / (1000 * 60 * 60 * 24);
-              }
-
-              // 权重分布：
-              // Commits (30天内): 35% (高达 35 分) - 提升近期活跃的影响
-              // 插件数量 (pluginCount): 25% (高达 25 分)
-              // Stars: 15% (高达 15 分) - 降低长期累计数据的影响
-              // 更新时间 (daysSincePush): 25% (高达 25 分)
+              const daysSincePush = lastPushedAt ? (Date.now() - new Date(lastPushedAt).getTime()) / (1000 * 60 * 60 * 24) : Infinity;
               const scoreFromCommits = Math.min(recentCommits30d * 0.5, 35);
               const scoreFromPlugins = Math.min(pluginCount * 2.0, 25);
               const scoreFromStars = Math.min(stars * 0.1, 15);
-
-              // 距离上次 push 越近得分越高 (衰减衰减)
-              // ≤7天: 25分, ≤30天: 15分, ≤90天: 5分, >90天: 0分
               let scoreFromTime = 0;
               if (daysSincePush <= 7) scoreFromTime = 25;
               else if (daysSincePush <= 30) scoreFromTime = 15;
               else if (daysSincePush <= 90) scoreFromTime = 5;
-
-              const totalScore = (scoreFromCommits + scoreFromPlugins + scoreFromStars + scoreFromTime) / 100;
-              return Math.min(totalScore, 1); // 归一化到 0~1 之间
+              return Math.min((scoreFromCommits + scoreFromPlugins + scoreFromStars + scoreFromTime) / 100, 1);
             }
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add stats.json
-          git diff --staged --quiet || git commit -m "📊 Daily stats update $(date -u +%Y-%m-%d)"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "📊 Daily stats update $(date -u +%Y-%m-%d)"
+          for i in {1..5}; do
+            echo "Attempt $i to push changes..."
+            if git pull --rebase && git push; then
+              echo "Push successful"
+              exit 0
+            fi
+            wait_time=$((i * 2 + RANDOM % 3))
+            echo "Push failed, retrying in ${wait_time}s..."
+            sleep $wait_time
+          done
+          echo "Push failed after 5 attempts"
+          exit 1
