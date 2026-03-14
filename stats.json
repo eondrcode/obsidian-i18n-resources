@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-14T00:57:50.971Z",
+  "lastUpdated": "2026-03-14T01:31:26.926Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -46,16 +46,64 @@
         "excalibrain"
       ],
       "lastManifestUpdate": "2026-03-13T14:33:25.955Z"
+    },
+    "yunrr/obsidian-i18n-resources": {
+      "authorName": "yunrr",
+      "authorId": 144842921,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/yunrr",
+      "repoName": "obsidian-i18n-resources",
+      "repoFullName": "yunrr/obsidian-i18n-resources",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/yunrr/obsidian-i18n-resources",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 15165,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-03-13T17:36:40Z",
+      "repoUpdatedAt": "2026-03-13T18:53:10Z",
+      "lastPushedAt": "2026-03-13T18:53:07Z",
+      "recentCommits30d": 100,
+      "totalContributors": 1,
+      "activityScore": 0.85,
+      "pluginCount": 2701,
+      "translationCount": 2701,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-03-13T18:39:48.362Z"
     }
   },
   "leaderboard": {
     "topReposByStars": [
-      "voxrs/obsidian-translations"
+      "voxrs/obsidian-translations",
+      "yunrr/obsidian-i18n-resources"
     ],
     "topReposByActivity": [
+      "yunrr/obsidian-i18n-resources",
       "voxrs/obsidian-translations"
     ],
     "topAuthors": [
+      {
+        "name": "yunrr",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
+        "htmlUrl": "https://github.com/yunrr",
+        "totalPlugins": 2701,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.85,
+        "lastActiveAt": "2026-03-13T18:53:07Z"
+      },
       {
         "name": "voxrs",
         "avatarUrl": "https://avatars.githubusercontent.com/u/132795729?v=4",
@@ -72,13 +120,13 @@
     ]
   },
   "summary": {
-    "totalRepos": 1,
+    "totalRepos": 2,
     "totalPlugins": 11,
-    "totalTranslations": 16,
-    "totalContributors": 1,
+    "totalTranslations": 2717,
+    "totalContributors": 2,
     "totalStars": 0,
     "languageDistribution": {
-      "zh-cn": 16
+      "zh-cn": 2717
     }
   }
 }
