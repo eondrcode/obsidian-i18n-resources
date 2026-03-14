@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-14T01:31:26.926Z",
+  "lastUpdated": "2026-03-14T01:34:41.696Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -31,19 +31,6 @@
       "translationCount": 16,
       "languages": [
         "zh-cn"
-      ],
-      "pluginIds": [
-        "obsidian-admonition",
-        "calendar",
-        "copilot",
-        "obsidian-excalidraw-plugin",
-        "Minimal",
-        "homepage",
-        "obsidian-git",
-        "better-plugins-manager",
-        "table-editor-obsidian",
-        "obsidian42-brat",
-        "excalibrain"
       ],
       "lastManifestUpdate": "2026-03-13T14:33:25.955Z"
     },
@@ -123,7 +110,7 @@
     "totalRepos": 2,
     "totalPlugins": 11,
     "totalTranslations": 2717,
-    "totalContributors": 2,
+    "totalContributors": 0,
     "totalStars": 0,
     "languageDistribution": {
       "zh-cn": 2717
