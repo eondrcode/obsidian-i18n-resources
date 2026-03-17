@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-16T16:54:15.598Z",
+  "lastUpdated": "2026-03-17T09:42:27.784Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -66,16 +66,51 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-03-14T19:12:43.701Z"
+    },
+    "Anonym0usPlayer/obsidian-i18n-resources": {
+      "authorName": "Anonym0usPlayer",
+      "authorId": 82373133,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/Anonym0usPlayer",
+      "repoName": "obsidian-i18n-resources",
+      "repoFullName": "Anonym0usPlayer/obsidian-i18n-resources",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/Anonym0usPlayer/obsidian-i18n-resources",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 24,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-03-15T08:46:10Z",
+      "repoUpdatedAt": "2026-03-17T01:21:17Z",
+      "lastPushedAt": "2026-03-17T01:21:15Z",
+      "recentCommits30d": 10,
+      "totalContributors": 1,
+      "activityScore": 0.34,
+      "pluginCount": 2,
+      "translationCount": 2,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-03-17T01:21:14.998Z"
     }
   },
   "leaderboard": {
     "topReposByStars": [
       "yunrr/obsidian-i18n-resources",
-      "voxrs/obsidian-translations"
+      "voxrs/obsidian-translations",
+      "Anonym0usPlayer/obsidian-i18n-resources"
     ],
     "topReposByActivity": [
       "yunrr/obsidian-i18n-resources",
-      "voxrs/obsidian-translations"
+      "voxrs/obsidian-translations",
+      "Anonym0usPlayer/obsidian-i18n-resources"
     ],
     "topAuthors": [
       {
@@ -103,17 +138,30 @@
         ],
         "activityScore": 0.62,
         "lastActiveAt": "2026-03-14T13:55:20Z"
+      },
+      {
+        "name": "Anonym0usPlayer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
+        "htmlUrl": "https://github.com/Anonym0usPlayer",
+        "totalPlugins": 2,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.34,
+        "lastActiveAt": "2026-03-17T01:21:15Z"
       }
     ]
   },
   "summary": {
-    "totalRepos": 2,
+    "totalRepos": 3,
     "totalPlugins": 0,
-    "totalTranslations": 3441,
-    "totalContributors": 0,
+    "totalTranslations": 3443,
+    "totalContributors": 3,
     "totalStars": 1,
     "languageDistribution": {
-      "zh-cn": 3441
+      "zh-cn": 3443
     }
   }
 }
