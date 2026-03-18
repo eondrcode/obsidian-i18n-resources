@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-17T16:56:53.951Z",
+  "lastUpdated": "2026-03-18T16:50:53.619Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -82,23 +82,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 27,
+      "repoSize": 44,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-03-15T08:46:10Z",
-      "repoUpdatedAt": "2026-03-17T10:40:11Z",
-      "lastPushedAt": "2026-03-17T10:40:09Z",
-      "recentCommits30d": 12,
+      "repoUpdatedAt": "2026-03-18T03:48:51Z",
+      "lastPushedAt": "2026-03-18T03:48:49Z",
+      "recentCommits30d": 19,
       "totalContributors": 1,
-      "activityScore": 0.37,
-      "pluginCount": 3,
-      "translationCount": 3,
+      "activityScore": 0.445,
+      "pluginCount": 5,
+      "translationCount": 5,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-03-17T10:40:08.931Z"
+      "lastManifestUpdate": "2026-03-18T03:48:48.947Z"
     }
   },
   "leaderboard": {
@@ -143,25 +143,25 @@
         "name": "Anonym0usPlayer",
         "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
         "htmlUrl": "https://github.com/Anonym0usPlayer",
-        "totalPlugins": 3,
+        "totalPlugins": 5,
         "totalStars": 0,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.37,
-        "lastActiveAt": "2026-03-17T10:40:09Z"
+        "activityScore": 0.445,
+        "lastActiveAt": "2026-03-18T03:48:49Z"
       }
     ]
   },
   "summary": {
     "totalRepos": 3,
-    "totalPlugins": 3,
-    "totalTranslations": 3444,
+    "totalPlugins": 5,
+    "totalTranslations": 3446,
     "totalContributors": 1,
     "totalStars": 1,
     "languageDistribution": {
-      "zh-cn": 3444
+      "zh-cn": 3446
     }
   }
 }
