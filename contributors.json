@@ -1,3 +1,10 @@
 {
-  "contributors": []
+  "contributors": [
+    {
+      "name": "测试",
+      "category": "code",
+      "url": "测试",
+      "description": "测试"
+    }
+  ]
 }
