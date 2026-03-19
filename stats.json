@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-18T16:50:53.619Z",
+  "lastUpdated": "2026-03-19T16:48:12.001Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -50,16 +50,16 @@
       "isArchived": false,
       "isFork": false,
       "repoSize": 14786,
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
-      "watchers": 1,
+      "watchers": 2,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-03-13T17:36:40Z",
-      "repoUpdatedAt": "2026-03-15T09:36:34Z",
+      "repoUpdatedAt": "2026-03-19T14:20:42Z",
       "lastPushedAt": "2026-03-15T09:36:31Z",
       "recentCommits30d": 100,
       "totalContributors": 1,
-      "activityScore": 0.851,
+      "activityScore": 0.852,
       "pluginCount": 2877,
       "translationCount": 3440,
       "languages": [
@@ -82,23 +82,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 44,
+      "repoSize": 58,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-03-15T08:46:10Z",
-      "repoUpdatedAt": "2026-03-18T03:48:51Z",
-      "lastPushedAt": "2026-03-18T03:48:49Z",
-      "recentCommits30d": 19,
+      "repoUpdatedAt": "2026-03-19T12:15:17Z",
+      "lastPushedAt": "2026-03-19T12:14:32Z",
+      "recentCommits30d": 25,
       "totalContributors": 1,
-      "activityScore": 0.445,
+      "activityScore": 0.475,
       "pluginCount": 5,
       "translationCount": 5,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-03-18T03:48:48.947Z"
+      "lastManifestUpdate": "2026-03-19T12:14:32.062Z"
     }
   },
   "leaderboard": {
@@ -118,12 +118,12 @@
         "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
         "htmlUrl": "https://github.com/yunrr",
         "totalPlugins": 2877,
-        "totalStars": 1,
+        "totalStars": 2,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.851,
+        "activityScore": 0.852,
         "lastActiveAt": "2026-03-15T09:36:31Z"
       },
       {
@@ -149,8 +149,8 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.445,
-        "lastActiveAt": "2026-03-18T03:48:49Z"
+        "activityScore": 0.475,
+        "lastActiveAt": "2026-03-19T12:14:32Z"
       }
     ]
   },
@@ -159,7 +159,7 @@
     "totalPlugins": 5,
     "totalTranslations": 3446,
     "totalContributors": 1,
-    "totalStars": 1,
+    "totalStars": 2,
     "languageDistribution": {
       "zh-cn": 3446
     }
