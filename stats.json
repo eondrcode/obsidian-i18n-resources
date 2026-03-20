@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T16:32:51.497Z",
+  "lastUpdated": "2026-03-20T23:06:40.461Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -99,17 +99,52 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-03-20T01:22:10.127Z"
+    },
+    "Ayanami-Shinji/obsidian-i18n-resources": {
+      "authorName": "Ayanami-Shinji",
+      "authorId": 78525325,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/78525325?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/Ayanami-Shinji",
+      "repoName": "obsidian-i18n-resources",
+      "repoFullName": "Ayanami-Shinji/obsidian-i18n-resources",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/Ayanami-Shinji/obsidian-i18n-resources",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 175,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-03-20T13:27:48Z",
+      "repoUpdatedAt": "2026-03-20T13:53:56Z",
+      "lastPushedAt": "2026-03-20T13:53:54Z",
+      "recentCommits30d": 10,
+      "totalContributors": 1,
+      "activityScore": 0.55,
+      "pluginCount": 37,
+      "translationCount": 40,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-03-20T13:53:42.142Z"
     }
   },
   "leaderboard": {
     "topReposByStars": [
       "yunrr/obsidian-i18n-resources",
       "voxrs/obsidian-translations",
-      "Anonym0usPlayer/obsidian-i18n-resources"
+      "Anonym0usPlayer/obsidian-i18n-resources",
+      "Ayanami-Shinji/obsidian-i18n-resources"
     ],
     "topReposByActivity": [
       "yunrr/obsidian-i18n-resources",
       "voxrs/obsidian-translations",
+      "Ayanami-Shinji/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources"
     ],
     "topAuthors": [
@@ -140,6 +175,19 @@
         "lastActiveAt": "2026-03-14T13:55:20Z"
       },
       {
+        "name": "Ayanami-Shinji",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/78525325?v=4",
+        "htmlUrl": "https://github.com/Ayanami-Shinji",
+        "totalPlugins": 37,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.55,
+        "lastActiveAt": "2026-03-20T13:53:54Z"
+      },
+      {
         "name": "Anonym0usPlayer",
         "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
         "htmlUrl": "https://github.com/Anonym0usPlayer",
@@ -155,13 +203,13 @@
     ]
   },
   "summary": {
-    "totalRepos": 3,
+    "totalRepos": 4,
     "totalPlugins": 6,
-    "totalTranslations": 3447,
-    "totalContributors": 1,
+    "totalTranslations": 3487,
+    "totalContributors": 4,
     "totalStars": 2,
     "languageDistribution": {
-      "zh-cn": 3447
+      "zh-cn": 3487
     }
   }
 }
