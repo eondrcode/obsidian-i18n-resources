@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-22T16:19:29.713Z",
+  "lastUpdated": "2026-03-23T11:31:26.023Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -132,6 +132,39 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-03-20T13:53:42.142Z"
+    },
+    "xiaosong8584/obsidian-i18n-resources": {
+      "authorName": "xiaosong8584",
+      "authorId": 50919680,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/50919680?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/xiaosong8584",
+      "repoName": "obsidian-i18n-resources",
+      "repoFullName": "xiaosong8584/obsidian-i18n-resources",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/xiaosong8584/obsidian-i18n-resources",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 3,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-03-22T14:59:23Z",
+      "repoUpdatedAt": "2026-03-22T15:00:30Z",
+      "lastPushedAt": "2026-03-22T15:00:28Z",
+      "recentCommits30d": 5,
+      "totalContributors": 1,
+      "activityScore": 0.295,
+      "pluginCount": 1,
+      "translationCount": 1,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-03-22T15:00:33.716Z"
     }
   },
   "leaderboard": {
@@ -139,13 +172,15 @@
       "yunrr/obsidian-i18n-resources",
       "voxrs/obsidian-translations",
       "Anonym0usPlayer/obsidian-i18n-resources",
-      "Ayanami-Shinji/obsidian-i18n-resources"
+      "Ayanami-Shinji/obsidian-i18n-resources",
+      "xiaosong8584/obsidian-i18n-resources"
     ],
     "topReposByActivity": [
       "yunrr/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
-      "voxrs/obsidian-translations"
+      "voxrs/obsidian-translations",
+      "xiaosong8584/obsidian-i18n-resources"
     ],
     "topAuthors": [
       {
@@ -199,17 +234,30 @@
         ],
         "activityScore": 0.52,
         "lastActiveAt": "2026-03-14T13:55:20Z"
+      },
+      {
+        "name": "xiaosong8584",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/50919680?v=4",
+        "htmlUrl": "https://github.com/xiaosong8584",
+        "totalPlugins": 1,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.295,
+        "lastActiveAt": "2026-03-22T15:00:28Z"
       }
     ]
   },
   "summary": {
-    "totalRepos": 4,
+    "totalRepos": 5,
     "totalPlugins": 0,
-    "totalTranslations": 3487,
-    "totalContributors": 0,
+    "totalTranslations": 3488,
+    "totalContributors": 5,
     "totalStars": 2,
     "languageDistribution": {
-      "zh-cn": 3487
+      "zh-cn": 3488
     }
   }
 }
