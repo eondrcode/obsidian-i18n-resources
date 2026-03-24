@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-23T16:48:36.782Z",
+  "lastUpdated": "2026-03-24T16:52:18.589Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -82,23 +82,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 92,
+      "repoSize": 116,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-03-15T08:46:10Z",
-      "repoUpdatedAt": "2026-03-23T10:32:04Z",
-      "lastPushedAt": "2026-03-23T10:32:02Z",
-      "recentCommits30d": 35,
+      "repoUpdatedAt": "2026-03-24T08:09:20Z",
+      "lastPushedAt": "2026-03-24T08:09:18Z",
+      "recentCommits30d": 41,
       "totalContributors": 1,
-      "activityScore": 0.565,
+      "activityScore": 0.595,
       "pluginCount": 7,
       "translationCount": 7,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-03-23T10:32:01.593Z"
+      "lastManifestUpdate": "2026-03-24T08:09:18.231Z"
     },
     "Ayanami-Shinji/obsidian-i18n-resources": {
       "authorName": "Ayanami-Shinji",
@@ -148,7 +148,7 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 3,
+      "repoSize": 16,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
@@ -206,8 +206,8 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.565,
-        "lastActiveAt": "2026-03-23T10:32:02Z"
+        "activityScore": 0.595,
+        "lastActiveAt": "2026-03-24T08:09:18Z"
       },
       {
         "name": "Ayanami-Shinji",
@@ -252,9 +252,9 @@
   },
   "summary": {
     "totalRepos": 5,
-    "totalPlugins": 9,
+    "totalPlugins": 7,
     "totalTranslations": 3490,
-    "totalContributors": 2,
+    "totalContributors": 1,
     "totalStars": 2,
     "languageDistribution": {
       "zh-cn": 3490
