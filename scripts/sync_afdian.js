@@ -21,12 +21,12 @@ async function getAllSponsors() {
         console.log(`Fetching page ${page}...`);
         const ts = Math.floor(Date.now() / 1000);
         const params = JSON.stringify({ page });
-        
+
         // Afdian Sign algorithm
         const signStr = `${TOKEN}params${params}ts${ts}user_id${USER_ID}`;
         const sign = crypto.createHash('md5').update(signStr).digest('hex');
 
-        const res = await fetch('https://afdian.net/api/open/query-sponsor', {
+        const res = await fetch('https://ifdian.net/api/open/query-sponsor', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -38,14 +38,14 @@ async function getAllSponsors() {
         });
 
         const data = await res.json();
-        
+
         if (data.ec !== 200) {
             throw new Error(`Afdian API Error: ${data.em}`);
         }
 
         const list = data.data.list;
         allSponsors = allSponsors.concat(list);
-        
+
         totalPage = data.data.total_page;
         page++;
     } while (page <= totalPage);
@@ -87,7 +87,7 @@ async function main() {
         // Save
         fs.writeFileSync(CONTRIBUTORS_FILE, JSON.stringify(contributorsData, null, 2), 'utf-8');
         console.log(`Successfully updated ${CONTRIBUTORS_FILE}`);
-        
+
     } catch (e) {
         console.error("Failed to sync sponsors:", e);
         process.exit(1);
