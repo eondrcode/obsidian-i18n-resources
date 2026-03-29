@@ -1,3 +1,16 @@
 {
-  "contributors": []
+  "contributors": [
+    {
+      "name": "bosongdx",
+      "category": "sponsor",
+      "avatarUrl": "https://pic1.afdiancdn.com/default/avatar/avatar-blue.png",
+      "description": "累计发电: ￥30.00"
+    },
+    {
+      "name": "爱发电用户_AwBh",
+      "category": "sponsor",
+      "avatarUrl": "https://pic1.afdiancdn.com/default/avatar/avatar-purple.png",
+      "description": "累计发电: ￥5.00"
+    }
+  ]
 }
