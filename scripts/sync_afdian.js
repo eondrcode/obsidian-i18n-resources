@@ -73,10 +73,11 @@ async function main() {
         sponsors.sort((a, b) => parseFloat(b.all_sum_amount) - parseFloat(a.all_sum_amount));
 
         const sponsorEntries = sponsors.map(s => {
+            const user = s.user || s.sponsor || {};
             return {
-                name: s.sponsor.name,
+                name: user.name || '爱发电用户',
                 category: 'sponsor',
-                avatarUrl: s.sponsor.avatar,
+                avatarUrl: user.avatar || '',
                 description: `累计发电: ￥${s.all_sum_amount}`,
             };
         });
