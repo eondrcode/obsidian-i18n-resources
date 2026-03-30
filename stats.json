@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-29T16:25:29.030Z",
+  "lastUpdated": "2026-03-30T16:47:44.237Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -82,23 +82,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 116,
+      "repoSize": 140,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-03-15T08:46:10Z",
-      "repoUpdatedAt": "2026-03-24T08:09:20Z",
-      "lastPushedAt": "2026-03-24T08:09:18Z",
-      "recentCommits30d": 41,
+      "repoUpdatedAt": "2026-03-30T07:15:21Z",
+      "lastPushedAt": "2026-03-30T07:15:19Z",
+      "recentCommits30d": 45,
       "totalContributors": 1,
-      "activityScore": 0.595,
+      "activityScore": 0.615,
       "pluginCount": 7,
       "translationCount": 7,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-03-24T08:09:18.231Z"
+      "lastManifestUpdate": "2026-03-30T07:15:18.925Z"
     },
     "Ayanami-Shinji/obsidian-i18n-resources": {
       "authorName": "Ayanami-Shinji",
@@ -158,7 +158,7 @@
       "lastPushedAt": "2026-03-23T16:14:05Z",
       "recentCommits30d": 7,
       "totalContributors": 1,
-      "activityScore": 0.325,
+      "activityScore": 0.225,
       "pluginCount": 2,
       "translationCount": 2,
       "languages": [
@@ -206,8 +206,8 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.595,
-        "lastActiveAt": "2026-03-24T08:09:18Z"
+        "activityScore": 0.615,
+        "lastActiveAt": "2026-03-30T07:15:19Z"
       },
       {
         "name": "voxrs",
@@ -245,16 +245,16 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.325,
+        "activityScore": 0.225,
         "lastActiveAt": "2026-03-23T16:14:05Z"
       }
     ]
   },
   "summary": {
     "totalRepos": 5,
-    "totalPlugins": 0,
+    "totalPlugins": 7,
     "totalTranslations": 3490,
-    "totalContributors": 0,
+    "totalContributors": 1,
     "totalStars": 2,
     "languageDistribution": {
       "zh-cn": 3490
