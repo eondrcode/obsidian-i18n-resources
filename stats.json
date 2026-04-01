@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-31T16:49:53.721Z",
+  "lastUpdated": "2026-04-01T16:44:44.012Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -49,23 +49,21 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 14786,
-      "stars": 2,
+      "repoSize": 14953,
+      "stars": 3,
       "forks": 1,
-      "watchers": 2,
+      "watchers": 3,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-03-13T17:36:40Z",
-      "repoUpdatedAt": "2026-03-19T14:20:42Z",
-      "lastPushedAt": "2026-03-15T09:36:31Z",
+      "repoUpdatedAt": "2026-04-01T10:48:40Z",
+      "lastPushedAt": "2026-04-01T10:26:17Z",
       "recentCommits30d": 100,
       "totalContributors": 1,
-      "activityScore": 0.752,
-      "pluginCount": 2877,
-      "translationCount": 3440,
-      "languages": [
-        "zh-cn"
-      ],
-      "lastManifestUpdate": "2026-03-14T19:12:43.701Z"
+      "activityScore": 0.603,
+      "pluginCount": 0,
+      "translationCount": 0,
+      "languages": [],
+      "lastManifestUpdate": ""
     },
     "Anonym0usPlayer/obsidian-i18n-resources": {
       "authorName": "Anonym0usPlayer",
@@ -82,23 +80,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 140,
+      "repoSize": 81,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-03-15T08:46:10Z",
-      "repoUpdatedAt": "2026-03-30T07:15:21Z",
-      "lastPushedAt": "2026-03-30T07:15:19Z",
-      "recentCommits30d": 45,
+      "repoUpdatedAt": "2026-04-01T08:25:47Z",
+      "lastPushedAt": "2026-04-01T08:25:44Z",
+      "recentCommits30d": 56,
       "totalContributors": 1,
-      "activityScore": 0.615,
-      "pluginCount": 7,
-      "translationCount": 7,
+      "activityScore": 0.69,
+      "pluginCount": 8,
+      "translationCount": 8,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-03-30T07:15:18.925Z"
+      "lastManifestUpdate": "2026-04-01T05:34:07.736Z"
     },
     "Ayanami-Shinji/obsidian-i18n-resources": {
       "authorName": "Ayanami-Shinji",
@@ -176,38 +174,36 @@
       "xiaosong8584/obsidian-i18n-resources"
     ],
     "topReposByActivity": [
-      "yunrr/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
+      "yunrr/obsidian-i18n-resources",
       "voxrs/obsidian-translations",
       "Ayanami-Shinji/obsidian-i18n-resources",
       "xiaosong8584/obsidian-i18n-resources"
     ],
     "topAuthors": [
       {
-        "name": "yunrr",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
-        "htmlUrl": "https://github.com/yunrr",
-        "totalPlugins": 2877,
-        "totalStars": 2,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.752,
-        "lastActiveAt": "2026-03-15T09:36:31Z"
-      },
-      {
         "name": "Anonym0usPlayer",
         "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
         "htmlUrl": "https://github.com/Anonym0usPlayer",
-        "totalPlugins": 7,
+        "totalPlugins": 8,
         "totalStars": 0,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.615,
-        "lastActiveAt": "2026-03-30T07:15:19Z"
+        "activityScore": 0.69,
+        "lastActiveAt": "2026-04-01T08:25:44Z"
+      },
+      {
+        "name": "yunrr",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
+        "htmlUrl": "https://github.com/yunrr",
+        "totalPlugins": 0,
+        "totalStars": 3,
+        "repoCount": 1,
+        "languages": [],
+        "activityScore": 0.603,
+        "lastActiveAt": "2026-04-01T10:26:17Z"
       },
       {
         "name": "voxrs",
@@ -252,12 +248,12 @@
   },
   "summary": {
     "totalRepos": 5,
-    "totalPlugins": 0,
-    "totalTranslations": 3490,
-    "totalContributors": 0,
-    "totalStars": 2,
+    "totalPlugins": 8,
+    "totalTranslations": 51,
+    "totalContributors": 2,
+    "totalStars": 3,
     "languageDistribution": {
-      "zh-cn": 3490
+      "zh-cn": 51
     }
   }
 }
