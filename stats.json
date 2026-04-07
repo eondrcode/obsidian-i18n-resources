@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-07T09:40:28.008Z",
+  "lastUpdated": "2026-04-07T16:46:01.741Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -82,23 +82,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 179,
+      "repoSize": 200,
       "stars": 1,
       "forks": 0,
       "watchers": 1,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-03-15T08:46:10Z",
-      "repoUpdatedAt": "2026-04-06T13:21:33Z",
-      "lastPushedAt": "2026-04-06T13:21:31Z",
-      "recentCommits30d": 66,
+      "repoUpdatedAt": "2026-04-07T09:13:15Z",
+      "lastPushedAt": "2026-04-07T09:13:13Z",
+      "recentCommits30d": 72,
       "totalContributors": 1,
-      "activityScore": 0.8009999999999999,
-      "pluginCount": 11,
-      "translationCount": 11,
+      "activityScore": 0.851,
+      "pluginCount": 13,
+      "translationCount": 13,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-04-06T13:21:30.687Z"
+      "lastManifestUpdate": "2026-04-07T09:13:12.803Z"
     },
     "Ayanami-Shinji/obsidian-i18n-resources": {
       "authorName": "Ayanami-Shinji",
@@ -214,23 +214,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 9,
+      "repoSize": 100,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-04-06T15:23:33Z",
-      "repoUpdatedAt": "2026-04-06T16:00:31Z",
-      "lastPushedAt": "2026-04-06T16:00:27Z",
-      "recentCommits30d": 7,
+      "repoUpdatedAt": "2026-04-07T14:40:00Z",
+      "lastPushedAt": "2026-04-07T14:39:07Z",
+      "recentCommits30d": 39,
       "totalContributors": 1,
-      "activityScore": 0.325,
-      "pluginCount": 2,
-      "translationCount": 2,
+      "activityScore": 0.665,
+      "pluginCount": 11,
+      "translationCount": 11,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-04-06T16:00:23.588Z"
+      "lastManifestUpdate": "2026-04-07T14:39:06.983Z"
     },
     "yubolun/obsidian-i18n-resources": {
       "authorName": "yubolun",
@@ -247,23 +247,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 126,
+      "repoSize": 162,
       "stars": 1,
       "forks": 0,
       "watchers": 1,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-04-01T09:14:25Z",
-      "repoUpdatedAt": "2026-04-07T09:12:57Z",
-      "lastPushedAt": "2026-04-07T09:12:54Z",
-      "recentCommits30d": 29,
+      "repoUpdatedAt": "2026-04-07T15:43:10Z",
+      "lastPushedAt": "2026-04-07T15:43:07Z",
+      "recentCommits30d": 41,
       "totalContributors": 1,
-      "activityScore": 0.536,
-      "pluginCount": 7,
-      "translationCount": 7,
+      "activityScore": 0.696,
+      "pluginCount": 12,
+      "translationCount": 12,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-04-07T09:12:53.767Z"
+      "lastManifestUpdate": "2026-04-07T15:43:06.519Z"
     }
   },
   "leaderboard": {
@@ -279,11 +279,11 @@
     ],
     "topReposByActivity": [
       "yunrr/obsidian-i18n-resources",
-      "voxrs/obsidian-translations",
       "Anonym0usPlayer/obsidian-i18n-resources",
+      "voxrs/obsidian-translations",
       "yubolun/obsidian-i18n-resources",
-      "Ayanami-Shinji/obsidian-i18n-resources",
       "daoziy/obsidian-i18n-daoziz",
+      "Ayanami-Shinji/obsidian-i18n-resources",
       "yeeun4028/obsidian-i18n-resources",
       "xiaosong8584/obsidian-i18n-resources"
     ],
@@ -302,6 +302,19 @@
         "lastActiveAt": "2026-04-02T07:42:44Z"
       },
       {
+        "name": "Anonym0usPlayer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
+        "htmlUrl": "https://github.com/Anonym0usPlayer",
+        "totalPlugins": 13,
+        "totalStars": 1,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.851,
+        "lastActiveAt": "2026-04-07T09:13:13Z"
+      },
+      {
         "name": "voxrs",
         "avatarUrl": "https://avatars.githubusercontent.com/u/132795729?v=4",
         "htmlUrl": "https://github.com/voxrs",
@@ -315,30 +328,30 @@
         "lastActiveAt": "2026-04-02T01:17:15Z"
       },
       {
-        "name": "Anonym0usPlayer",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
-        "htmlUrl": "https://github.com/Anonym0usPlayer",
-        "totalPlugins": 11,
-        "totalStars": 1,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.8009999999999999,
-        "lastActiveAt": "2026-04-06T13:21:31Z"
-      },
-      {
         "name": "yubolun",
         "avatarUrl": "https://avatars.githubusercontent.com/u/30453265?v=4",
         "htmlUrl": "https://github.com/yubolun",
-        "totalPlugins": 7,
+        "totalPlugins": 12,
         "totalStars": 1,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.536,
-        "lastActiveAt": "2026-04-07T09:12:54Z"
+        "activityScore": 0.696,
+        "lastActiveAt": "2026-04-07T15:43:07Z"
+      },
+      {
+        "name": "daoziy",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/220045369?v=4",
+        "htmlUrl": "https://github.com/daoziy",
+        "totalPlugins": 11,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.665,
+        "lastActiveAt": "2026-04-07T14:39:07Z"
       },
       {
         "name": "Ayanami-Shinji",
@@ -352,19 +365,6 @@
         ],
         "activityScore": 0.451,
         "lastActiveAt": "2026-03-20T13:53:54Z"
-      },
-      {
-        "name": "daoziy",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/220045369?v=4",
-        "htmlUrl": "https://github.com/daoziy",
-        "totalPlugins": 2,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.325,
-        "lastActiveAt": "2026-04-06T16:00:27Z"
       },
       {
         "name": "yeeun4028",
@@ -396,12 +396,12 @@
   },
   "summary": {
     "totalRepos": 8,
-    "totalPlugins": 11,
-    "totalTranslations": 3522,
-    "totalContributors": 8,
+    "totalPlugins": 33,
+    "totalTranslations": 3538,
+    "totalContributors": 3,
     "totalStars": 9,
     "languageDistribution": {
-      "zh-cn": 3522
+      "zh-cn": 3538
     }
   }
 }
