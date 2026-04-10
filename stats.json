@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-09T16:57:37.139Z",
+  "lastUpdated": "2026-04-10T03:01:22.369Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -264,6 +264,37 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-04-08T06:24:58.208Z"
+    },
+    "AscerChan/obsidian-i18n-resources": {
+      "authorName": "AscerChan",
+      "authorId": 186818476,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/186818476?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/AscerChan",
+      "repoName": "obsidian-i18n-resources",
+      "repoFullName": "AscerChan/obsidian-i18n-resources",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/AscerChan/obsidian-i18n-resources",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 103,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-04-09T18:11:55Z",
+      "repoUpdatedAt": "2026-04-09T18:14:13Z",
+      "lastPushedAt": "2026-04-09T18:14:10Z",
+      "recentCommits30d": 9,
+      "totalContributors": 1,
+      "activityScore": 0.295,
+      "pluginCount": 0,
+      "translationCount": 0,
+      "languages": [],
+      "lastManifestUpdate": ""
     }
   },
   "leaderboard": {
@@ -275,7 +306,8 @@
       "voxrs/obsidian-translations",
       "xiaosong8584/obsidian-i18n-resources",
       "yeeun4028/obsidian-i18n-resources",
-      "daoziy/obsidian-i18n-daoziz"
+      "daoziy/obsidian-i18n-daoziz",
+      "AscerChan/obsidian-i18n-resources"
     ],
     "topReposByActivity": [
       "Anonym0usPlayer/obsidian-i18n-resources",
@@ -285,7 +317,8 @@
       "voxrs/obsidian-translations",
       "yubolun/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
-      "yeeun4028/obsidian-i18n-resources"
+      "yeeun4028/obsidian-i18n-resources",
+      "AscerChan/obsidian-i18n-resources"
     ],
     "topAuthors": [
       {
@@ -391,14 +424,25 @@
         ],
         "activityScore": 0.295,
         "lastActiveAt": "2026-04-03T18:21:17Z"
+      },
+      {
+        "name": "AscerChan",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/186818476?v=4",
+        "htmlUrl": "https://github.com/AscerChan",
+        "totalPlugins": 0,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [],
+        "activityScore": 0.295,
+        "lastActiveAt": "2026-04-09T18:14:10Z"
       }
     ]
   },
   "summary": {
-    "totalRepos": 8,
+    "totalRepos": 9,
     "totalPlugins": 19,
     "totalTranslations": 3575,
-    "totalContributors": 1,
+    "totalContributors": 9,
     "totalStars": 9,
     "languageDistribution": {
       "zh-cn": 3575
