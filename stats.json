@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-10T16:40:57.527Z",
+  "lastUpdated": "2026-04-11T16:26:19.522Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -191,7 +191,7 @@
       "lastPushedAt": "2026-04-03T18:21:17Z",
       "recentCommits30d": 5,
       "totalContributors": 1,
-      "activityScore": 0.295,
+      "activityScore": 0.195,
       "pluginCount": 1,
       "translationCount": 1,
       "languages": [
@@ -317,8 +317,8 @@
       "voxrs/obsidian-translations",
       "yubolun/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
-      "yeeun4028/obsidian-i18n-resources",
-      "AscerChan/obsidian-i18n-resources"
+      "AscerChan/obsidian-i18n-resources",
+      "yeeun4028/obsidian-i18n-resources"
     ],
     "topAuthors": [
       {
@@ -413,19 +413,6 @@
         "lastActiveAt": "2026-03-20T13:53:54Z"
       },
       {
-        "name": "yeeun4028",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/204590408?v=4",
-        "htmlUrl": "https://github.com/yeeun4028",
-        "totalPlugins": 1,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.295,
-        "lastActiveAt": "2026-04-03T18:21:17Z"
-      },
-      {
         "name": "AscerChan",
         "avatarUrl": "https://avatars.githubusercontent.com/u/186818476?v=4",
         "htmlUrl": "https://github.com/AscerChan",
@@ -435,14 +422,27 @@
         "languages": [],
         "activityScore": 0.295,
         "lastActiveAt": "2026-04-09T18:14:10Z"
+      },
+      {
+        "name": "yeeun4028",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/204590408?v=4",
+        "htmlUrl": "https://github.com/yeeun4028",
+        "totalPlugins": 1,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.195,
+        "lastActiveAt": "2026-04-03T18:21:17Z"
       }
     ]
   },
   "summary": {
     "totalRepos": 9,
-    "totalPlugins": 13,
+    "totalPlugins": 0,
     "totalTranslations": 3575,
-    "totalContributors": 1,
+    "totalContributors": 0,
     "totalStars": 9,
     "languageDistribution": {
       "zh-cn": 3575
