@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-11T16:26:19.522Z",
+  "lastUpdated": "2026-04-12T16:28:23.833Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -24,9 +24,9 @@
       "repoCreatedAt": "2026-02-25T11:41:17Z",
       "repoUpdatedAt": "2026-04-02T01:17:17Z",
       "lastPushedAt": "2026-04-02T01:17:15Z",
-      "recentCommits30d": 100,
+      "recentCommits30d": 49,
       "totalContributors": 1,
-      "activityScore": 0.75,
+      "activityScore": 0.645,
       "pluginCount": 17,
       "translationCount": 19,
       "languages": [
@@ -314,8 +314,8 @@
       "xiaosong8584/obsidian-i18n-resources",
       "daoziy/obsidian-i18n-daoziz",
       "yunrr/obsidian-i18n-resources",
-      "voxrs/obsidian-translations",
       "yubolun/obsidian-i18n-resources",
+      "voxrs/obsidian-translations",
       "Ayanami-Shinji/obsidian-i18n-resources",
       "AscerChan/obsidian-i18n-resources",
       "yeeun4028/obsidian-i18n-resources"
@@ -374,19 +374,6 @@
         "lastActiveAt": "2026-04-02T07:42:44Z"
       },
       {
-        "name": "voxrs",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/132795729?v=4",
-        "htmlUrl": "https://github.com/voxrs",
-        "totalPlugins": 17,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.75,
-        "lastActiveAt": "2026-04-02T01:17:15Z"
-      },
-      {
         "name": "yubolun",
         "avatarUrl": "https://avatars.githubusercontent.com/u/30453265?v=4",
         "htmlUrl": "https://github.com/yubolun",
@@ -398,6 +385,19 @@
         ],
         "activityScore": 0.736,
         "lastActiveAt": "2026-04-08T06:24:58Z"
+      },
+      {
+        "name": "voxrs",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/132795729?v=4",
+        "htmlUrl": "https://github.com/voxrs",
+        "totalPlugins": 17,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.645,
+        "lastActiveAt": "2026-04-02T01:17:15Z"
       },
       {
         "name": "Ayanami-Shinji",
