@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-12T16:28:23.833Z",
+  "lastUpdated": "2026-04-13T15:22:28.587Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -295,6 +295,39 @@
       "translationCount": 0,
       "languages": [],
       "lastManifestUpdate": ""
+    },
+    "cute-boy-2736/obsidian-translations": {
+      "authorName": "cute-boy-2736",
+      "authorId": 177925249,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/177925249?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/cute-boy-2736",
+      "repoName": "obsidian-translations",
+      "repoFullName": "cute-boy-2736/obsidian-translations",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/cute-boy-2736/obsidian-translations",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 0,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-04-13T14:39:00Z",
+      "repoUpdatedAt": "2026-04-13T14:40:09Z",
+      "lastPushedAt": "2026-04-13T14:40:06Z",
+      "recentCommits30d": 7,
+      "totalContributors": 1,
+      "activityScore": 0.325,
+      "pluginCount": 2,
+      "translationCount": 2,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-04-13T14:39:57.121Z"
     }
   },
   "leaderboard": {
@@ -307,7 +340,8 @@
       "xiaosong8584/obsidian-i18n-resources",
       "yeeun4028/obsidian-i18n-resources",
       "daoziy/obsidian-i18n-daoziz",
-      "AscerChan/obsidian-i18n-resources"
+      "AscerChan/obsidian-i18n-resources",
+      "cute-boy-2736/obsidian-translations"
     ],
     "topReposByActivity": [
       "Anonym0usPlayer/obsidian-i18n-resources",
@@ -317,6 +351,7 @@
       "yubolun/obsidian-i18n-resources",
       "voxrs/obsidian-translations",
       "Ayanami-Shinji/obsidian-i18n-resources",
+      "cute-boy-2736/obsidian-translations",
       "AscerChan/obsidian-i18n-resources",
       "yeeun4028/obsidian-i18n-resources"
     ],
@@ -413,6 +448,19 @@
         "lastActiveAt": "2026-03-20T13:53:54Z"
       },
       {
+        "name": "cute-boy-2736",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/177925249?v=4",
+        "htmlUrl": "https://github.com/cute-boy-2736",
+        "totalPlugins": 2,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.325,
+        "lastActiveAt": "2026-04-13T14:40:06Z"
+      },
+      {
         "name": "AscerChan",
         "avatarUrl": "https://avatars.githubusercontent.com/u/186818476?v=4",
         "htmlUrl": "https://github.com/AscerChan",
@@ -439,13 +487,13 @@
     ]
   },
   "summary": {
-    "totalRepos": 9,
+    "totalRepos": 10,
     "totalPlugins": 0,
-    "totalTranslations": 3575,
-    "totalContributors": 0,
+    "totalTranslations": 3577,
+    "totalContributors": 10,
     "totalStars": 9,
     "languageDistribution": {
-      "zh-cn": 3575
+      "zh-cn": 3577
     }
   }
 }
