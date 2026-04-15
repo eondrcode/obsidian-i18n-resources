@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-14T16:56:12.810Z",
+  "lastUpdated": "2026-04-15T16:53:33.799Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -158,7 +158,7 @@
       "lastPushedAt": "2026-04-08T07:47:40Z",
       "recentCommits30d": 59,
       "totalContributors": 1,
-      "activityScore": 0.795,
+      "activityScore": 0.695,
       "pluginCount": 28,
       "translationCount": 28,
       "languages": [
@@ -257,7 +257,7 @@
       "lastPushedAt": "2026-04-08T06:24:58Z",
       "recentCommits30d": 47,
       "totalContributors": 1,
-      "activityScore": 0.736,
+      "activityScore": 0.636,
       "pluginCount": 15,
       "translationCount": 15,
       "languages": [
@@ -345,8 +345,8 @@
     ],
     "topReposByActivity": [
       "Anonym0usPlayer/obsidian-i18n-resources",
-      "xiaosong8584/obsidian-i18n-resources",
       "daoziy/obsidian-i18n-daoziz",
+      "xiaosong8584/obsidian-i18n-resources",
       "yubolun/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
       "yunrr/obsidian-i18n-resources",
@@ -370,19 +370,6 @@
         "lastActiveAt": "2026-04-14T07:04:34Z"
       },
       {
-        "name": "xiaosong8584",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/50919680?v=4",
-        "htmlUrl": "https://github.com/xiaosong8584",
-        "totalPlugins": 28,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.795,
-        "lastActiveAt": "2026-04-08T07:47:40Z"
-      },
-      {
         "name": "daoziy",
         "avatarUrl": "https://avatars.githubusercontent.com/u/220045369?v=4",
         "htmlUrl": "https://github.com/daoziy",
@@ -396,6 +383,19 @@
         "lastActiveAt": "2026-04-09T06:52:32Z"
       },
       {
+        "name": "xiaosong8584",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/50919680?v=4",
+        "htmlUrl": "https://github.com/xiaosong8584",
+        "totalPlugins": 28,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.695,
+        "lastActiveAt": "2026-04-08T07:47:40Z"
+      },
+      {
         "name": "yubolun",
         "avatarUrl": "https://avatars.githubusercontent.com/u/30453265?v=4",
         "htmlUrl": "https://github.com/yubolun",
@@ -405,7 +405,7 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.736,
+        "activityScore": 0.636,
         "lastActiveAt": "2026-04-08T06:24:58Z"
       },
       {
@@ -488,9 +488,9 @@
   },
   "summary": {
     "totalRepos": 10,
-    "totalPlugins": 13,
+    "totalPlugins": 0,
     "totalTranslations": 3577,
-    "totalContributors": 1,
+    "totalContributors": 0,
     "totalStars": 9,
     "languageDistribution": {
       "zh-cn": 3577
