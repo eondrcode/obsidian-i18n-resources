@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-15T16:53:33.799Z",
+  "lastUpdated": "2026-04-16T17:04:18.627Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -90,9 +90,9 @@
       "repoCreatedAt": "2026-03-15T08:46:10Z",
       "repoUpdatedAt": "2026-04-14T07:04:36Z",
       "lastPushedAt": "2026-04-14T07:04:34Z",
-      "recentCommits30d": 69,
+      "recentCommits30d": 64,
       "totalContributors": 1,
-      "activityScore": 0.846,
+      "activityScore": 0.821,
       "pluginCount": 13,
       "translationCount": 13,
       "languages": [
@@ -224,7 +224,7 @@
       "lastPushedAt": "2026-04-09T06:52:32Z",
       "recentCommits30d": 56,
       "totalContributors": 1,
-      "activityScore": 0.78,
+      "activityScore": 0.68,
       "pluginCount": 19,
       "translationCount": 19,
       "languages": [
@@ -345,8 +345,8 @@
     ],
     "topReposByActivity": [
       "Anonym0usPlayer/obsidian-i18n-resources",
-      "daoziy/obsidian-i18n-daoziz",
       "xiaosong8584/obsidian-i18n-resources",
+      "daoziy/obsidian-i18n-daoziz",
       "yubolun/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
       "yunrr/obsidian-i18n-resources",
@@ -366,21 +366,8 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.846,
+        "activityScore": 0.821,
         "lastActiveAt": "2026-04-14T07:04:34Z"
-      },
-      {
-        "name": "daoziy",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/220045369?v=4",
-        "htmlUrl": "https://github.com/daoziy",
-        "totalPlugins": 19,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.78,
-        "lastActiveAt": "2026-04-09T06:52:32Z"
       },
       {
         "name": "xiaosong8584",
@@ -394,6 +381,19 @@
         ],
         "activityScore": 0.695,
         "lastActiveAt": "2026-04-08T07:47:40Z"
+      },
+      {
+        "name": "daoziy",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/220045369?v=4",
+        "htmlUrl": "https://github.com/daoziy",
+        "totalPlugins": 19,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.68,
+        "lastActiveAt": "2026-04-09T06:52:32Z"
       },
       {
         "name": "yubolun",
