@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-17T16:44:20.356Z",
+  "lastUpdated": "2026-04-18T16:29:13.426Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -90,9 +90,9 @@
       "repoCreatedAt": "2026-03-15T08:46:10Z",
       "repoUpdatedAt": "2026-04-14T07:04:36Z",
       "lastPushedAt": "2026-04-14T07:04:34Z",
-      "recentCommits30d": 57,
+      "recentCommits30d": 51,
       "totalContributors": 1,
-      "activityScore": 0.7859999999999999,
+      "activityScore": 0.7559999999999999,
       "pluginCount": 13,
       "translationCount": 13,
       "languages": [
@@ -344,8 +344,8 @@
       "cute-boy-2736/obsidian-translations"
     ],
     "topReposByActivity": [
-      "Anonym0usPlayer/obsidian-i18n-resources",
       "yubolun/obsidian-i18n-resources",
+      "Anonym0usPlayer/obsidian-i18n-resources",
       "xiaosong8584/obsidian-i18n-resources",
       "daoziy/obsidian-i18n-daoziz",
       "Ayanami-Shinji/obsidian-i18n-resources",
@@ -356,19 +356,6 @@
       "AscerChan/obsidian-i18n-resources"
     ],
     "topAuthors": [
-      {
-        "name": "Anonym0usPlayer",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
-        "htmlUrl": "https://github.com/Anonym0usPlayer",
-        "totalPlugins": 13,
-        "totalStars": 1,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.7859999999999999,
-        "lastActiveAt": "2026-04-14T07:04:34Z"
-      },
       {
         "name": "yubolun",
         "avatarUrl": "https://avatars.githubusercontent.com/u/30453265?v=4",
@@ -381,6 +368,19 @@
         ],
         "activityScore": 0.7659999999999999,
         "lastActiveAt": "2026-04-17T09:58:10Z"
+      },
+      {
+        "name": "Anonym0usPlayer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
+        "htmlUrl": "https://github.com/Anonym0usPlayer",
+        "totalPlugins": 13,
+        "totalStars": 1,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.7559999999999999,
+        "lastActiveAt": "2026-04-14T07:04:34Z"
       },
       {
         "name": "xiaosong8584",
@@ -488,9 +488,9 @@
   },
   "summary": {
     "totalRepos": 10,
-    "totalPlugins": 18,
+    "totalPlugins": 0,
     "totalTranslations": 3580,
-    "totalContributors": 1,
+    "totalContributors": 0,
     "totalStars": 9,
     "languageDistribution": {
       "zh-cn": 3580
