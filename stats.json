@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-22T16:50:01.228Z",
+  "lastUpdated": "2026-04-23T17:11:07.430Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -90,9 +90,9 @@
       "repoCreatedAt": "2026-03-15T08:46:10Z",
       "repoUpdatedAt": "2026-04-20T00:58:30Z",
       "lastPushedAt": "2026-04-20T00:58:27Z",
-      "recentCommits30d": 43,
+      "recentCommits30d": 37,
       "totalContributors": 1,
-      "activityScore": 0.716,
+      "activityScore": 0.6859999999999999,
       "pluginCount": 13,
       "translationCount": 13,
       "languages": [
@@ -247,23 +247,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 355,
+      "repoSize": 392,
       "stars": 1,
       "forks": 0,
       "watchers": 1,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-04-01T09:14:25Z",
-      "repoUpdatedAt": "2026-04-22T08:38:41Z",
-      "lastPushedAt": "2026-04-22T08:38:39Z",
-      "recentCommits30d": 77,
+      "repoUpdatedAt": "2026-04-23T06:19:47Z",
+      "lastPushedAt": "2026-04-23T06:19:45Z",
+      "recentCommits30d": 85,
       "totalContributors": 1,
       "activityScore": 0.851,
-      "pluginCount": 28,
-      "translationCount": 28,
+      "pluginCount": 32,
+      "translationCount": 32,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-04-22T08:38:39.143Z"
+      "lastManifestUpdate": "2026-04-23T06:19:44.590Z"
     },
     "AscerChan/obsidian-i18n-resources": {
       "authorName": "AscerChan",
@@ -360,14 +360,14 @@
         "name": "yubolun",
         "avatarUrl": "https://avatars.githubusercontent.com/u/30453265?v=4",
         "htmlUrl": "https://github.com/yubolun",
-        "totalPlugins": 28,
+        "totalPlugins": 32,
         "totalStars": 1,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
         "activityScore": 0.851,
-        "lastActiveAt": "2026-04-22T08:38:39Z"
+        "lastActiveAt": "2026-04-23T06:19:45Z"
       },
       {
         "name": "Anonym0usPlayer",
@@ -379,7 +379,7 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.716,
+        "activityScore": 0.6859999999999999,
         "lastActiveAt": "2026-04-20T00:58:27Z"
       },
       {
@@ -488,12 +488,12 @@
   },
   "summary": {
     "totalRepos": 10,
-    "totalPlugins": 28,
-    "totalTranslations": 3590,
+    "totalPlugins": 32,
+    "totalTranslations": 3594,
     "totalContributors": 1,
     "totalStars": 12,
     "languageDistribution": {
-      "zh-cn": 3590
+      "zh-cn": 3594
     }
   }
 }
