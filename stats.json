@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-28T02:42:53.162Z",
+  "lastUpdated": "2026-04-28T17:30:12.232Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -248,16 +248,16 @@
       "isArchived": false,
       "isFork": false,
       "repoSize": 392,
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
-      "watchers": 1,
+      "watchers": 2,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-04-01T09:14:25Z",
-      "repoUpdatedAt": "2026-04-23T06:19:47Z",
+      "repoUpdatedAt": "2026-04-28T14:23:57Z",
       "lastPushedAt": "2026-04-23T06:19:45Z",
       "recentCommits30d": 85,
       "totalContributors": 1,
-      "activityScore": 0.851,
+      "activityScore": 0.852,
       "pluginCount": 32,
       "translationCount": 32,
       "languages": [
@@ -366,9 +366,9 @@
   "leaderboard": {
     "topReposByStars": [
       "yunrr/obsidian-i18n-resources",
+      "yubolun/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
-      "yubolun/obsidian-i18n-resources",
       "voxrs/obsidian-translations",
       "xiaosong8584/obsidian-i18n-resources",
       "yeeun4028/obsidian-i18n-resources",
@@ -394,12 +394,12 @@
         "avatarUrl": "https://avatars.githubusercontent.com/u/30453265?v=4",
         "htmlUrl": "https://github.com/yubolun",
         "totalPlugins": 32,
-        "totalStars": 1,
+        "totalStars": 2,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.851,
+        "activityScore": 0.852,
         "lastActiveAt": "2026-04-23T06:19:45Z"
       },
       {
@@ -523,8 +523,8 @@
     "totalRepos": 11,
     "totalPlugins": 0,
     "totalTranslations": 3596,
-    "totalContributors": 11,
-    "totalStars": 15,
+    "totalContributors": 0,
+    "totalStars": 16,
     "languageDistribution": {
       "zh-cn": 3596
     }
