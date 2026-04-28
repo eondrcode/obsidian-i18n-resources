@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27T17:14:56.398Z",
+  "lastUpdated": "2026-04-28T02:42:53.162Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -328,6 +328,39 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-04-13T14:39:57.121Z"
+    },
+    "ljded/obsidian-i18n-resources": {
+      "authorName": "ljded",
+      "authorId": 68012354,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/68012354?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/ljded",
+      "repoName": "obsidian-i18n-resources",
+      "repoFullName": "ljded/obsidian-i18n-resources",
+      "description": "龙剑的Obsidian插件汉化仓库",
+      "htmlUrl": "https://github.com/ljded/obsidian-i18n-resources",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 7,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-04-27T03:48:33Z",
+      "repoUpdatedAt": "2026-04-27T05:27:14Z",
+      "lastPushedAt": "2026-04-27T05:27:11Z",
+      "recentCommits30d": 7,
+      "totalContributors": 1,
+      "activityScore": 0.325,
+      "pluginCount": 2,
+      "translationCount": 2,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-04-27T05:27:10.388Z"
     }
   },
   "leaderboard": {
@@ -350,10 +383,10 @@
       "Anonym0usPlayer/obsidian-i18n-resources",
       "yunrr/obsidian-i18n-resources",
       "voxrs/obsidian-translations",
+      "ljded/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
       "cute-boy-2736/obsidian-translations",
-      "AscerChan/obsidian-i18n-resources",
-      "yeeun4028/obsidian-i18n-resources"
+      "AscerChan/obsidian-i18n-resources"
     ],
     "topAuthors": [
       {
@@ -435,6 +468,19 @@
         "lastActiveAt": "2026-04-02T01:17:15Z"
       },
       {
+        "name": "ljded",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/68012354?v=4",
+        "htmlUrl": "https://github.com/ljded",
+        "totalPlugins": 2,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.325,
+        "lastActiveAt": "2026-04-27T05:27:11Z"
+      },
+      {
         "name": "Ayanami-Shinji",
         "avatarUrl": "https://avatars.githubusercontent.com/u/78525325?v=4",
         "htmlUrl": "https://github.com/Ayanami-Shinji",
@@ -470,30 +516,17 @@
         "languages": [],
         "activityScore": 0.195,
         "lastActiveAt": "2026-04-09T18:14:10Z"
-      },
-      {
-        "name": "yeeun4028",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/204590408?v=4",
-        "htmlUrl": "https://github.com/yeeun4028",
-        "totalPlugins": 1,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.18,
-        "lastActiveAt": "2026-04-03T18:21:17Z"
       }
     ]
   },
   "summary": {
-    "totalRepos": 10,
+    "totalRepos": 11,
     "totalPlugins": 0,
-    "totalTranslations": 3594,
-    "totalContributors": 0,
+    "totalTranslations": 3596,
+    "totalContributors": 11,
     "totalStars": 15,
     "languageDistribution": {
-      "zh-cn": 3594
+      "zh-cn": 3596
     }
   }
 }
