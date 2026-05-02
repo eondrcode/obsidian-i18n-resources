@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T16:44:45.856Z",
+  "lastUpdated": "2026-05-02T16:36:55.132Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -24,9 +24,9 @@
       "repoCreatedAt": "2026-02-25T11:41:17Z",
       "repoUpdatedAt": "2026-04-02T01:17:17Z",
       "lastPushedAt": "2026-04-02T01:17:15Z",
-      "recentCommits30d": 4,
+      "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.42,
+      "activityScore": 0.3,
       "pluginCount": 17,
       "translationCount": 19,
       "languages": [
@@ -50,16 +50,16 @@
       "isArchived": false,
       "isFork": false,
       "repoSize": 10613,
-      "stars": 13,
+      "stars": 14,
       "forks": 4,
-      "watchers": 13,
+      "watchers": 14,
       "openIssuesCount": 3,
       "repoCreatedAt": "2026-03-13T17:36:40Z",
-      "repoUpdatedAt": "2026-04-29T05:31:10Z",
+      "repoUpdatedAt": "2026-05-02T13:07:49Z",
       "lastPushedAt": "2026-04-02T07:42:44Z",
-      "recentCommits30d": 5,
+      "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.43799999999999994,
+      "activityScore": 0.314,
       "pluginCount": 2877,
       "translationCount": 3440,
       "languages": [
@@ -381,10 +381,10 @@
       "daoziy/obsidian-i18n-daoziz",
       "xiaosong8584/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
-      "yunrr/obsidian-i18n-resources",
-      "voxrs/obsidian-translations",
       "ljded/obsidian-i18n-resources",
+      "yunrr/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
+      "voxrs/obsidian-translations",
       "cute-boy-2736/obsidian-translations",
       "AscerChan/obsidian-i18n-resources"
     ],
@@ -442,32 +442,6 @@
         "lastActiveAt": "2026-04-20T00:58:27Z"
       },
       {
-        "name": "yunrr",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
-        "htmlUrl": "https://github.com/yunrr",
-        "totalPlugins": 2877,
-        "totalStars": 13,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.43799999999999994,
-        "lastActiveAt": "2026-04-02T07:42:44Z"
-      },
-      {
-        "name": "voxrs",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/132795729?v=4",
-        "htmlUrl": "https://github.com/voxrs",
-        "totalPlugins": 17,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.42,
-        "lastActiveAt": "2026-04-02T01:17:15Z"
-      },
-      {
         "name": "ljded",
         "avatarUrl": "https://avatars.githubusercontent.com/u/68012354?v=4",
         "htmlUrl": "https://github.com/ljded",
@@ -481,6 +455,19 @@
         "lastActiveAt": "2026-04-27T05:27:11Z"
       },
       {
+        "name": "yunrr",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
+        "htmlUrl": "https://github.com/yunrr",
+        "totalPlugins": 2877,
+        "totalStars": 14,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.314,
+        "lastActiveAt": "2026-04-02T07:42:44Z"
+      },
+      {
         "name": "Ayanami-Shinji",
         "avatarUrl": "https://avatars.githubusercontent.com/u/78525325?v=4",
         "htmlUrl": "https://github.com/Ayanami-Shinji",
@@ -492,6 +479,19 @@
         ],
         "activityScore": 0.301,
         "lastActiveAt": "2026-03-20T13:53:54Z"
+      },
+      {
+        "name": "voxrs",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/132795729?v=4",
+        "htmlUrl": "https://github.com/voxrs",
+        "totalPlugins": 17,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.3,
+        "lastActiveAt": "2026-04-02T01:17:15Z"
       },
       {
         "name": "cute-boy-2736",
@@ -524,7 +524,7 @@
     "totalPlugins": 0,
     "totalTranslations": 3596,
     "totalContributors": 0,
-    "totalStars": 17,
+    "totalStars": 18,
     "languageDistribution": {
       "zh-cn": 3596
     }
