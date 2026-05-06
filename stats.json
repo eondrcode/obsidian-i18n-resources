@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-06T02:05:22.593Z",
+  "lastUpdated": "2026-05-06T17:23:12.396Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -90,9 +90,9 @@
       "repoCreatedAt": "2026-03-15T08:46:10Z",
       "repoUpdatedAt": "2026-04-20T00:58:30Z",
       "lastPushedAt": "2026-04-20T00:58:27Z",
-      "recentCommits30d": 16,
+      "recentCommits30d": 8,
       "totalContributors": 1,
-      "activityScore": 0.48100000000000004,
+      "activityScore": 0.441,
       "pluginCount": 13,
       "translationCount": 13,
       "languages": [
@@ -222,9 +222,9 @@
       "repoCreatedAt": "2026-04-06T15:23:33Z",
       "repoUpdatedAt": "2026-04-09T06:52:34Z",
       "lastPushedAt": "2026-04-09T06:52:32Z",
-      "recentCommits30d": 56,
+      "recentCommits30d": 49,
       "totalContributors": 1,
-      "activityScore": 0.68,
+      "activityScore": 0.645,
       "pluginCount": 19,
       "translationCount": 19,
       "languages": [
@@ -377,23 +377,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 0,
+      "repoSize": 30,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-06T01:57:03Z",
-      "repoUpdatedAt": "2026-05-06T01:59:37Z",
-      "lastPushedAt": "2026-05-06T01:59:35Z",
-      "recentCommits30d": 5,
+      "repoUpdatedAt": "2026-05-06T04:05:37Z",
+      "lastPushedAt": "2026-05-06T04:05:34Z",
+      "recentCommits30d": 9,
       "totalContributors": 1,
-      "activityScore": 0.295,
-      "pluginCount": 1,
-      "translationCount": 1,
+      "activityScore": 0.355,
+      "pluginCount": 3,
+      "translationCount": 3,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-05-06T01:59:30.323Z"
+      "lastManifestUpdate": "2026-05-06T04:05:30.125Z"
     }
   },
   "leaderboard": {
@@ -411,13 +411,13 @@
     ],
     "topReposByActivity": [
       "yubolun/obsidian-i18n-resources",
-      "daoziy/obsidian-i18n-daoziz",
       "xiaosong8584/obsidian-i18n-resources",
+      "daoziy/obsidian-i18n-daoziz",
       "Anonym0usPlayer/obsidian-i18n-resources",
+      "Dxnixub/obsidian-translations",
       "yunrr/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
       "voxrs/obsidian-translations",
-      "Dxnixub/obsidian-translations",
       "cute-boy-2736/obsidian-translations",
       "ljded/obsidian-i18n-resources"
     ],
@@ -436,19 +436,6 @@
         "lastActiveAt": "2026-04-23T06:19:45Z"
       },
       {
-        "name": "daoziy",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/220045369?v=4",
-        "htmlUrl": "https://github.com/daoziy",
-        "totalPlugins": 19,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.68,
-        "lastActiveAt": "2026-04-09T06:52:32Z"
-      },
-      {
         "name": "xiaosong8584",
         "avatarUrl": "https://avatars.githubusercontent.com/u/50919680?v=4",
         "htmlUrl": "https://github.com/xiaosong8584",
@@ -462,6 +449,19 @@
         "lastActiveAt": "2026-04-08T07:47:40Z"
       },
       {
+        "name": "daoziy",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/220045369?v=4",
+        "htmlUrl": "https://github.com/daoziy",
+        "totalPlugins": 19,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.645,
+        "lastActiveAt": "2026-04-09T06:52:32Z"
+      },
+      {
         "name": "Anonym0usPlayer",
         "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
         "htmlUrl": "https://github.com/Anonym0usPlayer",
@@ -471,8 +471,21 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.48100000000000004,
+        "activityScore": 0.441,
         "lastActiveAt": "2026-04-20T00:58:27Z"
+      },
+      {
+        "name": "Dxnixub",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/53068030?v=4",
+        "htmlUrl": "https://github.com/Dxnixub",
+        "totalPlugins": 3,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.355,
+        "lastActiveAt": "2026-05-06T04:05:34Z"
       },
       {
         "name": "yunrr",
@@ -514,19 +527,6 @@
         "lastActiveAt": "2026-04-02T01:17:15Z"
       },
       {
-        "name": "Dxnixub",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/53068030?v=4",
-        "htmlUrl": "https://github.com/Dxnixub",
-        "totalPlugins": 1,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.295,
-        "lastActiveAt": "2026-05-06T01:59:35Z"
-      },
-      {
         "name": "cute-boy-2736",
         "avatarUrl": "https://avatars.githubusercontent.com/u/177925249?v=4",
         "htmlUrl": "https://github.com/cute-boy-2736",
@@ -556,12 +556,12 @@
   },
   "summary": {
     "totalRepos": 12,
-    "totalPlugins": 0,
-    "totalTranslations": 3597,
-    "totalContributors": 12,
+    "totalPlugins": 3,
+    "totalTranslations": 3599,
+    "totalContributors": 1,
     "totalStars": 20,
     "languageDistribution": {
-      "zh-cn": 3597
+      "zh-cn": 3599
     }
   }
 }
