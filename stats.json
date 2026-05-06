@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-05T17:14:43.310Z",
+  "lastUpdated": "2026-05-06T02:05:22.593Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -361,6 +361,39 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-04-27T05:27:10.388Z"
+    },
+    "Dxnixub/obsidian-translations": {
+      "authorName": "Dxnixub",
+      "authorId": 53068030,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/53068030?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/Dxnixub",
+      "repoName": "obsidian-translations",
+      "repoFullName": "Dxnixub/obsidian-translations",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/Dxnixub/obsidian-translations",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 0,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-05-06T01:57:03Z",
+      "repoUpdatedAt": "2026-05-06T01:59:37Z",
+      "lastPushedAt": "2026-05-06T01:59:35Z",
+      "recentCommits30d": 5,
+      "totalContributors": 1,
+      "activityScore": 0.295,
+      "pluginCount": 1,
+      "translationCount": 1,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-05-06T01:59:30.323Z"
     }
   },
   "leaderboard": {
@@ -384,9 +417,9 @@
       "yunrr/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
       "voxrs/obsidian-translations",
+      "Dxnixub/obsidian-translations",
       "cute-boy-2736/obsidian-translations",
-      "ljded/obsidian-i18n-resources",
-      "AscerChan/obsidian-i18n-resources"
+      "ljded/obsidian-i18n-resources"
     ],
     "topAuthors": [
       {
@@ -481,6 +514,19 @@
         "lastActiveAt": "2026-04-02T01:17:15Z"
       },
       {
+        "name": "Dxnixub",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/53068030?v=4",
+        "htmlUrl": "https://github.com/Dxnixub",
+        "totalPlugins": 1,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.295,
+        "lastActiveAt": "2026-05-06T01:59:35Z"
+      },
+      {
         "name": "cute-boy-2736",
         "avatarUrl": "https://avatars.githubusercontent.com/u/177925249?v=4",
         "htmlUrl": "https://github.com/cute-boy-2736",
@@ -505,28 +551,17 @@
         ],
         "activityScore": 0.225,
         "lastActiveAt": "2026-04-27T05:27:11Z"
-      },
-      {
-        "name": "AscerChan",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/186818476?v=4",
-        "htmlUrl": "https://github.com/AscerChan",
-        "totalPlugins": 0,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [],
-        "activityScore": 0.195,
-        "lastActiveAt": "2026-04-09T18:14:10Z"
       }
     ]
   },
   "summary": {
-    "totalRepos": 11,
+    "totalRepos": 12,
     "totalPlugins": 0,
-    "totalTranslations": 3596,
-    "totalContributors": 0,
+    "totalTranslations": 3597,
+    "totalContributors": 12,
     "totalStars": 20,
     "languageDistribution": {
-      "zh-cn": 3596
+      "zh-cn": 3597
     }
   }
 }
