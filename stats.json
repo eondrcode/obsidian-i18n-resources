@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-09T16:42:14.055Z",
+  "lastUpdated": "2026-05-10T16:42:23.984Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -90,9 +90,9 @@
       "repoCreatedAt": "2026-03-15T08:46:10Z",
       "repoUpdatedAt": "2026-05-08T13:38:58Z",
       "lastPushedAt": "2026-05-08T13:38:55Z",
-      "recentCommits30d": 8,
+      "recentCommits30d": 6,
       "totalContributors": 1,
-      "activityScore": 0.541,
+      "activityScore": 0.531,
       "pluginCount": 14,
       "translationCount": 14,
       "languages": [
@@ -148,17 +148,17 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 219,
+      "repoSize": 220,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-03-22T14:59:23Z",
-      "repoUpdatedAt": "2026-05-09T15:02:23Z",
-      "lastPushedAt": "2026-05-09T15:02:20Z",
-      "recentCommits30d": 11,
+      "repoUpdatedAt": "2026-05-09T16:49:14Z",
+      "lastPushedAt": "2026-05-09T16:49:11Z",
+      "recentCommits30d": 12,
       "totalContributors": 1,
-      "activityScore": 0.555,
+      "activityScore": 0.56,
       "pluginCount": 33,
       "translationCount": 33,
       "languages": [
@@ -288,9 +288,9 @@
       "repoCreatedAt": "2026-04-09T18:11:55Z",
       "repoUpdatedAt": "2026-04-09T18:14:13Z",
       "lastPushedAt": "2026-04-09T18:14:10Z",
-      "recentCommits30d": 9,
+      "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.195,
+      "activityScore": 0.05,
       "pluginCount": 0,
       "translationCount": 0,
       "languages": [],
@@ -445,8 +445,8 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.555,
-        "lastActiveAt": "2026-05-09T15:02:20Z"
+        "activityScore": 0.56,
+        "lastActiveAt": "2026-05-09T16:49:11Z"
       },
       {
         "name": "Anonym0usPlayer",
@@ -458,7 +458,7 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.541,
+        "activityScore": 0.531,
         "lastActiveAt": "2026-05-08T13:38:55Z"
       },
       {
