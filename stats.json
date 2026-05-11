@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-10T16:42:23.984Z",
+  "lastUpdated": "2026-05-11T17:49:47.881Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -50,16 +50,16 @@
       "isArchived": false,
       "isFork": false,
       "repoSize": 10613,
-      "stars": 16,
-      "forks": 4,
-      "watchers": 16,
+      "stars": 17,
+      "forks": 5,
+      "watchers": 17,
       "openIssuesCount": 4,
       "repoCreatedAt": "2026-03-13T17:36:40Z",
-      "repoUpdatedAt": "2026-05-08T12:51:54Z",
+      "repoUpdatedAt": "2026-05-11T10:05:10Z",
       "lastPushedAt": "2026-04-02T07:42:44Z",
       "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.316,
+      "activityScore": 0.317,
       "pluginCount": 2877,
       "translationCount": 3440,
       "languages": [
@@ -121,7 +121,7 @@
       "watchers": 1,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-03-20T13:27:48Z",
-      "repoUpdatedAt": "2026-04-02T14:58:03Z",
+      "repoUpdatedAt": "2026-05-11T03:20:06Z",
       "lastPushedAt": "2026-03-20T13:53:54Z",
       "recentCommits30d": 0,
       "totalContributors": 1,
@@ -479,12 +479,12 @@
         "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
         "htmlUrl": "https://github.com/yunrr",
         "totalPlugins": 2877,
-        "totalStars": 16,
+        "totalStars": 17,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.316,
+        "activityScore": 0.317,
         "lastActiveAt": "2026-04-02T07:42:44Z"
       },
       {
@@ -556,10 +556,10 @@
   },
   "summary": {
     "totalRepos": 12,
-    "totalPlugins": 33,
+    "totalPlugins": 0,
     "totalTranslations": 3603,
-    "totalContributors": 1,
-    "totalStars": 22,
+    "totalContributors": 0,
+    "totalStars": 23,
     "languageDistribution": {
       "zh-cn": 3603
     }
