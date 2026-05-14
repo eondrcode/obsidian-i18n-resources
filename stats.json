@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T17:54:59.223Z",
+  "lastUpdated": "2026-05-14T17:42:06.137Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -90,9 +90,9 @@
       "repoCreatedAt": "2026-03-15T08:46:10Z",
       "repoUpdatedAt": "2026-05-08T13:38:58Z",
       "lastPushedAt": "2026-05-08T13:38:55Z",
-      "recentCommits30d": 6,
+      "recentCommits30d": 4,
       "totalContributors": 1,
-      "activityScore": 0.531,
+      "activityScore": 0.521,
       "pluginCount": 14,
       "translationCount": 14,
       "languages": [
@@ -387,7 +387,7 @@
       "lastPushedAt": "2026-05-07T06:27:23Z",
       "recentCommits30d": 17,
       "totalContributors": 1,
-      "activityScore": 0.355,
+      "activityScore": 0.255,
       "pluginCount": 1,
       "translationCount": 1,
       "languages": [
@@ -413,11 +413,11 @@
       "yubolun/obsidian-i18n-resources",
       "xiaosong8584/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
-      "Dxnixub/obsidian-translations",
       "yunrr/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
       "voxrs/obsidian-translations",
       "daoziy/obsidian-i18n-daoziz",
+      "Dxnixub/obsidian-translations",
       "ljded/obsidian-i18n-resources",
       "cute-boy-2736/obsidian-translations"
     ],
@@ -458,21 +458,8 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.531,
+        "activityScore": 0.521,
         "lastActiveAt": "2026-05-08T13:38:55Z"
-      },
-      {
-        "name": "Dxnixub",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/53068030?v=4",
-        "htmlUrl": "https://github.com/Dxnixub",
-        "totalPlugins": 1,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.355,
-        "lastActiveAt": "2026-05-07T06:27:23Z"
       },
       {
         "name": "yunrr",
@@ -525,6 +512,19 @@
         ],
         "activityScore": 0.3,
         "lastActiveAt": "2026-04-02T01:17:15Z"
+      },
+      {
+        "name": "Dxnixub",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/53068030?v=4",
+        "htmlUrl": "https://github.com/Dxnixub",
+        "totalPlugins": 1,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.255,
+        "lastActiveAt": "2026-05-07T06:27:23Z"
       },
       {
         "name": "ljded",
