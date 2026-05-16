@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-15T17:21:45.728Z",
+  "lastUpdated": "2026-05-16T16:46:47.530Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -148,23 +148,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 220,
+      "repoSize": 233,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-03-22T14:59:23Z",
-      "repoUpdatedAt": "2026-05-09T16:49:14Z",
-      "lastPushedAt": "2026-05-09T16:49:11Z",
-      "recentCommits30d": 12,
+      "repoUpdatedAt": "2026-05-16T15:49:58Z",
+      "lastPushedAt": "2026-05-16T15:49:55Z",
+      "recentCommits30d": 16,
       "totalContributors": 1,
-      "activityScore": 0.56,
-      "pluginCount": 33,
-      "translationCount": 33,
+      "activityScore": 0.58,
+      "pluginCount": 34,
+      "translationCount": 34,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-05-09T13:07:58.099Z"
+      "lastManifestUpdate": "2026-05-16T14:52:58.526Z"
     },
     "yeeun4028/obsidian-i18n-resources": {
       "authorName": "yeeun4028",
@@ -439,14 +439,14 @@
         "name": "xiaosong8584",
         "avatarUrl": "https://avatars.githubusercontent.com/u/50919680?v=4",
         "htmlUrl": "https://github.com/xiaosong8584",
-        "totalPlugins": 33,
+        "totalPlugins": 34,
         "totalStars": 0,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.56,
-        "lastActiveAt": "2026-05-09T16:49:11Z"
+        "activityScore": 0.58,
+        "lastActiveAt": "2026-05-16T15:49:55Z"
       },
       {
         "name": "Anonym0usPlayer",
@@ -556,12 +556,12 @@
   },
   "summary": {
     "totalRepos": 12,
-    "totalPlugins": 0,
-    "totalTranslations": 3603,
-    "totalContributors": 0,
+    "totalPlugins": 34,
+    "totalTranslations": 3604,
+    "totalContributors": 1,
     "totalStars": 24,
     "languageDistribution": {
-      "zh-cn": 3603
+      "zh-cn": 3604
     }
   }
 }
