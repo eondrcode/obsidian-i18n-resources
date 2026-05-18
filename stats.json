@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-17T16:47:11.135Z",
+  "lastUpdated": "2026-05-18T17:52:01.433Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -82,23 +82,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 228,
+      "repoSize": 234,
       "stars": 1,
       "forks": 0,
       "watchers": 1,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-03-15T08:46:10Z",
-      "repoUpdatedAt": "2026-05-08T13:38:58Z",
-      "lastPushedAt": "2026-05-08T13:38:55Z",
-      "recentCommits30d": 4,
+      "repoUpdatedAt": "2026-05-18T05:39:54Z",
+      "lastPushedAt": "2026-05-18T05:39:51Z",
+      "recentCommits30d": 6,
       "totalContributors": 1,
-      "activityScore": 0.42100000000000004,
-      "pluginCount": 14,
-      "translationCount": 14,
+      "activityScore": 0.531,
+      "pluginCount": 15,
+      "translationCount": 15,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-05-08T13:38:54.917Z"
+      "lastManifestUpdate": "2026-05-18T05:39:51.250Z"
     },
     "Ayanami-Shinji/obsidian-i18n-resources": {
       "authorName": "Ayanami-Shinji",
@@ -452,14 +452,14 @@
         "name": "Anonym0usPlayer",
         "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
         "htmlUrl": "https://github.com/Anonym0usPlayer",
-        "totalPlugins": 14,
+        "totalPlugins": 15,
         "totalStars": 1,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.42100000000000004,
-        "lastActiveAt": "2026-05-08T13:38:55Z"
+        "activityScore": 0.531,
+        "lastActiveAt": "2026-05-18T05:39:51Z"
       },
       {
         "name": "yunrr",
@@ -556,12 +556,12 @@
   },
   "summary": {
     "totalRepos": 12,
-    "totalPlugins": 41,
-    "totalTranslations": 3611,
+    "totalPlugins": 15,
+    "totalTranslations": 3612,
     "totalContributors": 1,
     "totalStars": 25,
     "languageDistribution": {
-      "zh-cn": 3611
+      "zh-cn": 3612
     }
   }
 }
