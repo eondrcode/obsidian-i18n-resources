@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-20T18:11:23.704Z",
+  "lastUpdated": "2026-05-21T17:50:08.212Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -82,23 +82,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 248,
+      "repoSize": 309,
       "stars": 1,
       "forks": 0,
       "watchers": 1,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-03-15T08:46:10Z",
-      "repoUpdatedAt": "2026-05-19T08:10:19Z",
-      "lastPushedAt": "2026-05-19T08:10:15Z",
-      "recentCommits30d": 10,
+      "repoUpdatedAt": "2026-05-21T08:01:50Z",
+      "lastPushedAt": "2026-05-21T08:01:48Z",
+      "recentCommits30d": 14,
       "totalContributors": 1,
-      "activityScore": 0.551,
+      "activityScore": 0.5710000000000001,
       "pluginCount": 16,
       "translationCount": 16,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-05-19T08:08:33.513Z"
+      "lastManifestUpdate": "2026-05-21T08:01:47.808Z"
     },
     "Ayanami-Shinji/obsidian-i18n-resources": {
       "authorName": "Ayanami-Shinji",
@@ -255,9 +255,9 @@
       "repoCreatedAt": "2026-04-01T09:14:25Z",
       "repoUpdatedAt": "2026-05-04T02:13:20Z",
       "lastPushedAt": "2026-04-23T06:19:45Z",
-      "recentCommits30d": 18,
+      "recentCommits30d": 10,
       "totalContributors": 1,
-      "activityScore": 0.493,
+      "activityScore": 0.45299999999999996,
       "pluginCount": 32,
       "translationCount": 32,
       "languages": [
@@ -445,8 +445,8 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.551,
-        "lastActiveAt": "2026-05-19T08:10:15Z"
+        "activityScore": 0.5710000000000001,
+        "lastActiveAt": "2026-05-21T08:01:48Z"
       },
       {
         "name": "yubolun",
@@ -458,7 +458,7 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.493,
+        "activityScore": 0.45299999999999996,
         "lastActiveAt": "2026-04-23T06:19:45Z"
       },
       {
@@ -556,9 +556,9 @@
   },
   "summary": {
     "totalRepos": 12,
-    "totalPlugins": 0,
+    "totalPlugins": 16,
     "totalTranslations": 3613,
-    "totalContributors": 0,
+    "totalContributors": 1,
     "totalStars": 25,
     "languageDistribution": {
       "zh-cn": 3613
