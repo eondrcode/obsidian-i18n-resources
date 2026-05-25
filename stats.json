@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-24T16:52:55.825Z",
+  "lastUpdated": "2026-05-25T13:10:06.900Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -427,6 +427,39 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-05-23T06:04:07.118Z"
+    },
+    "Chico890921/obsidian-translations": {
+      "authorName": "Chico890921",
+      "authorId": 32149972,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/32149972?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/Chico890921",
+      "repoName": "obsidian-translations",
+      "repoFullName": "Chico890921/obsidian-translations",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/Chico890921/obsidian-translations",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 463,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-05-25T02:40:02Z",
+      "repoUpdatedAt": "2026-05-25T03:51:33Z",
+      "lastPushedAt": "2026-05-25T03:51:30Z",
+      "recentCommits30d": 93,
+      "totalContributors": 1,
+      "activityScore": 0.85,
+      "pluginCount": 45,
+      "translationCount": 45,
+      "languages": [
+        "zh-tw"
+      ],
+      "lastManifestUpdate": "2026-05-25T03:51:31.637Z"
     }
   },
   "leaderboard": {
@@ -443,6 +476,7 @@
       "AscerChan/obsidian-i18n-resources"
     ],
     "topReposByActivity": [
+      "Chico890921/obsidian-translations",
       "lizhengyi3003/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
       "xiaosong8584/obsidian-i18n-resources",
@@ -451,10 +485,22 @@
       "Ayanami-Shinji/obsidian-i18n-resources",
       "voxrs/obsidian-translations",
       "daoziy/obsidian-i18n-daoziz",
-      "Dxnixub/obsidian-translations",
-      "ljded/obsidian-i18n-resources"
+      "Dxnixub/obsidian-translations"
     ],
     "topAuthors": [
+      {
+        "name": "Chico890921",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/32149972?v=4",
+        "htmlUrl": "https://github.com/Chico890921",
+        "totalPlugins": 45,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-tw"
+        ],
+        "activityScore": 0.85,
+        "lastActiveAt": "2026-05-25T03:51:30Z"
+      },
       {
         "name": "lizhengyi3003",
         "avatarUrl": "https://avatars.githubusercontent.com/u/81514724?v=4",
@@ -571,29 +617,17 @@
         ],
         "activityScore": 0.255,
         "lastActiveAt": "2026-05-07T06:27:23Z"
-      },
-      {
-        "name": "ljded",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/68012354?v=4",
-        "htmlUrl": "https://github.com/ljded",
-        "totalPlugins": 2,
-        "totalStars": 1,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.226,
-        "lastActiveAt": "2026-04-27T05:27:11Z"
       }
     ]
   },
   "summary": {
-    "totalRepos": 13,
+    "totalRepos": 14,
     "totalPlugins": 17,
-    "totalTranslations": 3637,
-    "totalContributors": 1,
+    "totalTranslations": 3682,
+    "totalContributors": 14,
     "totalStars": 26,
     "languageDistribution": {
+      "zh-tw": 45,
       "zh-cn": 3637
     }
   }
