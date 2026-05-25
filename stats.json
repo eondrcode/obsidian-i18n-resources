@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25T13:10:06.900Z",
+  "lastUpdated": "2026-05-25T17:27:58.787Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -443,15 +443,15 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 463,
+      "repoSize": 475,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-05-25T03:51:33Z",
-      "lastPushedAt": "2026-05-25T03:51:30Z",
-      "recentCommits30d": 93,
+      "repoUpdatedAt": "2026-05-25T13:25:44Z",
+      "lastPushedAt": "2026-05-25T13:25:42Z",
+      "recentCommits30d": 95,
       "totalContributors": 1,
       "activityScore": 0.85,
       "pluginCount": 45,
@@ -459,7 +459,7 @@
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-05-25T03:51:31.637Z"
+      "lastManifestUpdate": "2026-05-25T13:25:42.416Z"
     }
   },
   "leaderboard": {
@@ -499,7 +499,7 @@
           "zh-tw"
         ],
         "activityScore": 0.85,
-        "lastActiveAt": "2026-05-25T03:51:30Z"
+        "lastActiveAt": "2026-05-25T13:25:42Z"
       },
       {
         "name": "lizhengyi3003",
@@ -622,13 +622,13 @@
   },
   "summary": {
     "totalRepos": 14,
-    "totalPlugins": 17,
+    "totalPlugins": 45,
     "totalTranslations": 3682,
-    "totalContributors": 14,
+    "totalContributors": 1,
     "totalStars": 26,
     "languageDistribution": {
-      "zh-tw": 45,
-      "zh-cn": 3637
+      "zh-cn": 3637,
+      "zh-tw": 45
     }
   }
 }
