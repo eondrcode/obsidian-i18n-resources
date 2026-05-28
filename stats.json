@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28T18:30:15.915Z",
+  "lastUpdated": "2026-05-28T22:25:49.838Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -427,6 +427,39 @@
         "zh-tw"
       ],
       "lastManifestUpdate": "2026-05-25T13:25:42.416Z"
+    },
+    "Siyin22/obsidian-i18n-resources": {
+      "authorName": "Siyin22",
+      "authorId": 225679950,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/225679950?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/Siyin22",
+      "repoName": "obsidian-i18n-resources",
+      "repoFullName": "Siyin22/obsidian-i18n-resources",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/Siyin22/obsidian-i18n-resources",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 10,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-03-13T13:28:21Z",
+      "repoUpdatedAt": "2026-05-26T15:00:48Z",
+      "lastPushedAt": "2026-05-26T14:41:42Z",
+      "recentCommits30d": 2,
+      "totalContributors": 1,
+      "activityScore": 0.28,
+      "pluginCount": 1,
+      "translationCount": 1,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-05-26T14:41:33.682Z"
     }
   },
   "leaderboard": {
@@ -451,8 +484,8 @@
       "Ayanami-Shinji/obsidian-i18n-resources",
       "voxrs/obsidian-translations",
       "daoziy/obsidian-i18n-daoziz",
-      "Dxnixub/obsidian-translations",
-      "ljded/obsidian-i18n-resources"
+      "Siyin22/obsidian-i18n-resources",
+      "Dxnixub/obsidian-translations"
     ],
     "topAuthors": [
       {
@@ -560,6 +593,19 @@
         "lastActiveAt": "2026-04-02T01:17:15Z"
       },
       {
+        "name": "Siyin22",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/225679950?v=4",
+        "htmlUrl": "https://github.com/Siyin22",
+        "totalPlugins": 1,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.28,
+        "lastActiveAt": "2026-05-26T14:41:42Z"
+      },
+      {
         "name": "Dxnixub",
         "avatarUrl": "https://avatars.githubusercontent.com/u/53068030?v=4",
         "htmlUrl": "https://github.com/Dxnixub",
@@ -571,31 +617,18 @@
         ],
         "activityScore": 0.255,
         "lastActiveAt": "2026-05-07T06:27:23Z"
-      },
-      {
-        "name": "ljded",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/68012354?v=4",
-        "htmlUrl": "https://github.com/ljded",
-        "totalPlugins": 2,
-        "totalStars": 1,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.091,
-        "lastActiveAt": "2026-04-27T05:27:11Z"
       }
     ]
   },
   "summary": {
-    "totalRepos": 13,
+    "totalRepos": 14,
     "totalPlugins": 0,
-    "totalTranslations": 243,
-    "totalContributors": 0,
+    "totalTranslations": 244,
+    "totalContributors": 14,
     "totalStars": 6,
     "languageDistribution": {
-      "zh-cn": 198,
-      "zh-tw": 45
+      "zh-tw": 45,
+      "zh-cn": 199
     }
   }
 }
