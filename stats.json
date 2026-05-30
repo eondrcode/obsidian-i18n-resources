@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-29T18:26:29.356Z",
+  "lastUpdated": "2026-05-30T16:52:32.368Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -387,7 +387,7 @@
       "lastPushedAt": "2026-05-23T06:04:07Z",
       "recentCommits30d": 49,
       "totalContributors": 1,
-      "activityScore": 0.745,
+      "activityScore": 0.645,
       "pluginCount": 23,
       "translationCount": 23,
       "languages": [
@@ -410,15 +410,15 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 475,
+      "repoSize": 336,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-05-25T13:25:44Z",
-      "lastPushedAt": "2026-05-25T13:25:42Z",
-      "recentCommits30d": 95,
+      "repoUpdatedAt": "2026-05-30T08:20:23Z",
+      "lastPushedAt": "2026-05-30T08:20:19Z",
+      "recentCommits30d": 100,
       "totalContributors": 1,
       "activityScore": 0.85,
       "pluginCount": 45,
@@ -426,7 +426,7 @@
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-05-25T13:25:42.416Z"
+      "lastManifestUpdate": "2026-05-30T08:17:19.581Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -477,8 +477,8 @@
     ],
     "topReposByActivity": [
       "Chico890921/obsidian-translations",
-      "lizhengyi3003/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
+      "lizhengyi3003/obsidian-i18n-resources",
       "xiaosong8584/obsidian-i18n-resources",
       "yubolun/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
@@ -499,20 +499,7 @@
           "zh-tw"
         ],
         "activityScore": 0.85,
-        "lastActiveAt": "2026-05-25T13:25:42Z"
-      },
-      {
-        "name": "lizhengyi3003",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/81514724?v=4",
-        "htmlUrl": "https://github.com/lizhengyi3003",
-        "totalPlugins": 23,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.745,
-        "lastActiveAt": "2026-05-23T06:04:07Z"
+        "lastActiveAt": "2026-05-30T08:20:19Z"
       },
       {
         "name": "Anonym0usPlayer",
@@ -526,6 +513,19 @@
         ],
         "activityScore": 0.6509999999999999,
         "lastActiveAt": "2026-05-26T00:23:32Z"
+      },
+      {
+        "name": "lizhengyi3003",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/81514724?v=4",
+        "htmlUrl": "https://github.com/lizhengyi3003",
+        "totalPlugins": 23,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.645,
+        "lastActiveAt": "2026-05-23T06:04:07Z"
       },
       {
         "name": "xiaosong8584",
@@ -622,9 +622,9 @@
   },
   "summary": {
     "totalRepos": 14,
-    "totalPlugins": 0,
+    "totalPlugins": 45,
     "totalTranslations": 244,
-    "totalContributors": 0,
+    "totalContributors": 1,
     "totalStars": 6,
     "languageDistribution": {
       "zh-cn": 199,
