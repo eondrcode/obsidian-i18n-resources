@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-02T19:36:11.649Z",
+  "lastUpdated": "2026-06-03T12:00:27.801Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -526,6 +526,39 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-06-01T09:22:14.153Z"
+    },
+    "agarcabin/obsidian-translations": {
+      "authorName": "agarcabin",
+      "authorId": 48048603,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/48048603?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/agarcabin",
+      "repoName": "obsidian-translations",
+      "repoFullName": "agarcabin/obsidian-translations",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/agarcabin/obsidian-translations",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 67,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-05-29T14:28:25Z",
+      "repoUpdatedAt": "2026-06-02T17:14:29Z",
+      "lastPushedAt": "2026-06-02T17:14:27Z",
+      "recentCommits30d": 9,
+      "totalContributors": 1,
+      "activityScore": 0.375,
+      "pluginCount": 4,
+      "translationCount": 5,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-06-02T17:14:22.840Z"
     }
   },
   "leaderboard": {
@@ -548,10 +581,10 @@
       "Anonym0usPlayer/obsidian-i18n-resources",
       "xiaosong8584/obsidian-i18n-resources",
       "Fish-Ring/obsidian-i18n-resources",
+      "agarcabin/obsidian-translations",
       "yubolun/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
-      "voxrs/obsidian-translations",
-      "daoziy/obsidian-i18n-daoziz"
+      "voxrs/obsidian-translations"
     ],
     "topAuthors": [
       {
@@ -633,6 +666,19 @@
         "lastActiveAt": "2026-06-01T09:22:37Z"
       },
       {
+        "name": "agarcabin",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/48048603?v=4",
+        "htmlUrl": "https://github.com/agarcabin",
+        "totalPlugins": 4,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.375,
+        "lastActiveAt": "2026-06-02T17:14:27Z"
+      },
+      {
         "name": "yubolun",
         "avatarUrl": "https://avatars.githubusercontent.com/u/30453265?v=4",
         "htmlUrl": "https://github.com/yubolun",
@@ -670,31 +716,18 @@
         ],
         "activityScore": 0.3,
         "lastActiveAt": "2026-04-09T06:52:32Z"
-      },
-      {
-        "name": "voxrs",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/132795729?v=4",
-        "htmlUrl": "https://github.com/voxrs",
-        "totalPlugins": 17,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.3,
-        "lastActiveAt": "2026-04-02T01:17:15Z"
       }
     ]
   },
   "summary": {
-    "totalRepos": 16,
+    "totalRepos": 17,
     "totalPlugins": 0,
-    "totalTranslations": 265,
-    "totalContributors": 0,
+    "totalTranslations": 270,
+    "totalContributors": 17,
     "totalStars": 6,
     "languageDistribution": {
-      "zh-cn": 220,
-      "zh-tw": 45
+      "zh-tw": 45,
+      "zh-cn": 225
     }
   }
 }
