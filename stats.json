@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-03T12:00:27.801Z",
+  "lastUpdated": "2026-06-03T19:41:50.139Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -344,23 +344,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 36,
+      "repoSize": 69,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-06T01:57:03Z",
-      "repoUpdatedAt": "2026-05-07T06:27:25Z",
-      "lastPushedAt": "2026-05-07T06:27:23Z",
-      "recentCommits30d": 17,
+      "repoUpdatedAt": "2026-06-03T08:55:41Z",
+      "lastPushedAt": "2026-06-03T08:55:38Z",
+      "recentCommits30d": 19,
       "totalContributors": 1,
-      "activityScore": 0.255,
-      "pluginCount": 1,
-      "translationCount": 1,
+      "activityScore": 0.385,
+      "pluginCount": 2,
+      "translationCount": 2,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-05-07T06:26:55.078Z"
+      "lastManifestUpdate": "2026-06-03T08:54:27.866Z"
     },
     "lizhengyi3003/obsidian-i18n-resources": {
       "authorName": "lizhengyi3003",
@@ -410,14 +410,14 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 336,
+      "repoSize": 375,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-05-30T08:20:23Z",
-      "lastPushedAt": "2026-05-30T08:20:19Z",
+      "repoUpdatedAt": "2026-06-03T07:59:43Z",
+      "lastPushedAt": "2026-06-03T07:59:41Z",
       "recentCommits30d": 100,
       "totalContributors": 1,
       "activityScore": 0.85,
@@ -426,7 +426,7 @@
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-05-30T08:17:19.581Z"
+      "lastManifestUpdate": "2026-06-03T07:59:45.655Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -581,10 +581,10 @@
       "Anonym0usPlayer/obsidian-i18n-resources",
       "xiaosong8584/obsidian-i18n-resources",
       "Fish-Ring/obsidian-i18n-resources",
+      "Dxnixub/obsidian-translations",
       "agarcabin/obsidian-translations",
       "yubolun/obsidian-i18n-resources",
-      "Ayanami-Shinji/obsidian-i18n-resources",
-      "voxrs/obsidian-translations"
+      "Ayanami-Shinji/obsidian-i18n-resources"
     ],
     "topAuthors": [
       {
@@ -598,7 +598,7 @@
           "zh-tw"
         ],
         "activityScore": 0.85,
-        "lastActiveAt": "2026-05-30T08:20:19Z"
+        "lastActiveAt": "2026-06-03T07:59:41Z"
       },
       {
         "name": "lizhengyi3003",
@@ -666,6 +666,19 @@
         "lastActiveAt": "2026-06-01T09:22:37Z"
       },
       {
+        "name": "Dxnixub",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/53068030?v=4",
+        "htmlUrl": "https://github.com/Dxnixub",
+        "totalPlugins": 2,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.385,
+        "lastActiveAt": "2026-06-03T08:55:38Z"
+      },
+      {
         "name": "agarcabin",
         "avatarUrl": "https://avatars.githubusercontent.com/u/48048603?v=4",
         "htmlUrl": "https://github.com/agarcabin",
@@ -703,31 +716,18 @@
         ],
         "activityScore": 0.301,
         "lastActiveAt": "2026-03-20T13:53:54Z"
-      },
-      {
-        "name": "daoziy",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/220045369?v=4",
-        "htmlUrl": "https://github.com/daoziy",
-        "totalPlugins": 19,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.3,
-        "lastActiveAt": "2026-04-09T06:52:32Z"
       }
     ]
   },
   "summary": {
     "totalRepos": 17,
-    "totalPlugins": 0,
-    "totalTranslations": 270,
-    "totalContributors": 17,
+    "totalPlugins": 47,
+    "totalTranslations": 271,
+    "totalContributors": 2,
     "totalStars": 6,
     "languageDistribution": {
-      "zh-tw": 45,
-      "zh-cn": 225
+      "zh-cn": 226,
+      "zh-tw": 45
     }
   }
 }
