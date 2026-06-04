@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04T11:13:08.439Z",
+  "lastUpdated": "2026-06-04T16:14:44.257Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -592,6 +592,39 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-06-04T06:36:00.120Z"
+    },
+    "amouses/haokunyo-resources": {
+      "authorName": "amouses",
+      "authorId": 67671580,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/67671580?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/amouses",
+      "repoName": "haokunyo-resources",
+      "repoFullName": "amouses/haokunyo-resources",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/amouses/haokunyo-resources",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 0,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-06-04T16:09:26Z",
+      "repoUpdatedAt": "2026-06-04T16:10:50Z",
+      "lastPushedAt": "2026-06-04T16:10:20Z",
+      "recentCommits30d": 9,
+      "totalContributors": 1,
+      "activityScore": 0.355,
+      "pluginCount": 3,
+      "translationCount": 3,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-06-04T16:10:18.559Z"
     }
   },
   "leaderboard": {
@@ -617,7 +650,7 @@
       "Fish-Ring/obsidian-i18n-resources",
       "Dxnixub/obsidian-translations",
       "agarcabin/obsidian-translations",
-      "yubolun/obsidian-i18n-resources"
+      "amouses/haokunyo-resources"
     ],
     "topAuthors": [
       {
@@ -738,29 +771,29 @@
         "lastActiveAt": "2026-06-02T17:14:27Z"
       },
       {
-        "name": "yubolun",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/30453265?v=4",
-        "htmlUrl": "https://github.com/yubolun",
-        "totalPlugins": 32,
-        "totalStars": 3,
+        "name": "amouses",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67671580?v=4",
+        "htmlUrl": "https://github.com/amouses",
+        "totalPlugins": 3,
+        "totalStars": 0,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.303,
-        "lastActiveAt": "2026-04-23T06:19:45Z"
+        "activityScore": 0.355,
+        "lastActiveAt": "2026-06-04T16:10:20Z"
       }
     ]
   },
   "summary": {
-    "totalRepos": 18,
+    "totalRepos": 19,
     "totalPlugins": 47,
-    "totalTranslations": 289,
-    "totalContributors": 18,
+    "totalTranslations": 292,
+    "totalContributors": 19,
     "totalStars": 6,
     "languageDistribution": {
       "zh-tw": 45,
-      "zh-cn": 244
+      "zh-cn": 247
     }
   }
 }
