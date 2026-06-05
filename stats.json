@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04T18:08:35.276Z",
+  "lastUpdated": "2026-06-05T17:47:28.886Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -49,7 +49,7 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 195,
+      "repoSize": 200,
       "stars": 1,
       "forks": 0,
       "watchers": 1,
@@ -352,9 +352,9 @@
       "repoCreatedAt": "2026-05-06T01:57:03Z",
       "repoUpdatedAt": "2026-06-03T08:55:41Z",
       "lastPushedAt": "2026-06-03T08:55:38Z",
-      "recentCommits30d": 19,
+      "recentCommits30d": 10,
       "totalContributors": 1,
-      "activityScore": 0.385,
+      "activityScore": 0.34,
       "pluginCount": 2,
       "translationCount": 2,
       "languages": [
@@ -648,9 +648,9 @@
       "win2ter/obsidian-translations",
       "xiaosong8584/obsidian-i18n-resources",
       "Fish-Ring/obsidian-i18n-resources",
-      "Dxnixub/obsidian-translations",
       "amouses/haokunyo-resources",
-      "agarcabin/obsidian-translations"
+      "agarcabin/obsidian-translations",
+      "Dxnixub/obsidian-translations"
     ],
     "topAuthors": [
       {
@@ -758,19 +758,6 @@
         "lastActiveAt": "2026-06-04T16:45:02Z"
       },
       {
-        "name": "Dxnixub",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/53068030?v=4",
-        "htmlUrl": "https://github.com/Dxnixub",
-        "totalPlugins": 2,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.385,
-        "lastActiveAt": "2026-06-03T08:55:38Z"
-      },
-      {
         "name": "agarcabin",
         "avatarUrl": "https://avatars.githubusercontent.com/u/48048603?v=4",
         "htmlUrl": "https://github.com/agarcabin",
@@ -782,14 +769,27 @@
         ],
         "activityScore": 0.375,
         "lastActiveAt": "2026-06-02T17:14:27Z"
+      },
+      {
+        "name": "Dxnixub",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/53068030?v=4",
+        "htmlUrl": "https://github.com/Dxnixub",
+        "totalPlugins": 2,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.34,
+        "lastActiveAt": "2026-06-03T08:55:38Z"
       }
     ]
   },
   "summary": {
     "totalRepos": 19,
-    "totalPlugins": 72,
+    "totalPlugins": 0,
     "totalTranslations": 294,
-    "totalContributors": 4,
+    "totalContributors": 0,
     "totalStars": 6,
     "languageDistribution": {
       "zh-cn": 248,
