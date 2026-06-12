@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T18:41:02.872Z",
+  "lastUpdated": "2026-06-12T17:58:58.123Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -410,14 +410,14 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 514,
+      "repoSize": 527,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-06-08T20:23:28Z",
-      "lastPushedAt": "2026-06-08T20:23:24Z",
+      "repoUpdatedAt": "2026-06-12T09:18:27Z",
+      "lastPushedAt": "2026-06-12T09:18:24Z",
       "recentCommits30d": 100,
       "totalContributors": 1,
       "activityScore": 0.85,
@@ -426,7 +426,7 @@
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-06-08T20:23:26.298Z"
+      "lastManifestUpdate": "2026-06-12T09:18:20.370Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -608,23 +608,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 68,
+      "repoSize": 73,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-06-04T16:09:26Z",
-      "repoUpdatedAt": "2026-06-09T12:27:43Z",
-      "lastPushedAt": "2026-06-09T12:27:15Z",
-      "recentCommits30d": 17,
+      "repoUpdatedAt": "2026-06-12T11:22:21Z",
+      "lastPushedAt": "2026-06-12T11:22:18Z",
+      "recentCommits30d": 19,
       "totalContributors": 1,
-      "activityScore": 0.415,
-      "pluginCount": 4,
-      "translationCount": 4,
+      "activityScore": 0.445,
+      "pluginCount": 5,
+      "translationCount": 5,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-06-09T12:27:13.672Z"
+      "lastManifestUpdate": "2026-06-12T11:22:18.315Z"
     }
   },
   "leaderboard": {
@@ -664,7 +664,7 @@
           "zh-tw"
         ],
         "activityScore": 0.85,
-        "lastActiveAt": "2026-06-08T20:23:24Z"
+        "lastActiveAt": "2026-06-12T09:18:24Z"
       },
       {
         "name": "ZergoWL",
@@ -735,14 +735,14 @@
         "name": "amouses",
         "avatarUrl": "https://avatars.githubusercontent.com/u/67671580?v=4",
         "htmlUrl": "https://github.com/amouses",
-        "totalPlugins": 4,
+        "totalPlugins": 5,
         "totalStars": 0,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.415,
-        "lastActiveAt": "2026-06-09T12:27:15Z"
+        "activityScore": 0.445,
+        "lastActiveAt": "2026-06-12T11:22:18Z"
       },
       {
         "name": "Fish-Ring",
@@ -787,12 +787,12 @@
   },
   "summary": {
     "totalRepos": 19,
-    "totalPlugins": 0,
-    "totalTranslations": 301,
-    "totalContributors": 0,
+    "totalPlugins": 52,
+    "totalTranslations": 302,
+    "totalContributors": 2,
     "totalStars": 6,
     "languageDistribution": {
-      "zh-cn": 254,
+      "zh-cn": 255,
       "zh-tw": 47
     }
   }
