@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T17:12:31.773Z",
+  "lastUpdated": "2026-06-14T12:52:04.228Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -625,6 +625,39 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-06-12T11:22:18.315Z"
+    },
+    "wakeme128/obsidian-translations": {
+      "authorName": "wakeme128",
+      "authorId": 11244376,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/11244376?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/wakeme128",
+      "repoName": "obsidian-translations",
+      "repoFullName": "wakeme128/obsidian-translations",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/wakeme128/obsidian-translations",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 19,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-06-14T07:50:22Z",
+      "repoUpdatedAt": "2026-06-14T12:10:19Z",
+      "lastPushedAt": "2026-06-14T12:10:17Z",
+      "recentCommits30d": 8,
+      "totalContributors": 1,
+      "activityScore": 0.31,
+      "pluginCount": 1,
+      "translationCount": 1,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-06-14T12:10:17.235Z"
     }
   },
   "leaderboard": {
@@ -649,8 +682,8 @@
       "win2ter/obsidian-translations",
       "amouses/haokunyo-resources",
       "Fish-Ring/obsidian-i18n-resources",
-      "yubolun/obsidian-i18n-resources",
-      "Ayanami-Shinji/obsidian-i18n-resources"
+      "wakeme128/obsidian-translations",
+      "yubolun/obsidian-i18n-resources"
     ],
     "topAuthors": [
       {
@@ -758,6 +791,19 @@
         "lastActiveAt": "2026-06-01T09:22:37Z"
       },
       {
+        "name": "wakeme128",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/11244376?v=4",
+        "htmlUrl": "https://github.com/wakeme128",
+        "totalPlugins": 1,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.31,
+        "lastActiveAt": "2026-06-14T12:10:17Z"
+      },
+      {
         "name": "yubolun",
         "avatarUrl": "https://avatars.githubusercontent.com/u/30453265?v=4",
         "htmlUrl": "https://github.com/yubolun",
@@ -769,31 +815,18 @@
         ],
         "activityScore": 0.303,
         "lastActiveAt": "2026-04-23T06:19:45Z"
-      },
-      {
-        "name": "Ayanami-Shinji",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/78525325?v=4",
-        "htmlUrl": "https://github.com/Ayanami-Shinji",
-        "totalPlugins": 37,
-        "totalStars": 1,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.301,
-        "lastActiveAt": "2026-03-20T13:53:54Z"
       }
     ]
   },
   "summary": {
-    "totalRepos": 19,
+    "totalRepos": 20,
     "totalPlugins": 47,
-    "totalTranslations": 302,
-    "totalContributors": 1,
+    "totalTranslations": 303,
+    "totalContributors": 20,
     "totalStars": 7,
     "languageDistribution": {
-      "zh-cn": 255,
-      "zh-tw": 47
+      "zh-tw": 47,
+      "zh-cn": 256
     }
   }
 }
