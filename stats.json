@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14T17:09:19.616Z",
+  "lastUpdated": "2026-06-15T19:37:49.418Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -123,9 +123,9 @@
       "repoCreatedAt": "2026-03-22T14:59:23Z",
       "repoUpdatedAt": "2026-05-16T17:07:35Z",
       "lastPushedAt": "2026-05-16T17:07:33Z",
-      "recentCommits30d": 18,
+      "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.49,
+      "activityScore": 0.3,
       "pluginCount": 41,
       "translationCount": 41,
       "languages": [
@@ -575,23 +575,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 671,
+      "repoSize": 773,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-06-01T03:09:35Z",
-      "repoUpdatedAt": "2026-06-10T07:02:03Z",
-      "lastPushedAt": "2026-06-10T07:01:22Z",
-      "recentCommits30d": 41,
+      "repoUpdatedAt": "2026-06-15T09:13:49Z",
+      "lastPushedAt": "2026-06-15T09:13:48Z",
+      "recentCommits30d": 43,
       "totalContributors": 1,
-      "activityScore": 0.705,
-      "pluginCount": 16,
-      "translationCount": 20,
+      "activityScore": 0.715,
+      "pluginCount": 22,
+      "translationCount": 28,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-06-10T06:59:53.218Z"
+      "lastManifestUpdate": "2026-06-15T09:13:41.551Z"
     },
     "amouses/haokunyo-resources": {
       "authorName": "amouses",
@@ -679,11 +679,11 @@
       "Anonym0usPlayer/obsidian-i18n-resources",
       "lizhengyi3003/obsidian-i18n-resources",
       "Fish-Ring/obsidian-i18n-resources",
-      "xiaosong8584/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
       "amouses/haokunyo-resources",
       "wakeme128/obsidian-translations",
-      "yubolun/obsidian-i18n-resources"
+      "yubolun/obsidian-i18n-resources",
+      "Ayanami-Shinji/obsidian-i18n-resources"
     ],
     "topAuthors": [
       {
@@ -703,14 +703,14 @@
         "name": "ZergoWL",
         "avatarUrl": "https://avatars.githubusercontent.com/u/95464162?v=4",
         "htmlUrl": "https://github.com/ZergoWL",
-        "totalPlugins": 16,
+        "totalPlugins": 22,
         "totalStars": 0,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.705,
-        "lastActiveAt": "2026-06-10T07:01:22Z"
+        "activityScore": 0.715,
+        "lastActiveAt": "2026-06-15T09:13:48Z"
       },
       {
         "name": "Anonym0usPlayer",
@@ -750,19 +750,6 @@
         ],
         "activityScore": 0.515,
         "lastActiveAt": "2026-06-14T15:32:34Z"
-      },
-      {
-        "name": "xiaosong8584",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/50919680?v=4",
-        "htmlUrl": "https://github.com/xiaosong8584",
-        "totalPlugins": 41,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.49,
-        "lastActiveAt": "2026-05-16T17:07:33Z"
       },
       {
         "name": "win2ter",
@@ -815,17 +802,30 @@
         ],
         "activityScore": 0.303,
         "lastActiveAt": "2026-04-23T06:19:45Z"
+      },
+      {
+        "name": "Ayanami-Shinji",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/78525325?v=4",
+        "htmlUrl": "https://github.com/Ayanami-Shinji",
+        "totalPlugins": 37,
+        "totalStars": 1,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.301,
+        "lastActiveAt": "2026-03-20T13:53:54Z"
       }
     ]
   },
   "summary": {
     "totalRepos": 20,
-    "totalPlugins": 6,
-    "totalTranslations": 304,
+    "totalPlugins": 22,
+    "totalTranslations": 312,
     "totalContributors": 1,
     "totalStars": 7,
     "languageDistribution": {
-      "zh-cn": 257,
+      "zh-cn": 265,
       "zh-tw": 47
     }
   }
