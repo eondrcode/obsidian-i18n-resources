@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T19:37:49.418Z",
+  "lastUpdated": "2026-06-16T19:28:00.749Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -509,23 +509,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 208,
+      "repoSize": 282,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-31T08:54:21Z",
-      "repoUpdatedAt": "2026-06-14T15:32:37Z",
-      "lastPushedAt": "2026-06-14T15:32:34Z",
-      "recentCommits30d": 29,
+      "repoUpdatedAt": "2026-06-16T14:48:48Z",
+      "lastPushedAt": "2026-06-16T14:40:01Z",
+      "recentCommits30d": 35,
       "totalContributors": 1,
-      "activityScore": 0.515,
+      "activityScore": 0.545,
       "pluginCount": 6,
       "translationCount": 6,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-06-14T15:32:34.647Z"
+      "lastManifestUpdate": "2026-06-16T14:40:00.103Z"
     },
     "agarcabin/obsidian-translations": {
       "authorName": "agarcabin",
@@ -748,8 +748,8 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.515,
-        "lastActiveAt": "2026-06-14T15:32:34Z"
+        "activityScore": 0.545,
+        "lastActiveAt": "2026-06-16T14:40:01Z"
       },
       {
         "name": "win2ter",
@@ -820,7 +820,7 @@
   },
   "summary": {
     "totalRepos": 20,
-    "totalPlugins": 22,
+    "totalPlugins": 6,
     "totalTranslations": 312,
     "totalContributors": 1,
     "totalStars": 7,
