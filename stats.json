@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T01:01:51.947Z",
+  "lastUpdated": "2026-06-17T12:31:43.036Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -691,6 +691,39 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-06-16T15:39:59.131Z"
+    },
+    "yunrr/obsidian-translations": {
+      "authorName": "yunrr",
+      "authorId": 144842921,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/yunrr",
+      "repoName": "obsidian-translations",
+      "repoFullName": "yunrr/obsidian-translations",
+      "description": "一个AI批量翻译的仓库",
+      "htmlUrl": "https://github.com/yunrr/obsidian-translations",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": true,
+      "isFork": false,
+      "repoSize": 30909,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-06-16T22:20:06Z",
+      "repoUpdatedAt": "2026-06-17T09:29:34Z",
+      "lastPushedAt": "2026-06-17T01:02:31Z",
+      "recentCommits30d": 100,
+      "totalContributors": 1,
+      "activityScore": 0,
+      "pluginCount": 4581,
+      "translationCount": 9366,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-06-16T23:32:37.362Z"
     }
   },
   "leaderboard": {
@@ -852,14 +885,14 @@
     ]
   },
   "summary": {
-    "totalRepos": 21,
+    "totalRepos": 22,
     "totalPlugins": 6,
-    "totalTranslations": 313,
-    "totalContributors": 21,
+    "totalTranslations": 9679,
+    "totalContributors": 22,
     "totalStars": 7,
     "languageDistribution": {
       "zh-tw": 47,
-      "zh-cn": 266
+      "zh-cn": 9632
     }
   }
 }
