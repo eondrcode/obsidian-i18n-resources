@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T19:28:00.749Z",
+  "lastUpdated": "2026-06-17T01:01:51.947Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -658,6 +658,39 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-06-14T12:10:17.235Z"
+    },
+    "zhouying92/obsidian-i18n-resources": {
+      "authorName": "zhouying92",
+      "authorId": 204734699,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/204734699?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/zhouying92",
+      "repoName": "obsidian-i18n-resources",
+      "repoFullName": "zhouying92/obsidian-i18n-resources",
+      "description": "obsidian插件汉化",
+      "htmlUrl": "https://github.com/zhouying92/obsidian-i18n-resources",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 18,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-06-14T16:49:17Z",
+      "repoUpdatedAt": "2026-06-16T16:17:53Z",
+      "lastPushedAt": "2026-06-16T16:17:48Z",
+      "recentCommits30d": 6,
+      "totalContributors": 1,
+      "activityScore": 0.3,
+      "pluginCount": 1,
+      "translationCount": 1,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-06-16T15:39:59.131Z"
     }
   },
   "leaderboard": {
@@ -819,14 +852,14 @@
     ]
   },
   "summary": {
-    "totalRepos": 20,
+    "totalRepos": 21,
     "totalPlugins": 6,
-    "totalTranslations": 312,
-    "totalContributors": 1,
+    "totalTranslations": 313,
+    "totalContributors": 21,
     "totalStars": 7,
     "languageDistribution": {
-      "zh-cn": 265,
-      "zh-tw": 47
+      "zh-tw": 47,
+      "zh-cn": 266
     }
   }
 }
