@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T17:47:39.831Z",
+  "lastUpdated": "2026-06-20T17:15:39.187Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -57,9 +57,9 @@
       "repoCreatedAt": "2026-03-15T08:46:10Z",
       "repoUpdatedAt": "2026-06-10T10:29:06Z",
       "lastPushedAt": "2026-06-10T10:28:27Z",
-      "recentCommits30d": 28,
+      "recentCommits30d": 24,
       "totalContributors": 1,
-      "activityScore": 0.541,
+      "activityScore": 0.521,
       "pluginCount": 22,
       "translationCount": 22,
       "languages": [
@@ -410,14 +410,14 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 971,
+      "repoSize": 1061,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-06-19T17:38:47Z",
-      "lastPushedAt": "2026-06-19T17:38:44Z",
+      "repoUpdatedAt": "2026-06-19T20:22:16Z",
+      "lastPushedAt": "2026-06-19T20:22:14Z",
       "recentCommits30d": 100,
       "totalContributors": 1,
       "activityScore": 0.85,
@@ -426,7 +426,7 @@
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-06-19T17:38:51.318Z"
+      "lastManifestUpdate": "2026-06-19T20:22:21.191Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -763,7 +763,7 @@
           "zh-tw"
         ],
         "activityScore": 0.85,
-        "lastActiveAt": "2026-06-19T17:38:44Z"
+        "lastActiveAt": "2026-06-19T20:22:14Z"
       },
       {
         "name": "ZergoWL",
@@ -814,7 +814,7 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.541,
+        "activityScore": 0.521,
         "lastActiveAt": "2026-06-10T10:28:27Z"
       },
       {
