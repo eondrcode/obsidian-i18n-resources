@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T19:18:27.834Z",
+  "lastUpdated": "2026-06-22T23:45:15.106Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -724,6 +724,39 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-06-16T23:32:37.362Z"
+    },
+    "Ouroboros-XX/obsidian-plugin-translations": {
+      "authorName": "Ouroboros-XX",
+      "authorId": 283668085,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/283668085?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/Ouroboros-XX",
+      "repoName": "obsidian-plugin-translations",
+      "repoFullName": "Ouroboros-XX/obsidian-plugin-translations",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/Ouroboros-XX/obsidian-plugin-translations",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 322,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-06-22T16:56:51Z",
+      "repoUpdatedAt": "2026-06-22T19:24:10Z",
+      "lastPushedAt": "2026-06-22T19:24:07Z",
+      "recentCommits30d": 59,
+      "totalContributors": 1,
+      "activityScore": 0.795,
+      "pluginCount": 26,
+      "translationCount": 26,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-06-22T17:54:24.780Z"
     }
   },
   "leaderboard": {
@@ -741,6 +774,7 @@
     ],
     "topReposByActivity": [
       "Chico890921/obsidian-translations",
+      "Ouroboros-XX/obsidian-plugin-translations",
       "ZergoWL/obsidian-i18n-resources",
       "Fish-Ring/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
@@ -748,8 +782,7 @@
       "amouses/haokunyo-resources",
       "zhouying92/obsidian-i18n-resources",
       "yubolun/obsidian-i18n-resources",
-      "voxrs/obsidian-translations",
-      "xiaosong8584/obsidian-i18n-resources"
+      "voxrs/obsidian-translations"
     ],
     "topAuthors": [
       {
@@ -764,6 +797,19 @@
         ],
         "activityScore": 0.85,
         "lastActiveAt": "2026-06-19T20:22:14Z"
+      },
+      {
+        "name": "Ouroboros-XX",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/283668085?v=4",
+        "htmlUrl": "https://github.com/Ouroboros-XX",
+        "totalPlugins": 26,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.795,
+        "lastActiveAt": "2026-06-22T19:24:07Z"
       },
       {
         "name": "ZergoWL",
@@ -868,31 +914,18 @@
         ],
         "activityScore": 0.3,
         "lastActiveAt": "2026-05-16T17:07:33Z"
-      },
-      {
-        "name": "lizhengyi3003",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/81514724?v=4",
-        "htmlUrl": "https://github.com/lizhengyi3003",
-        "totalPlugins": 23,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.3,
-        "lastActiveAt": "2026-05-23T06:04:07Z"
       }
     ]
   },
   "summary": {
-    "totalRepos": 22,
+    "totalRepos": 23,
     "totalPlugins": 0,
-    "totalTranslations": 9679,
-    "totalContributors": 0,
+    "totalTranslations": 9705,
+    "totalContributors": 23,
     "totalStars": 7,
     "languageDistribution": {
-      "zh-cn": 9632,
-      "zh-tw": 47
+      "zh-tw": 47,
+      "zh-cn": 9658
     }
   }
 }
