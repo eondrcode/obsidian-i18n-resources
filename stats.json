@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T17:19:17.001Z",
+  "lastUpdated": "2026-06-22T19:18:27.834Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -385,9 +385,9 @@
       "repoCreatedAt": "2026-05-23T05:33:29Z",
       "repoUpdatedAt": "2026-05-23T06:04:09Z",
       "lastPushedAt": "2026-05-23T06:04:07Z",
-      "recentCommits30d": 49,
+      "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.645,
+      "activityScore": 0.3,
       "pluginCount": 23,
       "translationCount": 23,
       "languages": [
@@ -585,7 +585,7 @@
       "lastPushedAt": "2026-06-15T09:13:48Z",
       "recentCommits30d": 43,
       "totalContributors": 1,
-      "activityScore": 0.715,
+      "activityScore": 0.615,
       "pluginCount": 22,
       "translationCount": 28,
       "languages": [
@@ -742,14 +742,14 @@
     "topReposByActivity": [
       "Chico890921/obsidian-translations",
       "ZergoWL/obsidian-i18n-resources",
-      "lizhengyi3003/obsidian-i18n-resources",
       "Fish-Ring/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
       "amouses/haokunyo-resources",
       "zhouying92/obsidian-i18n-resources",
       "yubolun/obsidian-i18n-resources",
-      "voxrs/obsidian-translations"
+      "voxrs/obsidian-translations",
+      "xiaosong8584/obsidian-i18n-resources"
     ],
     "topAuthors": [
       {
@@ -775,21 +775,8 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.715,
+        "activityScore": 0.615,
         "lastActiveAt": "2026-06-15T09:13:48Z"
-      },
-      {
-        "name": "lizhengyi3003",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/81514724?v=4",
-        "htmlUrl": "https://github.com/lizhengyi3003",
-        "totalPlugins": 23,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.645,
-        "lastActiveAt": "2026-05-23T06:04:07Z"
       },
       {
         "name": "Fish-Ring",
@@ -881,6 +868,19 @@
         ],
         "activityScore": 0.3,
         "lastActiveAt": "2026-05-16T17:07:33Z"
+      },
+      {
+        "name": "lizhengyi3003",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/81514724?v=4",
+        "htmlUrl": "https://github.com/lizhengyi3003",
+        "totalPlugins": 23,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.3,
+        "lastActiveAt": "2026-05-23T06:04:07Z"
       }
     ]
   },
