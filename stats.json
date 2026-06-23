@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T23:45:15.106Z",
+  "lastUpdated": "2026-06-23T17:44:38.923Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -57,9 +57,9 @@
       "repoCreatedAt": "2026-03-15T08:46:10Z",
       "repoUpdatedAt": "2026-06-10T10:29:06Z",
       "lastPushedAt": "2026-06-10T10:28:27Z",
-      "recentCommits30d": 24,
+      "recentCommits30d": 16,
       "totalContributors": 1,
-      "activityScore": 0.521,
+      "activityScore": 0.48100000000000004,
       "pluginCount": 22,
       "translationCount": 22,
       "languages": [
@@ -519,7 +519,7 @@
       "lastPushedAt": "2026-06-16T14:40:01Z",
       "recentCommits30d": 35,
       "totalContributors": 1,
-      "activityScore": 0.545,
+      "activityScore": 0.445,
       "pluginCount": 6,
       "translationCount": 6,
       "languages": [
@@ -776,9 +776,9 @@
       "Chico890921/obsidian-translations",
       "Ouroboros-XX/obsidian-plugin-translations",
       "ZergoWL/obsidian-i18n-resources",
-      "Fish-Ring/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
+      "Fish-Ring/obsidian-i18n-resources",
       "amouses/haokunyo-resources",
       "zhouying92/obsidian-i18n-resources",
       "yubolun/obsidian-i18n-resources",
@@ -825,19 +825,6 @@
         "lastActiveAt": "2026-06-15T09:13:48Z"
       },
       {
-        "name": "Fish-Ring",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/139535469?v=4",
-        "htmlUrl": "https://github.com/Fish-Ring",
-        "totalPlugins": 6,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.545,
-        "lastActiveAt": "2026-06-16T14:40:01Z"
-      },
-      {
         "name": "Anonym0usPlayer",
         "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
         "htmlUrl": "https://github.com/Anonym0usPlayer",
@@ -847,7 +834,7 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.521,
+        "activityScore": 0.48100000000000004,
         "lastActiveAt": "2026-06-10T10:28:27Z"
       },
       {
@@ -862,6 +849,19 @@
         ],
         "activityScore": 0.466,
         "lastActiveAt": "2026-05-30T11:28:55Z"
+      },
+      {
+        "name": "Fish-Ring",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/139535469?v=4",
+        "htmlUrl": "https://github.com/Fish-Ring",
+        "totalPlugins": 6,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.445,
+        "lastActiveAt": "2026-06-16T14:40:01Z"
       },
       {
         "name": "amouses",
@@ -921,11 +921,11 @@
     "totalRepos": 23,
     "totalPlugins": 0,
     "totalTranslations": 9705,
-    "totalContributors": 23,
+    "totalContributors": 0,
     "totalStars": 7,
     "languageDistribution": {
-      "zh-tw": 47,
-      "zh-cn": 9658
+      "zh-cn": 9658,
+      "zh-tw": 47
     }
   }
 }
