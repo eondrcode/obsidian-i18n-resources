@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T17:47:15.737Z",
+  "lastUpdated": "2026-06-25T18:02:52.751Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -57,9 +57,9 @@
       "repoCreatedAt": "2026-03-15T08:46:10Z",
       "repoUpdatedAt": "2026-06-10T10:29:06Z",
       "lastPushedAt": "2026-06-10T10:28:27Z",
-      "recentCommits30d": 16,
+      "recentCommits30d": 8,
       "totalContributors": 1,
-      "activityScore": 0.48100000000000004,
+      "activityScore": 0.441,
       "pluginCount": 22,
       "translationCount": 22,
       "languages": [
@@ -311,23 +311,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 7,
+      "repoSize": 61,
       "stars": 1,
       "forks": 1,
       "watchers": 1,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-04-27T03:48:33Z",
-      "repoUpdatedAt": "2026-05-08T13:43:12Z",
-      "lastPushedAt": "2026-04-27T05:27:11Z",
-      "recentCommits30d": 0,
+      "repoUpdatedAt": "2026-06-25T07:40:02Z",
+      "lastPushedAt": "2026-06-25T07:40:00Z",
+      "recentCommits30d": 14,
       "totalContributors": 1,
-      "activityScore": 0.091,
-      "pluginCount": 2,
-      "translationCount": 2,
+      "activityScore": 0.461,
+      "pluginCount": 7,
+      "translationCount": 7,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-04-27T05:27:10.388Z"
+      "lastManifestUpdate": "2026-06-25T07:39:59.656Z"
     },
     "Dxnixub/obsidian-translations": {
       "authorName": "Dxnixub",
@@ -451,9 +451,9 @@
       "repoCreatedAt": "2026-03-13T13:28:21Z",
       "repoUpdatedAt": "2026-05-26T15:00:48Z",
       "lastPushedAt": "2026-05-26T14:41:42Z",
-      "recentCommits30d": 2,
+      "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.18,
+      "activityScore": 0.07,
       "pluginCount": 1,
       "translationCount": 1,
       "languages": [
@@ -684,7 +684,7 @@
       "lastPushedAt": "2026-06-18T07:40:48Z",
       "recentCommits30d": 8,
       "totalContributors": 1,
-      "activityScore": 0.31,
+      "activityScore": 0.21,
       "pluginCount": 1,
       "translationCount": 1,
       "languages": [
@@ -740,23 +740,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 322,
+      "repoSize": 630,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-06-22T16:56:51Z",
-      "repoUpdatedAt": "2026-06-24T17:08:44Z",
-      "lastPushedAt": "2026-06-24T17:08:08Z",
-      "recentCommits30d": 61,
+      "repoUpdatedAt": "2026-06-25T05:17:17Z",
+      "lastPushedAt": "2026-06-25T05:17:15Z",
+      "recentCommits30d": 100,
       "totalContributors": 1,
-      "activityScore": 0.805,
-      "pluginCount": 27,
-      "translationCount": 27,
+      "activityScore": 0.85,
+      "pluginCount": 45,
+      "translationCount": 45,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-06-24T17:08:08.104Z"
+      "lastManifestUpdate": "2026-06-25T05:17:15.693Z"
     }
   },
   "leaderboard": {
@@ -776,11 +776,11 @@
       "Ouroboros-XX/obsidian-plugin-translations",
       "Chico890921/obsidian-translations",
       "ZergoWL/obsidian-i18n-resources",
-      "Anonym0usPlayer/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
+      "ljded/obsidian-i18n-resources",
       "Fish-Ring/obsidian-i18n-resources",
+      "Anonym0usPlayer/obsidian-i18n-resources",
       "amouses/haokunyo-resources",
-      "zhouying92/obsidian-i18n-resources",
       "yubolun/obsidian-i18n-resources",
       "voxrs/obsidian-translations"
     ],
@@ -789,14 +789,14 @@
         "name": "Ouroboros-XX",
         "avatarUrl": "https://avatars.githubusercontent.com/u/283668085?v=4",
         "htmlUrl": "https://github.com/Ouroboros-XX",
-        "totalPlugins": 27,
+        "totalPlugins": 45,
         "totalStars": 0,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.805,
-        "lastActiveAt": "2026-06-24T17:08:08Z"
+        "activityScore": 0.85,
+        "lastActiveAt": "2026-06-25T05:17:15Z"
       },
       {
         "name": "Chico890921",
@@ -825,19 +825,6 @@
         "lastActiveAt": "2026-06-15T09:13:48Z"
       },
       {
-        "name": "Anonym0usPlayer",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
-        "htmlUrl": "https://github.com/Anonym0usPlayer",
-        "totalPlugins": 22,
-        "totalStars": 1,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.48100000000000004,
-        "lastActiveAt": "2026-06-10T10:28:27Z"
-      },
-      {
         "name": "win2ter",
         "avatarUrl": "https://avatars.githubusercontent.com/u/35884432?v=4",
         "htmlUrl": "https://github.com/win2ter",
@@ -849,6 +836,19 @@
         ],
         "activityScore": 0.466,
         "lastActiveAt": "2026-05-30T11:28:55Z"
+      },
+      {
+        "name": "ljded",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/68012354?v=4",
+        "htmlUrl": "https://github.com/ljded",
+        "totalPlugins": 7,
+        "totalStars": 1,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.461,
+        "lastActiveAt": "2026-06-25T07:40:00Z"
       },
       {
         "name": "Fish-Ring",
@@ -864,6 +864,19 @@
         "lastActiveAt": "2026-06-16T14:40:01Z"
       },
       {
+        "name": "Anonym0usPlayer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
+        "htmlUrl": "https://github.com/Anonym0usPlayer",
+        "totalPlugins": 22,
+        "totalStars": 1,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.441,
+        "lastActiveAt": "2026-06-10T10:28:27Z"
+      },
+      {
         "name": "amouses",
         "avatarUrl": "https://avatars.githubusercontent.com/u/67671580?v=4",
         "htmlUrl": "https://github.com/amouses",
@@ -875,19 +888,6 @@
         ],
         "activityScore": 0.345,
         "lastActiveAt": "2026-06-12T11:22:18Z"
-      },
-      {
-        "name": "zhouying92",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/204734699?v=4",
-        "htmlUrl": "https://github.com/zhouying92",
-        "totalPlugins": 1,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.31,
-        "lastActiveAt": "2026-06-18T07:40:48Z"
       },
       {
         "name": "yubolun",
@@ -919,12 +919,12 @@
   },
   "summary": {
     "totalRepos": 23,
-    "totalPlugins": 27,
-    "totalTranslations": 9706,
-    "totalContributors": 1,
+    "totalPlugins": 49,
+    "totalTranslations": 9729,
+    "totalContributors": 2,
     "totalStars": 7,
     "languageDistribution": {
-      "zh-cn": 9659,
+      "zh-cn": 9682,
       "zh-tw": 47
     }
   }
