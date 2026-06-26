@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T18:02:52.751Z",
+  "lastUpdated": "2026-06-26T17:29:34.318Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -680,7 +680,7 @@
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-06-14T16:49:17Z",
-      "repoUpdatedAt": "2026-06-18T07:40:50Z",
+      "repoUpdatedAt": "2026-06-26T06:02:18Z",
       "lastPushedAt": "2026-06-18T07:40:48Z",
       "recentCommits30d": 8,
       "totalContributors": 1,
@@ -708,12 +708,12 @@
       "isArchived": true,
       "isFork": false,
       "repoSize": 30909,
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
-      "watchers": 0,
+      "watchers": 1,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-06-16T22:20:06Z",
-      "repoUpdatedAt": "2026-06-17T09:29:34Z",
+      "repoUpdatedAt": "2026-06-26T09:50:36Z",
       "lastPushedAt": "2026-06-17T01:02:31Z",
       "recentCommits30d": 100,
       "totalContributors": 1,
@@ -766,11 +766,11 @@
       "Ayanami-Shinji/obsidian-i18n-resources",
       "ljded/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
+      "yunrr/obsidian-translations",
       "voxrs/obsidian-translations",
       "xiaosong8584/obsidian-i18n-resources",
       "yeeun4028/obsidian-i18n-resources",
-      "daoziy/obsidian-i18n-daoziz",
-      "AscerChan/obsidian-i18n-resources"
+      "daoziy/obsidian-i18n-daoziz"
     ],
     "topReposByActivity": [
       "Ouroboros-XX/obsidian-plugin-translations",
@@ -919,10 +919,10 @@
   },
   "summary": {
     "totalRepos": 23,
-    "totalPlugins": 49,
+    "totalPlugins": 0,
     "totalTranslations": 9729,
-    "totalContributors": 2,
-    "totalStars": 7,
+    "totalContributors": 0,
+    "totalStars": 8,
     "languageDistribution": {
       "zh-cn": 9682,
       "zh-tw": 47
