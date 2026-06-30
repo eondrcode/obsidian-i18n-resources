@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T18:03:36.189Z",
+  "lastUpdated": "2026-06-30T17:46:38.274Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -517,9 +517,9 @@
       "repoCreatedAt": "2026-05-31T08:54:21Z",
       "repoUpdatedAt": "2026-06-16T14:48:48Z",
       "lastPushedAt": "2026-06-16T14:40:01Z",
-      "recentCommits30d": 35,
+      "recentCommits30d": 26,
       "totalContributors": 1,
-      "activityScore": 0.445,
+      "activityScore": 0.4,
       "pluginCount": 6,
       "translationCount": 6,
       "languages": [
@@ -777,8 +777,8 @@
       "Chico890921/obsidian-translations",
       "ZergoWL/obsidian-i18n-resources",
       "ljded/obsidian-i18n-resources",
-      "Fish-Ring/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
+      "Fish-Ring/obsidian-i18n-resources",
       "amouses/haokunyo-resources",
       "yubolun/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
@@ -838,19 +838,6 @@
         "lastActiveAt": "2026-06-25T07:40:00Z"
       },
       {
-        "name": "Fish-Ring",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/139535469?v=4",
-        "htmlUrl": "https://github.com/Fish-Ring",
-        "totalPlugins": 6,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.445,
-        "lastActiveAt": "2026-06-16T14:40:01Z"
-      },
-      {
         "name": "Anonym0usPlayer",
         "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
         "htmlUrl": "https://github.com/Anonym0usPlayer",
@@ -862,6 +849,19 @@
         ],
         "activityScore": 0.441,
         "lastActiveAt": "2026-06-10T10:28:27Z"
+      },
+      {
+        "name": "Fish-Ring",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/139535469?v=4",
+        "htmlUrl": "https://github.com/Fish-Ring",
+        "totalPlugins": 6,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.4,
+        "lastActiveAt": "2026-06-16T14:40:01Z"
       },
       {
         "name": "amouses",
@@ -919,9 +919,9 @@
   },
   "summary": {
     "totalRepos": 23,
-    "totalPlugins": 47,
+    "totalPlugins": 0,
     "totalTranslations": 9729,
-    "totalContributors": 1,
+    "totalContributors": 0,
     "totalStars": 8,
     "languageDistribution": {
       "zh-cn": 9682,
