@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T17:46:10.134Z",
+  "lastUpdated": "2026-07-02T17:27:31.324Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -321,7 +321,7 @@
       "lastPushedAt": "2026-06-25T07:40:00Z",
       "recentCommits30d": 14,
       "totalContributors": 1,
-      "activityScore": 0.461,
+      "activityScore": 0.361,
       "pluginCount": 7,
       "translationCount": 7,
       "languages": [
@@ -410,15 +410,15 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 883,
+      "repoSize": 1243,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-07-01T17:42:16Z",
-      "lastPushedAt": "2026-07-01T17:42:13Z",
-      "recentCommits30d": 76,
+      "repoUpdatedAt": "2026-07-01T18:47:26Z",
+      "lastPushedAt": "2026-07-01T18:47:22Z",
+      "recentCommits30d": 96,
       "totalContributors": 1,
       "activityScore": 0.85,
       "pluginCount": 47,
@@ -426,7 +426,7 @@
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-07-01T17:42:03.990Z"
+      "lastManifestUpdate": "2026-07-01T18:47:12.674Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -550,9 +550,9 @@
       "repoCreatedAt": "2026-05-29T14:28:25Z",
       "repoUpdatedAt": "2026-06-02T17:14:29Z",
       "lastPushedAt": "2026-06-02T17:14:27Z",
-      "recentCommits30d": 6,
+      "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.26,
+      "activityScore": 0.13,
       "pluginCount": 4,
       "translationCount": 5,
       "languages": [
@@ -750,7 +750,7 @@
       "lastPushedAt": "2026-06-25T05:17:15Z",
       "recentCommits30d": 100,
       "totalContributors": 1,
-      "activityScore": 0.85,
+      "activityScore": 0.75,
       "pluginCount": 45,
       "translationCount": 45,
       "languages": [
@@ -776,8 +776,8 @@
       "Chico890921/obsidian-translations",
       "Ouroboros-XX/obsidian-plugin-translations",
       "ZergoWL/obsidian-i18n-resources",
-      "ljded/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
+      "ljded/obsidian-i18n-resources",
       "amouses/haokunyo-resources",
       "Fish-Ring/obsidian-i18n-resources",
       "yubolun/obsidian-i18n-resources",
@@ -796,7 +796,7 @@
           "zh-tw"
         ],
         "activityScore": 0.85,
-        "lastActiveAt": "2026-07-01T17:42:13Z"
+        "lastActiveAt": "2026-07-01T18:47:22Z"
       },
       {
         "name": "Ouroboros-XX",
@@ -808,7 +808,7 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.85,
+        "activityScore": 0.75,
         "lastActiveAt": "2026-06-25T05:17:15Z"
       },
       {
@@ -825,19 +825,6 @@
         "lastActiveAt": "2026-06-15T09:13:48Z"
       },
       {
-        "name": "ljded",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/68012354?v=4",
-        "htmlUrl": "https://github.com/ljded",
-        "totalPlugins": 7,
-        "totalStars": 1,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.461,
-        "lastActiveAt": "2026-06-25T07:40:00Z"
-      },
-      {
         "name": "Anonym0usPlayer",
         "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
         "htmlUrl": "https://github.com/Anonym0usPlayer",
@@ -849,6 +836,19 @@
         ],
         "activityScore": 0.441,
         "lastActiveAt": "2026-06-10T10:28:27Z"
+      },
+      {
+        "name": "ljded",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/68012354?v=4",
+        "htmlUrl": "https://github.com/ljded",
+        "totalPlugins": 7,
+        "totalStars": 1,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.361,
+        "lastActiveAt": "2026-06-25T07:40:00Z"
       },
       {
         "name": "amouses",
