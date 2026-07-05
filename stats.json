@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-05T10:45:48.698Z",
+  "lastUpdated": "2026-07-05T16:56:42.067Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -57,9 +57,9 @@
       "repoCreatedAt": "2026-03-15T08:46:10Z",
       "repoUpdatedAt": "2026-06-10T10:29:06Z",
       "lastPushedAt": "2026-06-10T10:28:27Z",
-      "recentCommits30d": 8,
+      "recentCommits30d": 6,
       "totalContributors": 1,
-      "activityScore": 0.441,
+      "activityScore": 0.431,
       "pluginCount": 22,
       "translationCount": 22,
       "languages": [
@@ -708,12 +708,12 @@
       "isArchived": true,
       "isFork": false,
       "repoSize": 30909,
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
-      "watchers": 1,
+      "watchers": 2,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-06-16T22:20:06Z",
-      "repoUpdatedAt": "2026-06-26T09:50:36Z",
+      "repoUpdatedAt": "2026-07-05T15:47:00Z",
       "lastPushedAt": "2026-06-17T01:02:31Z",
       "recentCommits30d": 100,
       "totalContributors": 1,
@@ -795,11 +795,11 @@
   "leaderboard": {
     "topReposByStars": [
       "yubolun/obsidian-i18n-resources",
+      "yunrr/obsidian-translations",
       "Anonym0usPlayer/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
       "ljded/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
-      "yunrr/obsidian-translations",
       "voxrs/obsidian-translations",
       "xiaosong8584/obsidian-i18n-resources",
       "yeeun4028/obsidian-i18n-resources",
@@ -867,7 +867,7 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.441,
+        "activityScore": 0.431,
         "lastActiveAt": "2026-06-10T10:28:27Z"
       },
       {
@@ -954,11 +954,11 @@
     "totalRepos": 24,
     "totalPlugins": 0,
     "totalTranslations": 9735,
-    "totalContributors": 24,
-    "totalStars": 8,
+    "totalContributors": 0,
+    "totalStars": 9,
     "languageDistribution": {
-      "zh-tw": 47,
-      "zh-cn": 9688
+      "zh-cn": 9688,
+      "zh-tw": 47
     }
   }
 }
