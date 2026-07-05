@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-04T16:54:33.837Z",
+  "lastUpdated": "2026-07-05T10:45:48.698Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -757,6 +757,39 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-07-03T11:22:58.772Z"
+    },
+    "ydpaiwt/obsidian-i18n-resources": {
+      "authorName": "ydpaiwt",
+      "authorId": 67509217,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/67509217?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/ydpaiwt",
+      "repoName": "obsidian-i18n-resources",
+      "repoFullName": "ydpaiwt/obsidian-i18n-resources",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/ydpaiwt/obsidian-i18n-resources",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 5,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-06-28T09:39:52Z",
+      "repoUpdatedAt": "2026-06-28T09:40:30Z",
+      "lastPushedAt": "2026-06-28T09:40:27Z",
+      "recentCommits30d": 5,
+      "totalContributors": 1,
+      "activityScore": 0.195,
+      "pluginCount": 1,
+      "translationCount": 1,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-06-28T09:40:27.495Z"
     }
   },
   "leaderboard": {
@@ -918,14 +951,14 @@
     ]
   },
   "summary": {
-    "totalRepos": 23,
+    "totalRepos": 24,
     "totalPlugins": 0,
-    "totalTranslations": 9734,
-    "totalContributors": 0,
+    "totalTranslations": 9735,
+    "totalContributors": 24,
     "totalStars": 8,
     "languageDistribution": {
-      "zh-cn": 9687,
-      "zh-tw": 47
+      "zh-tw": 47,
+      "zh-cn": 9688
     }
   }
 }
