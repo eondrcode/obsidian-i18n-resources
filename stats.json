@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-09T17:47:39.200Z",
+  "lastUpdated": "2026-07-10T17:40:40.542Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -57,9 +57,9 @@
       "repoCreatedAt": "2026-03-15T08:46:10Z",
       "repoUpdatedAt": "2026-06-10T10:29:06Z",
       "lastPushedAt": "2026-06-10T10:28:27Z",
-      "recentCommits30d": 2,
+      "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.41100000000000003,
+      "activityScore": 0.301,
       "pluginCount": 22,
       "translationCount": 22,
       "languages": [
@@ -583,9 +583,9 @@
       "repoCreatedAt": "2026-06-01T03:09:35Z",
       "repoUpdatedAt": "2026-07-03T09:30:29Z",
       "lastPushedAt": "2026-07-03T09:30:22Z",
-      "recentCommits30d": 14,
+      "recentCommits30d": 5,
       "totalContributors": 1,
-      "activityScore": 0.57,
+      "activityScore": 0.425,
       "pluginCount": 22,
       "translationCount": 28,
       "languages": [
@@ -750,7 +750,7 @@
       "lastPushedAt": "2026-07-03T11:22:59Z",
       "recentCommits30d": 100,
       "totalContributors": 1,
-      "activityScore": 0.85,
+      "activityScore": 0.75,
       "pluginCount": 50,
       "translationCount": 50,
       "languages": [
@@ -809,28 +809,15 @@
       "Chico890921/obsidian-translations",
       "Ouroboros-XX/obsidian-plugin-translations",
       "ZergoWL/obsidian-i18n-resources",
-      "Anonym0usPlayer/obsidian-i18n-resources",
       "ljded/obsidian-i18n-resources",
       "Fish-Ring/obsidian-i18n-resources",
       "yubolun/obsidian-i18n-resources",
+      "Anonym0usPlayer/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
       "xiaosong8584/obsidian-i18n-resources",
       "lizhengyi3003/obsidian-i18n-resources"
     ],
     "topAuthors": [
-      {
-        "name": "Ouroboros-XX",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/283668085?v=4",
-        "htmlUrl": "https://github.com/Ouroboros-XX",
-        "totalPlugins": 50,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.85,
-        "lastActiveAt": "2026-07-03T11:22:59Z"
-      },
       {
         "name": "Chico890921",
         "avatarUrl": "https://avatars.githubusercontent.com/u/32149972?v=4",
@@ -845,6 +832,19 @@
         "lastActiveAt": "2026-07-06T22:12:56Z"
       },
       {
+        "name": "Ouroboros-XX",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/283668085?v=4",
+        "htmlUrl": "https://github.com/Ouroboros-XX",
+        "totalPlugins": 50,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.75,
+        "lastActiveAt": "2026-07-03T11:22:59Z"
+      },
+      {
         "name": "ZergoWL",
         "avatarUrl": "https://avatars.githubusercontent.com/u/95464162?v=4",
         "htmlUrl": "https://github.com/ZergoWL",
@@ -854,21 +854,8 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.57,
+        "activityScore": 0.425,
         "lastActiveAt": "2026-07-03T09:30:22Z"
-      },
-      {
-        "name": "Anonym0usPlayer",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
-        "htmlUrl": "https://github.com/Anonym0usPlayer",
-        "totalPlugins": 22,
-        "totalStars": 1,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.41100000000000003,
-        "lastActiveAt": "2026-06-10T10:28:27Z"
       },
       {
         "name": "ljded",
@@ -908,6 +895,19 @@
         ],
         "activityScore": 0.303,
         "lastActiveAt": "2026-04-23T06:19:45Z"
+      },
+      {
+        "name": "Anonym0usPlayer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/82373133?v=4",
+        "htmlUrl": "https://github.com/Anonym0usPlayer",
+        "totalPlugins": 22,
+        "totalStars": 1,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.301,
+        "lastActiveAt": "2026-06-10T10:28:27Z"
       },
       {
         "name": "win2ter",
