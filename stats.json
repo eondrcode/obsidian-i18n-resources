@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-16T17:03:30.822Z",
+  "lastUpdated": "2026-07-17T17:00:33.544Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -575,23 +575,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 872,
+      "repoSize": 637,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-06-01T03:09:35Z",
-      "repoUpdatedAt": "2026-07-13T05:28:57Z",
-      "lastPushedAt": "2026-07-13T05:28:56Z",
-      "recentCommits30d": 6,
+      "repoUpdatedAt": "2026-07-17T07:33:34Z",
+      "lastPushedAt": "2026-07-17T07:33:29Z",
+      "recentCommits30d": 8,
       "totalContributors": 1,
-      "activityScore": 0.53,
-      "pluginCount": 27,
-      "translationCount": 32,
+      "activityScore": 0.54,
+      "pluginCount": 35,
+      "translationCount": 40,
       "languages": [
         "zh-cn"
       ],
-      "lastManifestUpdate": "2026-07-13T05:28:18.685Z"
+      "lastManifestUpdate": "2026-07-17T07:33:22.362Z"
     },
     "amouses/haokunyo-resources": {
       "authorName": "amouses",
@@ -708,14 +708,14 @@
       "isArchived": true,
       "isFork": false,
       "repoSize": 30909,
-      "stars": 2,
+      "stars": 3,
       "forks": 0,
-      "watchers": 2,
+      "watchers": 3,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-06-16T22:20:06Z",
-      "repoUpdatedAt": "2026-07-05T15:47:00Z",
+      "repoUpdatedAt": "2026-07-17T07:01:37Z",
       "lastPushedAt": "2026-06-17T01:02:31Z",
-      "recentCommits30d": 100,
+      "recentCommits30d": 0,
       "totalContributors": 1,
       "activityScore": 0,
       "pluginCount": 4581,
@@ -894,14 +894,14 @@
         "name": "ZergoWL",
         "avatarUrl": "https://avatars.githubusercontent.com/u/95464162?v=4",
         "htmlUrl": "https://github.com/ZergoWL",
-        "totalPlugins": 27,
+        "totalPlugins": 35,
         "totalStars": 0,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.53,
-        "lastActiveAt": "2026-07-13T05:28:56Z"
+        "activityScore": 0.54,
+        "lastActiveAt": "2026-07-17T07:33:29Z"
       },
       {
         "name": "ljded",
@@ -985,12 +985,12 @@
   },
   "summary": {
     "totalRepos": 25,
-    "totalPlugins": 0,
-    "totalTranslations": 9756,
-    "totalContributors": 0,
-    "totalStars": 9,
+    "totalPlugins": 35,
+    "totalTranslations": 9764,
+    "totalContributors": 1,
+    "totalStars": 10,
     "languageDistribution": {
-      "zh-cn": 9709,
+      "zh-cn": 9717,
       "zh-tw": 47
     }
   }
