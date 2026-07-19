@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-18T16:44:37.995Z",
+  "lastUpdated": "2026-07-19T16:46:06.785Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -816,7 +816,7 @@
       "lastPushedAt": "2026-07-12T03:05:28Z",
       "recentCommits30d": 10,
       "totalContributors": 1,
-      "activityScore": 0.55,
+      "activityScore": 0.45,
       "pluginCount": 16,
       "translationCount": 17,
       "languages": [
@@ -874,8 +874,8 @@
     "topReposByActivity": [
       "Ouroboros-XX/obsidian-plugin-translations",
       "Chico890921/obsidian-translations",
-      "baduyifei/obsidian-i18n-resources",
       "ZergoWL/obsidian-i18n-resources",
+      "baduyifei/obsidian-i18n-resources",
       "ljded/obsidian-i18n-resources",
       "John-881/obsidian-i18n-resources",
       "yubolun/obsidian-i18n-resources",
@@ -911,19 +911,6 @@
         "lastActiveAt": "2026-07-06T22:12:56Z"
       },
       {
-        "name": "baduyifei",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/14105006?v=4",
-        "htmlUrl": "https://github.com/baduyifei",
-        "totalPlugins": 16,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.55,
-        "lastActiveAt": "2026-07-12T03:05:28Z"
-      },
-      {
         "name": "ZergoWL",
         "avatarUrl": "https://avatars.githubusercontent.com/u/95464162?v=4",
         "htmlUrl": "https://github.com/ZergoWL",
@@ -935,6 +922,19 @@
         ],
         "activityScore": 0.54,
         "lastActiveAt": "2026-07-17T07:33:29Z"
+      },
+      {
+        "name": "baduyifei",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/14105006?v=4",
+        "htmlUrl": "https://github.com/baduyifei",
+        "totalPlugins": 16,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.45,
+        "lastActiveAt": "2026-07-12T03:05:28Z"
       },
       {
         "name": "ljded",
