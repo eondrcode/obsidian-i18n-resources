@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T17:25:20.775Z",
+  "lastUpdated": "2026-07-21T17:06:39.492Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -708,12 +708,12 @@
       "isArchived": true,
       "isFork": false,
       "repoSize": 30909,
-      "stars": 3,
+      "stars": 5,
       "forks": 0,
-      "watchers": 3,
+      "watchers": 5,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-06-16T22:20:06Z",
-      "repoUpdatedAt": "2026-07-17T07:01:37Z",
+      "repoUpdatedAt": "2026-07-21T09:45:02Z",
       "lastPushedAt": "2026-06-17T01:02:31Z",
       "recentCommits30d": 0,
       "totalContributors": 1,
@@ -860,8 +860,8 @@
   },
   "leaderboard": {
     "topReposByStars": [
-      "yubolun/obsidian-i18n-resources",
       "yunrr/obsidian-translations",
+      "yubolun/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
       "ljded/obsidian-i18n-resources",
@@ -1021,7 +1021,7 @@
     "totalPlugins": 0,
     "totalTranslations": 9765,
     "totalContributors": 0,
-    "totalStars": 10,
+    "totalStars": 12,
     "languageDistribution": {
       "zh-cn": 9718,
       "zh-tw": 47
