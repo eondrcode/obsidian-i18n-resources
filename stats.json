@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T17:09:51.237Z",
+  "lastUpdated": "2026-07-24T17:20:34.746Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -585,7 +585,7 @@
       "lastPushedAt": "2026-07-17T07:33:29Z",
       "recentCommits30d": 8,
       "totalContributors": 1,
-      "activityScore": 0.54,
+      "activityScore": 0.44,
       "pluginCount": 35,
       "translationCount": 40,
       "languages": [
@@ -748,9 +748,9 @@
       "repoCreatedAt": "2026-06-22T16:56:51Z",
       "repoUpdatedAt": "2026-07-03T11:23:01Z",
       "lastPushedAt": "2026-07-03T11:22:59Z",
-      "recentCommits30d": 56,
+      "recentCommits30d": 54,
       "totalContributors": 1,
-      "activityScore": 0.68,
+      "activityScore": 0.67,
       "pluginCount": 50,
       "translationCount": 50,
       "languages": [
@@ -874,8 +874,8 @@
     "topReposByActivity": [
       "Chico890921/obsidian-translations",
       "Ouroboros-XX/obsidian-plugin-translations",
-      "ZergoWL/obsidian-i18n-resources",
       "baduyifei/obsidian-i18n-resources",
+      "ZergoWL/obsidian-i18n-resources",
       "ljded/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
@@ -907,21 +907,8 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.68,
+        "activityScore": 0.67,
         "lastActiveAt": "2026-07-03T11:22:59Z"
-      },
-      {
-        "name": "ZergoWL",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/95464162?v=4",
-        "htmlUrl": "https://github.com/ZergoWL",
-        "totalPlugins": 35,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.54,
-        "lastActiveAt": "2026-07-17T07:33:29Z"
       },
       {
         "name": "baduyifei",
@@ -935,6 +922,19 @@
         ],
         "activityScore": 0.45,
         "lastActiveAt": "2026-07-12T03:05:28Z"
+      },
+      {
+        "name": "ZergoWL",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/95464162?v=4",
+        "htmlUrl": "https://github.com/ZergoWL",
+        "totalPlugins": 35,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.44,
+        "lastActiveAt": "2026-07-17T07:33:29Z"
       },
       {
         "name": "ljded",
@@ -1018,9 +1018,9 @@
   },
   "summary": {
     "totalRepos": 26,
-    "totalPlugins": 47,
+    "totalPlugins": 0,
     "totalTranslations": 9765,
-    "totalContributors": 1,
+    "totalContributors": 0,
     "totalStars": 12,
     "languageDistribution": {
       "zh-cn": 9718,
