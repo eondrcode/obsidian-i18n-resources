@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-25T16:45:31.581Z",
+  "lastUpdated": "2026-07-26T16:48:56.526Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -33,6 +33,39 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-04-02T01:12:03.283Z"
+    },
+    "yunrr/obsidian-i18n-resources": {
+      "authorName": "yunrr",
+      "authorId": 144842921,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/yunrr",
+      "repoName": "obsidian-i18n-resources",
+      "repoFullName": "yunrr/obsidian-i18n-resources",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/yunrr/obsidian-i18n-resources",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": true,
+      "repoSize": 11294,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-07-26T10:02:54Z",
+      "repoUpdatedAt": "2026-07-26T11:25:38Z",
+      "lastPushedAt": "2026-07-26T11:25:29Z",
+      "recentCommits30d": 1,
+      "totalContributors": 2,
+      "activityScore": 0.505,
+      "pluginCount": 2877,
+      "translationCount": 3467,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-03-28T01:30:17.200Z"
     },
     "Anonym0usPlayer/obsidian-i18n-resources": {
       "authorName": "Anonym0usPlayer",
@@ -867,12 +900,13 @@
       "ljded/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
       "voxrs/obsidian-translations",
+      "yunrr/obsidian-i18n-resources",
       "xiaosong8584/obsidian-i18n-resources",
-      "yeeun4028/obsidian-i18n-resources",
-      "daoziy/obsidian-i18n-daoziz"
+      "yeeun4028/obsidian-i18n-resources"
     ],
     "topReposByActivity": [
       "Chico890921/obsidian-translations",
+      "yunrr/obsidian-i18n-resources",
       "Ouroboros-XX/obsidian-plugin-translations",
       "baduyifei/obsidian-i18n-resources",
       "ZergoWL/obsidian-i18n-resources",
@@ -880,8 +914,7 @@
       "win2ter/obsidian-translations",
       "xiaosong8584/obsidian-i18n-resources",
       "lizhengyi3003/obsidian-i18n-resources",
-      "yubolun/obsidian-i18n-resources",
-      "Ayanami-Shinji/obsidian-i18n-resources"
+      "yubolun/obsidian-i18n-resources"
     ],
     "topAuthors": [
       {
@@ -935,6 +968,19 @@
         ],
         "activityScore": 0.44,
         "lastActiveAt": "2026-07-17T07:33:29Z"
+      },
+      {
+        "name": "yunrr",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
+        "htmlUrl": "https://github.com/yunrr",
+        "totalPlugins": 7458,
+        "totalStars": 5,
+        "repoCount": 2,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.33666666666666667,
+        "lastActiveAt": "2026-07-26T11:25:29Z"
       },
       {
         "name": "Anonym0usPlayer",
@@ -1000,30 +1046,17 @@
         ],
         "activityScore": 0.253,
         "lastActiveAt": "2026-04-23T06:19:45Z"
-      },
-      {
-        "name": "Ayanami-Shinji",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/78525325?v=4",
-        "htmlUrl": "https://github.com/Ayanami-Shinji",
-        "totalPlugins": 37,
-        "totalStars": 1,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.251,
-        "lastActiveAt": "2026-03-20T13:53:54Z"
       }
     ]
   },
   "summary": {
-    "totalRepos": 26,
-    "totalPlugins": 0,
-    "totalTranslations": 9765,
-    "totalContributors": 0,
+    "totalRepos": 27,
+    "totalPlugins": 2877,
+    "totalTranslations": 13232,
+    "totalContributors": 2,
     "totalStars": 12,
     "languageDistribution": {
-      "zh-cn": 9718,
+      "zh-cn": 13185,
       "zh-tw": 47
     }
   }
