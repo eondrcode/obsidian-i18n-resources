@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-28T17:19:00.329Z",
+  "lastUpdated": "2026-07-29T17:04:35.012Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -443,15 +443,15 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 1454,
+      "repoSize": 1757,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-07-23T09:42:59Z",
-      "lastPushedAt": "2026-07-23T09:08:29Z",
-      "recentCommits30d": 86,
+      "repoUpdatedAt": "2026-07-29T15:14:13Z",
+      "lastPushedAt": "2026-07-29T15:09:59Z",
+      "recentCommits30d": 100,
       "totalContributors": 1,
       "activityScore": 0.85,
       "pluginCount": 47,
@@ -459,7 +459,7 @@
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-07-23T09:08:29.206Z"
+      "lastManifestUpdate": "2026-07-29T15:09:59.328Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -928,7 +928,7 @@
           "zh-tw"
         ],
         "activityScore": 0.85,
-        "lastActiveAt": "2026-07-23T09:08:29Z"
+        "lastActiveAt": "2026-07-29T15:09:59Z"
       },
       {
         "name": "Ouroboros-XX",
@@ -1051,9 +1051,9 @@
   },
   "summary": {
     "totalRepos": 27,
-    "totalPlugins": 0,
+    "totalPlugins": 47,
     "totalTranslations": 13232,
-    "totalContributors": 0,
+    "totalContributors": 1,
     "totalStars": 12,
     "languageDistribution": {
       "zh-cn": 13185,
