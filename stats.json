@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-01T16:49:32.815Z",
+  "lastUpdated": "2026-08-02T16:48:15.995Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -616,9 +616,9 @@
       "repoCreatedAt": "2026-06-01T03:09:35Z",
       "repoUpdatedAt": "2026-07-17T07:33:34Z",
       "lastPushedAt": "2026-07-17T07:33:29Z",
-      "recentCommits30d": 8,
+      "recentCommits30d": 5,
       "totalContributors": 1,
-      "activityScore": 0.44,
+      "activityScore": 0.425,
       "pluginCount": 35,
       "translationCount": 40,
       "languages": [
@@ -781,9 +781,9 @@
       "repoCreatedAt": "2026-06-22T16:56:51Z",
       "repoUpdatedAt": "2026-07-03T11:23:01Z",
       "lastPushedAt": "2026-07-03T11:22:59Z",
-      "recentCommits30d": 14,
+      "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.47,
+      "activityScore": 0.3,
       "pluginCount": 50,
       "translationCount": 50,
       "languages": [
@@ -907,13 +907,13 @@
     "topReposByActivity": [
       "Chico890921/obsidian-translations",
       "yunrr/obsidian-i18n-resources",
-      "Ouroboros-XX/obsidian-plugin-translations",
       "baduyifei/obsidian-i18n-resources",
       "ZergoWL/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
       "xiaosong8584/obsidian-i18n-resources",
       "lizhengyi3003/obsidian-i18n-resources",
+      "Ouroboros-XX/obsidian-plugin-translations",
       "yubolun/obsidian-i18n-resources"
     ],
     "topAuthors": [
@@ -929,19 +929,6 @@
         ],
         "activityScore": 0.85,
         "lastActiveAt": "2026-07-29T15:09:59Z"
-      },
-      {
-        "name": "Ouroboros-XX",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/283668085?v=4",
-        "htmlUrl": "https://github.com/Ouroboros-XX",
-        "totalPlugins": 50,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.47,
-        "lastActiveAt": "2026-07-03T11:22:59Z"
       },
       {
         "name": "baduyifei",
@@ -966,7 +953,7 @@
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.44,
+        "activityScore": 0.425,
         "lastActiveAt": "2026-07-17T07:33:29Z"
       },
       {
@@ -1007,6 +994,19 @@
         ],
         "activityScore": 0.301,
         "lastActiveAt": "2026-05-30T11:28:55Z"
+      },
+      {
+        "name": "Ouroboros-XX",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/283668085?v=4",
+        "htmlUrl": "https://github.com/Ouroboros-XX",
+        "totalPlugins": 50,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.3,
+        "lastActiveAt": "2026-07-03T11:22:59Z"
       },
       {
         "name": "xiaosong8584",
