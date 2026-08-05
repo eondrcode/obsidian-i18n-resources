@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-04T17:29:07.878Z",
+  "lastUpdated": "2026-08-05T17:20:15.514Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -443,23 +443,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 1810,
+      "repoSize": 1897,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-08-04T17:18:41Z",
-      "lastPushedAt": "2026-08-04T17:16:06Z",
+      "repoUpdatedAt": "2026-08-04T17:40:49Z",
+      "lastPushedAt": "2026-08-04T17:37:13Z",
       "recentCommits30d": 100,
       "totalContributors": 1,
       "activityScore": 0.85,
-      "pluginCount": 47,
-      "translationCount": 47,
+      "pluginCount": 48,
+      "translationCount": 48,
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-08-04T17:16:06.319Z"
+      "lastManifestUpdate": "2026-08-04T17:37:14.007Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -921,14 +921,14 @@
         "name": "Chico890921",
         "avatarUrl": "https://avatars.githubusercontent.com/u/32149972?v=4",
         "htmlUrl": "https://github.com/Chico890921",
-        "totalPlugins": 47,
+        "totalPlugins": 48,
         "totalStars": 0,
         "repoCount": 1,
         "languages": [
           "zh-tw"
         ],
         "activityScore": 0.85,
-        "lastActiveAt": "2026-08-04T17:16:06Z"
+        "lastActiveAt": "2026-08-04T17:37:13Z"
       },
       {
         "name": "baduyifei",
@@ -1051,13 +1051,13 @@
   },
   "summary": {
     "totalRepos": 27,
-    "totalPlugins": 47,
-    "totalTranslations": 13232,
+    "totalPlugins": 48,
+    "totalTranslations": 13233,
     "totalContributors": 1,
     "totalStars": 12,
     "languageDistribution": {
       "zh-cn": 13185,
-      "zh-tw": 47
+      "zh-tw": 48
     }
   }
 }
