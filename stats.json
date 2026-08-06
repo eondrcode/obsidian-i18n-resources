@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-05T17:20:15.514Z",
+  "lastUpdated": "2026-08-06T23:28:27.962Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -889,6 +889,39 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-07-15T16:05:27.723Z"
+    },
+    "auralife2013/obsidian-i18n-resources": {
+      "authorName": "auralife2013",
+      "authorId": 107482915,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/107482915?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/auralife2013",
+      "repoName": "obsidian-i18n-resources",
+      "repoFullName": "auralife2013/obsidian-i18n-resources",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/auralife2013/obsidian-i18n-resources",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 13,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-03-14T02:49:31Z",
+      "repoUpdatedAt": "2026-03-16T08:32:55Z",
+      "lastPushedAt": "2026-03-16T08:32:53Z",
+      "recentCommits30d": 0,
+      "totalContributors": 1,
+      "activityScore": 0.04,
+      "pluginCount": 2,
+      "translationCount": 2,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-03-16T08:32:53.252Z"
     }
   },
   "leaderboard": {
@@ -1050,14 +1083,14 @@
     ]
   },
   "summary": {
-    "totalRepos": 27,
+    "totalRepos": 28,
     "totalPlugins": 48,
-    "totalTranslations": 13233,
-    "totalContributors": 1,
+    "totalTranslations": 13235,
+    "totalContributors": 27,
     "totalStars": 12,
     "languageDistribution": {
-      "zh-cn": 13185,
-      "zh-tw": 48
+      "zh-tw": 48,
+      "zh-cn": 13187
     }
   }
 }
