@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-06T23:28:27.962Z",
+  "lastUpdated": "2026-08-07T16:41:53.526Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -50,16 +50,16 @@
       "isArchived": false,
       "isFork": true,
       "repoSize": 11294,
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
-      "watchers": 0,
+      "watchers": 1,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-07-26T10:02:54Z",
-      "repoUpdatedAt": "2026-07-26T11:25:38Z",
+      "repoUpdatedAt": "2026-08-07T05:07:37Z",
       "lastPushedAt": "2026-07-27T13:14:25Z",
       "recentCommits30d": 1,
       "totalContributors": 2,
-      "activityScore": 0.405,
+      "activityScore": 0.406,
       "pluginCount": 2877,
       "translationCount": 3467,
       "languages": [
@@ -443,14 +443,14 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 1897,
+      "repoSize": 1968,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-08-04T17:40:49Z",
-      "lastPushedAt": "2026-08-04T17:37:13Z",
+      "repoUpdatedAt": "2026-08-06T06:57:53Z",
+      "lastPushedAt": "2026-08-06T06:57:51Z",
       "recentCommits30d": 100,
       "totalContributors": 1,
       "activityScore": 0.85,
@@ -459,7 +459,7 @@
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-08-04T17:37:14.007Z"
+      "lastManifestUpdate": "2026-08-06T06:57:51.122Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -928,12 +928,12 @@
     "topReposByStars": [
       "yunrr/obsidian-translations",
       "yubolun/obsidian-i18n-resources",
+      "yunrr/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
       "ljded/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
       "voxrs/obsidian-translations",
-      "yunrr/obsidian-i18n-resources",
       "xiaosong8584/obsidian-i18n-resources",
       "yeeun4028/obsidian-i18n-resources"
     ],
@@ -961,7 +961,7 @@
           "zh-tw"
         ],
         "activityScore": 0.85,
-        "lastActiveAt": "2026-08-04T17:37:13Z"
+        "lastActiveAt": "2026-08-06T06:57:51Z"
       },
       {
         "name": "baduyifei",
@@ -1059,12 +1059,12 @@
         "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
         "htmlUrl": "https://github.com/yunrr",
         "totalPlugins": 7458,
-        "totalStars": 5,
+        "totalStars": 6,
         "repoCount": 2,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.27,
+        "activityScore": 0.27066666666666667,
         "lastActiveAt": "2026-07-27T13:14:25Z"
       },
       {
@@ -1086,11 +1086,11 @@
     "totalRepos": 28,
     "totalPlugins": 48,
     "totalTranslations": 13235,
-    "totalContributors": 27,
-    "totalStars": 12,
+    "totalContributors": 1,
+    "totalStars": 13,
     "languageDistribution": {
-      "zh-tw": 48,
-      "zh-cn": 13187
+      "zh-cn": 13187,
+      "zh-tw": 48
     }
   }
 }
