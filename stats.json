@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-09T16:22:30.086Z",
+  "lastUpdated": "2026-08-10T16:42:54.484Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -450,7 +450,7 @@
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
       "repoUpdatedAt": "2026-08-06T06:57:53Z",
-      "lastPushedAt": "2026-08-06T06:57:51Z",
+      "lastPushedAt": "2026-08-10T16:42:21Z",
       "recentCommits30d": 100,
       "totalContributors": 1,
       "activityScore": 0.85,
@@ -459,7 +459,7 @@
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-08-06T06:57:51.122Z"
+      "lastManifestUpdate": "2026-08-10T16:42:21.861Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -961,7 +961,7 @@
           "zh-tw"
         ],
         "activityScore": 0.85,
-        "lastActiveAt": "2026-08-06T06:57:51Z"
+        "lastActiveAt": "2026-08-10T16:42:21Z"
       },
       {
         "name": "baduyifei",
@@ -1084,9 +1084,9 @@
   },
   "summary": {
     "totalRepos": 28,
-    "totalPlugins": 0,
+    "totalPlugins": 48,
     "totalTranslations": 13235,
-    "totalContributors": 0,
+    "totalContributors": 1,
     "totalStars": 13,
     "languageDistribution": {
       "zh-cn": 13187,
