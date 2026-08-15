@@ -6,8 +6,8 @@
     "isFeatured": false
   },
   {
-    "repoAddress": "yunrr/obsidian-i18n-resources",
-    "registeredAt": "2026-03-14T01:31:25.965Z",
+    "repoAddress": "yunrr/obsidian-translations",
+    "registeredAt": "2026-06-17T12:31:41.598Z",
     "isOfficial": true,
     "isFeatured": true
   },
@@ -90,10 +90,6 @@
   {
     "repoAddress": "zhouying92/obsidian-i18n-resources",
     "registeredAt": "2026-06-17T01:01:51.350Z"
-  },
-  {
-    "repoAddress": "yunrr/obsidian-translations",
-    "registeredAt": "2026-06-17T12:31:41.598Z"
   },
   {
     "repoAddress": "Ouroboros-XX/obsidian-plugin-translations",
