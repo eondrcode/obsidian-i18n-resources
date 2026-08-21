@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-20T16:22:47.847Z",
+  "lastUpdated": "2026-08-21T16:20:50.975Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -420,7 +420,7 @@
       "lastPushedAt": "2026-05-23T06:04:07Z",
       "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.3,
+      "activityScore": 0.25,
       "pluginCount": 23,
       "translationCount": 23,
       "languages": [
@@ -443,14 +443,14 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 1675,
+      "repoSize": 1735,
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-08-15T20:58:27Z",
-      "lastPushedAt": "2026-08-15T20:58:25Z",
+      "repoUpdatedAt": "2026-08-21T15:26:35Z",
+      "lastPushedAt": "2026-08-21T15:24:20Z",
       "recentCommits30d": 100,
       "totalContributors": 1,
       "activityScore": 0.85,
@@ -459,7 +459,7 @@
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-08-15T20:58:25.452Z"
+      "lastManifestUpdate": "2026-08-21T15:24:27.854Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -908,13 +908,13 @@
       "Chico890921/obsidian-translations",
       "Anonym0usPlayer/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
-      "lizhengyi3003/obsidian-i18n-resources",
       "ZergoWL/obsidian-i18n-resources",
       "Ouroboros-XX/obsidian-plugin-translations",
       "baduyifei/obsidian-i18n-resources",
       "yubolun/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
-      "voxrs/obsidian-translations"
+      "voxrs/obsidian-translations",
+      "xiaosong8584/obsidian-i18n-resources"
     ],
     "topAuthors": [
       {
@@ -928,7 +928,7 @@
           "zh-tw"
         ],
         "activityScore": 0.85,
-        "lastActiveAt": "2026-08-15T20:58:25Z"
+        "lastActiveAt": "2026-08-21T15:24:20Z"
       },
       {
         "name": "Anonym0usPlayer",
@@ -983,19 +983,6 @@
         "lastActiveAt": "2026-07-17T07:33:29Z"
       },
       {
-        "name": "lizhengyi3003",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/81514724?v=4",
-        "htmlUrl": "https://github.com/lizhengyi3003",
-        "totalPlugins": 23,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.3,
-        "lastActiveAt": "2026-05-23T06:04:07Z"
-      },
-      {
         "name": "baduyifei",
         "avatarUrl": "https://avatars.githubusercontent.com/u/14105006?v=4",
         "htmlUrl": "https://github.com/baduyifei",
@@ -1046,14 +1033,27 @@
         ],
         "activityScore": 0.25,
         "lastActiveAt": "2026-05-16T17:07:33Z"
+      },
+      {
+        "name": "lizhengyi3003",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/81514724?v=4",
+        "htmlUrl": "https://github.com/lizhengyi3003",
+        "totalPlugins": 23,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.25,
+        "lastActiveAt": "2026-05-23T06:04:07Z"
       }
     ]
   },
   "summary": {
     "totalRepos": 27,
-    "totalPlugins": 0,
+    "totalPlugins": 48,
     "totalTranslations": 9768,
-    "totalContributors": 0,
+    "totalContributors": 1,
     "totalStars": 12,
     "languageDistribution": {
       "zh-cn": 9720,
