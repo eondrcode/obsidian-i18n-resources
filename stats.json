@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T19:00:42.701Z",
+  "lastUpdated": "2026-09-02T19:06:10.586Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -1051,9 +1051,9 @@
   },
   "summary": {
     "totalRepos": 27,
-    "totalPlugins": 48,
+    "totalPlugins": 0,
     "totalTranslations": 9769,
-    "totalContributors": 1,
+    "totalContributors": 0,
     "totalStars": 13,
     "languageDistribution": {
       "zh-cn": 9721,
