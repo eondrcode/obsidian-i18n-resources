@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T18:42:33.016Z",
+  "lastUpdated": "2026-09-05T17:48:24.584Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -443,14 +443,14 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 1906,
+      "repoSize": 1987,
       "stars": 0,
       "forks": 1,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-09-01T13:37:58Z",
-      "lastPushedAt": "2026-09-01T13:07:36Z",
+      "repoUpdatedAt": "2026-09-05T12:57:32Z",
+      "lastPushedAt": "2026-09-05T12:57:29Z",
       "recentCommits30d": 42,
       "totalContributors": 1,
       "activityScore": 0.71,
@@ -459,7 +459,7 @@
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-09-01T13:07:35.773Z"
+      "lastManifestUpdate": "2026-09-05T12:57:29.618Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -928,7 +928,7 @@
           "zh-tw"
         ],
         "activityScore": 0.71,
-        "lastActiveAt": "2026-09-01T13:07:36Z"
+        "lastActiveAt": "2026-09-05T12:57:29Z"
       },
       {
         "name": "yunrr",
@@ -1051,9 +1051,9 @@
   },
   "summary": {
     "totalRepos": 27,
-    "totalPlugins": 0,
+    "totalPlugins": 48,
     "totalTranslations": 9769,
-    "totalContributors": 0,
+    "totalContributors": 1,
     "totalStars": 13,
     "languageDistribution": {
       "zh-cn": 9721,
