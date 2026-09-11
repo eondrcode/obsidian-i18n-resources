@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-10T18:49:22.165Z",
+  "lastUpdated": "2026-09-11T18:52:32.873Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -443,23 +443,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 2116,
+      "repoSize": 2140,
       "stars": 0,
       "forks": 1,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-09-08T14:26:12Z",
-      "lastPushedAt": "2026-09-08T14:21:43Z",
-      "recentCommits30d": 40,
+      "repoUpdatedAt": "2026-09-11T18:16:41Z",
+      "lastPushedAt": "2026-09-11T18:16:39Z",
+      "recentCommits30d": 50,
       "totalContributors": 1,
-      "activityScore": 0.7,
-      "pluginCount": 48,
-      "translationCount": 48,
+      "activityScore": 0.75,
+      "pluginCount": 49,
+      "translationCount": 49,
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-09-08T14:21:43.169Z"
+      "lastManifestUpdate": "2026-09-11T18:16:36.243Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -921,14 +921,14 @@
         "name": "Chico890921",
         "avatarUrl": "https://avatars.githubusercontent.com/u/32149972?v=4",
         "htmlUrl": "https://github.com/Chico890921",
-        "totalPlugins": 48,
+        "totalPlugins": 49,
         "totalStars": 0,
         "repoCount": 1,
         "languages": [
           "zh-tw"
         ],
-        "activityScore": 0.7,
-        "lastActiveAt": "2026-09-08T14:21:43Z"
+        "activityScore": 0.75,
+        "lastActiveAt": "2026-09-11T18:16:39Z"
       },
       {
         "name": "yunrr",
@@ -1051,13 +1051,13 @@
   },
   "summary": {
     "totalRepos": 27,
-    "totalPlugins": 0,
-    "totalTranslations": 9769,
-    "totalContributors": 0,
+    "totalPlugins": 49,
+    "totalTranslations": 9770,
+    "totalContributors": 1,
     "totalStars": 13,
     "languageDistribution": {
       "zh-cn": 9721,
-      "zh-tw": 48
+      "zh-tw": 49
     }
   }
 }
