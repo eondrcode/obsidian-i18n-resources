@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-13T18:25:29.069Z",
+  "lastUpdated": "2026-09-14T20:03:09.122Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -443,23 +443,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 2140,
+      "repoSize": 2431,
       "stars": 0,
       "forks": 1,
       "watchers": 0,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-09-11T18:16:41Z",
-      "lastPushedAt": "2026-09-11T18:16:39Z",
-      "recentCommits30d": 50,
+      "repoUpdatedAt": "2026-09-14T11:27:38Z",
+      "lastPushedAt": "2026-09-14T11:27:36Z",
+      "recentCommits30d": 54,
       "totalContributors": 1,
-      "activityScore": 0.75,
-      "pluginCount": 49,
-      "translationCount": 49,
+      "activityScore": 0.77,
+      "pluginCount": 50,
+      "translationCount": 50,
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-09-11T18:16:36.243Z"
+      "lastManifestUpdate": "2026-09-14T11:27:35.652Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -552,7 +552,7 @@
       "lastPushedAt": "2026-06-16T14:40:01Z",
       "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.17,
+      "activityScore": 0.12,
       "pluginCount": 6,
       "translationCount": 6,
       "languages": [
@@ -921,14 +921,14 @@
         "name": "Chico890921",
         "avatarUrl": "https://avatars.githubusercontent.com/u/32149972?v=4",
         "htmlUrl": "https://github.com/Chico890921",
-        "totalPlugins": 49,
+        "totalPlugins": 50,
         "totalStars": 0,
         "repoCount": 1,
         "languages": [
           "zh-tw"
         ],
-        "activityScore": 0.75,
-        "lastActiveAt": "2026-09-11T18:16:39Z"
+        "activityScore": 0.77,
+        "lastActiveAt": "2026-09-14T11:27:36Z"
       },
       {
         "name": "yunrr",
@@ -1051,13 +1051,13 @@
   },
   "summary": {
     "totalRepos": 27,
-    "totalPlugins": 0,
-    "totalTranslations": 9770,
-    "totalContributors": 0,
+    "totalPlugins": 50,
+    "totalTranslations": 9771,
+    "totalContributors": 1,
     "totalStars": 13,
     "languageDistribution": {
       "zh-cn": 9721,
-      "zh-tw": 49
+      "zh-tw": 50
     }
   }
 }
