@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T20:03:09.122Z",
+  "lastUpdated": "2026-09-15T19:22:23.437Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -59,7 +59,7 @@
       "lastPushedAt": "2026-06-17T01:02:31Z",
       "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.306,
+      "activityScore": 0.256,
       "pluginCount": 4581,
       "translationCount": 9366,
       "languages": [
@@ -451,9 +451,9 @@
       "repoCreatedAt": "2026-05-25T02:40:02Z",
       "repoUpdatedAt": "2026-09-14T11:27:38Z",
       "lastPushedAt": "2026-09-14T11:27:36Z",
-      "recentCommits30d": 54,
+      "recentCommits30d": 52,
       "totalContributors": 1,
-      "activityScore": 0.77,
+      "activityScore": 0.76,
       "pluginCount": 50,
       "translationCount": 50,
       "languages": [
@@ -906,10 +906,10 @@
     ],
     "topReposByActivity": [
       "Chico890921/obsidian-translations",
-      "yunrr/obsidian-translations",
       "ZergoWL/obsidian-i18n-resources",
       "Ouroboros-XX/obsidian-plugin-translations",
       "baduyifei/obsidian-i18n-resources",
+      "yunrr/obsidian-translations",
       "yubolun/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
@@ -927,21 +927,8 @@
         "languages": [
           "zh-tw"
         ],
-        "activityScore": 0.77,
+        "activityScore": 0.76,
         "lastActiveAt": "2026-09-14T11:27:36Z"
-      },
-      {
-        "name": "yunrr",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
-        "htmlUrl": "https://github.com/yunrr",
-        "totalPlugins": 4581,
-        "totalStars": 6,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.306,
-        "lastActiveAt": "2026-06-17T01:02:31Z"
       },
       {
         "name": "Ouroboros-XX",
@@ -981,6 +968,19 @@
         ],
         "activityScore": 0.3,
         "lastActiveAt": "2026-07-12T03:05:28Z"
+      },
+      {
+        "name": "yunrr",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
+        "htmlUrl": "https://github.com/yunrr",
+        "totalPlugins": 4581,
+        "totalStars": 6,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.256,
+        "lastActiveAt": "2026-06-17T01:02:31Z"
       },
       {
         "name": "yubolun",
@@ -1051,9 +1051,9 @@
   },
   "summary": {
     "totalRepos": 27,
-    "totalPlugins": 50,
+    "totalPlugins": 0,
     "totalTranslations": 9771,
-    "totalContributors": 1,
+    "totalContributors": 0,
     "totalStars": 13,
     "languageDistribution": {
       "zh-cn": 9721,
