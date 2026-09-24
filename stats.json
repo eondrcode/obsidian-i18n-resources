@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23T19:19:57.277Z",
+  "lastUpdated": "2026-09-24T19:36:46.213Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -451,9 +451,9 @@
       "repoCreatedAt": "2026-05-25T02:40:02Z",
       "repoUpdatedAt": "2026-09-23T17:31:52Z",
       "lastPushedAt": "2026-09-23T17:31:49Z",
-      "recentCommits30d": 72,
+      "recentCommits30d": 68,
       "totalContributors": 1,
-      "activityScore": 0.85,
+      "activityScore": 0.84,
       "pluginCount": 50,
       "translationCount": 50,
       "languages": [
@@ -880,9 +880,9 @@
       "repoCreatedAt": "2026-03-14T02:49:31Z",
       "repoUpdatedAt": "2026-08-25T11:49:18Z",
       "lastPushedAt": "2026-08-25T11:43:25Z",
-      "recentCommits30d": 2,
+      "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.22,
+      "activityScore": 0.11,
       "pluginCount": 3,
       "translationCount": 3,
       "languages": [
@@ -927,7 +927,7 @@
         "languages": [
           "zh-tw"
         ],
-        "activityScore": 0.85,
+        "activityScore": 0.84,
         "lastActiveAt": "2026-09-23T17:31:49Z"
       },
       {
@@ -1051,9 +1051,9 @@
   },
   "summary": {
     "totalRepos": 27,
-    "totalPlugins": 50,
+    "totalPlugins": 0,
     "totalTranslations": 9774,
-    "totalContributors": 1,
+    "totalContributors": 0,
     "totalStars": 13,
     "languageDistribution": {
       "zh-cn": 9724,
