@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-07T20:54:08.836Z",
+  "lastUpdated": "2026-10-08T20:55:25.312Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -443,23 +443,23 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 2815,
+      "repoSize": 2848,
       "stars": 1,
       "forks": 1,
       "watchers": 1,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-10-07T16:48:37Z",
-      "lastPushedAt": "2026-10-07T16:48:35Z",
-      "recentCommits30d": 90,
+      "repoUpdatedAt": "2026-10-08T10:20:04Z",
+      "lastPushedAt": "2026-10-08T10:20:01Z",
+      "recentCommits30d": 84,
       "totalContributors": 1,
       "activityScore": 0.851,
-      "pluginCount": 50,
-      "translationCount": 50,
+      "pluginCount": 51,
+      "translationCount": 51,
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-10-07T16:48:36.899Z"
+      "lastManifestUpdate": "2026-10-08T10:20:04.041Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -921,14 +921,14 @@
         "name": "Chico890921",
         "avatarUrl": "https://avatars.githubusercontent.com/u/32149972?v=4",
         "htmlUrl": "https://github.com/Chico890921",
-        "totalPlugins": 50,
+        "totalPlugins": 51,
         "totalStars": 1,
         "repoCount": 1,
         "languages": [
           "zh-tw"
         ],
         "activityScore": 0.851,
-        "lastActiveAt": "2026-10-07T16:48:35Z"
+        "lastActiveAt": "2026-10-08T10:20:01Z"
       },
       {
         "name": "ZergoWL",
@@ -1051,13 +1051,13 @@
   },
   "summary": {
     "totalRepos": 27,
-    "totalPlugins": 50,
-    "totalTranslations": 9774,
+    "totalPlugins": 51,
+    "totalTranslations": 9775,
     "totalContributors": 1,
     "totalStars": 15,
     "languageDistribution": {
       "zh-cn": 9724,
-      "zh-tw": 50
+      "zh-tw": 51
     }
   }
 }
