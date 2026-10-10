@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-09T20:24:17.482Z",
+  "lastUpdated": "2026-10-10T19:38:11.009Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -816,7 +816,7 @@
       "lastPushedAt": "2026-07-12T03:05:28Z",
       "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.3,
+      "activityScore": 0.25,
       "pluginCount": 16,
       "translationCount": 17,
       "languages": [
@@ -907,14 +907,14 @@
     "topReposByActivity": [
       "Chico890921/obsidian-translations",
       "ZergoWL/obsidian-i18n-resources",
-      "baduyifei/obsidian-i18n-resources",
       "Siyin22/obsidian-i18n-resources",
       "yunrr/obsidian-translations",
       "yubolun/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
-      "voxrs/obsidian-translations"
+      "voxrs/obsidian-translations",
+      "xiaosong8584/obsidian-i18n-resources"
     ],
     "topAuthors": [
       {
@@ -942,19 +942,6 @@
         ],
         "activityScore": 0.43,
         "lastActiveAt": "2026-09-20T13:33:53Z"
-      },
-      {
-        "name": "baduyifei",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/14105006?v=4",
-        "htmlUrl": "https://github.com/baduyifei",
-        "totalPlugins": 16,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.3,
-        "lastActiveAt": "2026-07-12T03:05:28Z"
       },
       {
         "name": "Siyin22",
@@ -1046,6 +1033,19 @@
         ],
         "activityScore": 0.25,
         "lastActiveAt": "2026-07-03T11:22:59Z"
+      },
+      {
+        "name": "xiaosong8584",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/50919680?v=4",
+        "htmlUrl": "https://github.com/xiaosong8584",
+        "totalPlugins": 41,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.25,
+        "lastActiveAt": "2026-05-16T17:07:33Z"
       }
     ]
   },
