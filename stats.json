@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T18:21:52.251Z",
+  "lastUpdated": "2026-10-19T20:47:48.319Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -50,16 +50,16 @@
       "isArchived": false,
       "isFork": false,
       "repoSize": 30909,
-      "stars": 7,
+      "stars": 8,
       "forks": 0,
-      "watchers": 7,
+      "watchers": 8,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-06-16T22:20:06Z",
-      "repoUpdatedAt": "2026-09-29T08:23:09Z",
+      "repoUpdatedAt": "2026-10-19T05:05:33Z",
       "lastPushedAt": "2026-06-17T01:02:31Z",
       "recentCommits30d": 0,
       "totalContributors": 1,
-      "activityScore": 0.257,
+      "activityScore": 0.258,
       "pluginCount": 4581,
       "translationCount": 9366,
       "languages": [
@@ -443,14 +443,14 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 3509,
+      "repoSize": 2801,
       "stars": 1,
       "forks": 1,
       "watchers": 1,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-10-14T17:30:26Z",
-      "lastPushedAt": "2026-10-14T17:30:23Z",
+      "repoUpdatedAt": "2026-10-19T09:38:41Z",
+      "lastPushedAt": "2026-10-19T09:38:38Z",
       "recentCommits30d": 84,
       "totalContributors": 1,
       "activityScore": 0.851,
@@ -459,7 +459,7 @@
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-10-14T17:29:23.361Z"
+      "lastManifestUpdate": "2026-10-19T09:38:38.125Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -928,7 +928,7 @@
           "zh-tw"
         ],
         "activityScore": 0.851,
-        "lastActiveAt": "2026-10-14T17:30:23Z"
+        "lastActiveAt": "2026-10-19T09:38:38Z"
       },
       {
         "name": "ZergoWL",
@@ -948,12 +948,12 @@
         "avatarUrl": "https://avatars.githubusercontent.com/u/144842921?v=4",
         "htmlUrl": "https://github.com/yunrr",
         "totalPlugins": 4581,
-        "totalStars": 7,
+        "totalStars": 8,
         "repoCount": 1,
         "languages": [
           "zh-cn"
         ],
-        "activityScore": 0.257,
+        "activityScore": 0.258,
         "lastActiveAt": "2026-06-17T01:02:31Z"
       },
       {
@@ -1051,10 +1051,10 @@
   },
   "summary": {
     "totalRepos": 27,
-    "totalPlugins": 0,
+    "totalPlugins": 52,
     "totalTranslations": 9776,
-    "totalContributors": 0,
-    "totalStars": 15,
+    "totalContributors": 1,
+    "totalStars": 16,
     "languageDistribution": {
       "zh-cn": 9724,
       "zh-tw": 52
