@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T06:29:56.682Z",
+  "lastUpdated": "2026-10-28T20:41:03.936Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -443,15 +443,15 @@
       "topics": [],
       "isArchived": false,
       "isFork": false,
-      "repoSize": 2905,
+      "repoSize": 3038,
       "stars": 1,
       "forks": 1,
       "watchers": 1,
       "openIssuesCount": 0,
       "repoCreatedAt": "2026-05-25T02:40:02Z",
-      "repoUpdatedAt": "2026-10-24T12:52:17Z",
-      "lastPushedAt": "2026-10-24T12:52:15Z",
-      "recentCommits30d": 84,
+      "repoUpdatedAt": "2026-10-28T10:24:37Z",
+      "lastPushedAt": "2026-10-28T10:24:35Z",
+      "recentCommits30d": 96,
       "totalContributors": 1,
       "activityScore": 0.851,
       "pluginCount": 52,
@@ -459,7 +459,7 @@
       "languages": [
         "zh-tw"
       ],
-      "lastManifestUpdate": "2026-10-24T12:52:14.817Z"
+      "lastManifestUpdate": "2026-10-28T10:24:34.430Z"
     },
     "Siyin22/obsidian-i18n-resources": {
       "authorName": "Siyin22",
@@ -994,7 +994,7 @@
           "zh-tw"
         ],
         "activityScore": 0.851,
-        "lastActiveAt": "2026-10-24T12:52:15Z"
+        "lastActiveAt": "2026-10-28T10:24:35Z"
       },
       {
         "name": "yyyr-otz",
@@ -1117,13 +1117,13 @@
   },
   "summary": {
     "totalRepos": 29,
-    "totalPlugins": 0,
+    "totalPlugins": 52,
     "totalTranslations": 9915,
-    "totalContributors": 29,
+    "totalContributors": 1,
     "totalStars": 17,
     "languageDistribution": {
-      "zh-tw": 52,
-      "zh-cn": 9863
+      "zh-cn": 9863,
+      "zh-tw": 52
     }
   }
 }
