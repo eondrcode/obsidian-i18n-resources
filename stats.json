@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T06:29:34.537Z",
+  "lastUpdated": "2026-10-28T06:29:56.682Z",
   "repos": {
     "voxrs/obsidian-translations": {
       "authorName": "voxrs",
@@ -922,6 +922,39 @@
         "zh-cn"
       ],
       "lastManifestUpdate": "2026-10-27T14:00:57.240Z"
+    },
+    "kasori4869/obsidian-i18n-resources": {
+      "authorName": "kasori4869",
+      "authorId": 58207568,
+      "avatarUrl": "https://avatars.githubusercontent.com/u/58207568?v=4",
+      "authorType": "User",
+      "authorHtmlUrl": "https://github.com/kasori4869",
+      "repoName": "obsidian-i18n-resources",
+      "repoFullName": "kasori4869/obsidian-i18n-resources",
+      "description": "My Obsidian plugin translations (created by obsidian-i18n)",
+      "htmlUrl": "https://github.com/kasori4869/obsidian-i18n-resources",
+      "defaultBranch": "main",
+      "license": null,
+      "topics": [],
+      "isArchived": false,
+      "isFork": false,
+      "repoSize": 511,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssuesCount": 0,
+      "repoCreatedAt": "2026-09-01T18:19:54Z",
+      "repoUpdatedAt": "2026-09-04T08:51:53Z",
+      "lastPushedAt": "2026-09-04T08:48:08Z",
+      "recentCommits30d": 0,
+      "totalContributors": 1,
+      "activityScore": 0.3,
+      "pluginCount": 25,
+      "translationCount": 39,
+      "languages": [
+        "zh-cn"
+      ],
+      "lastManifestUpdate": "2026-09-04T08:48:02.506Z"
     }
   },
   "leaderboard": {
@@ -941,13 +974,13 @@
       "Chico890921/obsidian-translations",
       "yyyr-otz/obsidian-translations",
       "ZergoWL/obsidian-i18n-resources",
+      "kasori4869/obsidian-i18n-resources",
       "yunrr/obsidian-translations",
       "yubolun/obsidian-i18n-resources",
       "Anonym0usPlayer/obsidian-i18n-resources",
       "Ayanami-Shinji/obsidian-i18n-resources",
       "win2ter/obsidian-translations",
-      "voxrs/obsidian-translations",
-      "xiaosong8584/obsidian-i18n-resources"
+      "voxrs/obsidian-translations"
     ],
     "topAuthors": [
       {
@@ -988,6 +1021,19 @@
         ],
         "activityScore": 0.3,
         "lastActiveAt": "2026-09-20T13:33:53Z"
+      },
+      {
+        "name": "kasori4869",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/58207568?v=4",
+        "htmlUrl": "https://github.com/kasori4869",
+        "totalPlugins": 25,
+        "totalStars": 0,
+        "repoCount": 1,
+        "languages": [
+          "zh-cn"
+        ],
+        "activityScore": 0.3,
+        "lastActiveAt": "2026-09-04T08:48:08Z"
       },
       {
         "name": "yunrr",
@@ -1066,31 +1112,18 @@
         ],
         "activityScore": 0.25,
         "lastActiveAt": "2026-07-03T11:22:59Z"
-      },
-      {
-        "name": "xiaosong8584",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/50919680?v=4",
-        "htmlUrl": "https://github.com/xiaosong8584",
-        "totalPlugins": 41,
-        "totalStars": 0,
-        "repoCount": 1,
-        "languages": [
-          "zh-cn"
-        ],
-        "activityScore": 0.25,
-        "lastActiveAt": "2026-05-16T17:07:33Z"
       }
     ]
   },
   "summary": {
-    "totalRepos": 28,
+    "totalRepos": 29,
     "totalPlugins": 0,
-    "totalTranslations": 9876,
-    "totalContributors": 28,
+    "totalTranslations": 9915,
+    "totalContributors": 29,
     "totalStars": 17,
     "languageDistribution": {
       "zh-tw": 52,
-      "zh-cn": 9824
+      "zh-cn": 9863
     }
   }
 }
